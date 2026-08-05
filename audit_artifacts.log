@@ -1,0 +1,187 @@
+[DOC] D:\SparkHub\app.py: missing module docstring
+[DOC] D:\SparkHub\app.py: function 'init_state' missing docstring
+[DOC] D:\SparkHub\app.py: function 'find_available_port' missing docstring
+[DOC] D:\SparkHub\app.py: function 'update_state' missing docstring
+[DOC] D:\SparkHub\app.py: function 'init_mempalace' missing docstring
+[DOC] D:\SparkHub\app.py: function 'mempalace_save' missing docstring
+[DOC] D:\SparkHub\app.py: function 'mempalace_search' missing docstring
+[DOC] D:\SparkHub\app.py: function 'mempalace_list' missing docstring
+[DOC] D:\SparkHub\app.py: function 'detect_heavy_load' missing docstring
+[DOC] D:\SparkHub\app.py: function 'call_llm_api' missing docstring
+[DOC] D:\SparkHub\app.py: function 'route_ai_request' missing docstring
+[DOC] D:\SparkHub\app.py: function 'load_env_phone' missing docstring
+[DOC] D:\SparkHub\app.py: function 'proactive_memory_check' missing docstring
+[DOC] D:\SparkHub\app.py: class 'SparkHubTCPServer' missing docstring
+[DOC] D:\SparkHub\app.py: class 'LocalHubMCPHandler' missing docstring
+[DOC] D:\SparkHub\app.py: function 'finalize' missing docstring
+[DOC] D:\SparkHub\app.py: function '_send_cors_headers' missing docstring
+[DOC] D:\SparkHub\app.py: function '_send_json' missing docstring
+[DOC] D:\SparkHub\app.py: function '_send_auth_error' missing docstring
+[DOC] D:\SparkHub\app.py: function '_is_authenticated' missing docstring
+[DOC] D:\SparkHub\app.py: function 'do_HEAD' missing docstring
+[DOC] D:\SparkHub\app.py: function 'do_OPTIONS' missing docstring
+[DOC] D:\SparkHub\app.py: function 'do_GET' missing docstring
+[DOC] D:\SparkHub\app.py: function 'do_POST' missing docstring
+[DB] D:\SparkHub\app.py: connection without WAL
+[DB] D:\SparkHub\app.py: connection without WAL
+[DB] D:\SparkHub\app.py: connection without WAL
+[DOC] D:\SparkHub\audit_full.py: missing module docstring
+[DOC] D:\SparkHub\audit_full.py: function 'log' missing docstring
+[DOC] D:\SparkHub\audit_full.py: function 'is_ascii' missing docstring
+[DOC] D:\SparkHub\audit_full.py: function 'find_python_files' missing docstring
+[DOC] D:\SparkHub\audit_full.py: function 'find_bat_files' missing docstring
+[DOC] D:\SparkHub\audit_full.py: function 'analyze_python_file' missing docstring
+[DOC] D:\SparkHub\audit_full.py: function 'analyze_bat_file' missing docstring
+[DOC] D:\SparkHub\audit_full.py: function 'check_sqlite_schema' missing docstring
+[DOC] D:\SparkHub\audit_full.py: function 'test_udp_ipc' missing docstring
+[DOC] D:\SparkHub\audit_full.py: function 'generate_report' missing docstring
+[DOC] D:\SparkHub\audit_full.py: function 'main' missing docstring
+[PATH] D:\SparkHub\audit_full.py: hard‑coded path 'D:\\SparkHub'
+[DOC] D:\SparkHub\check_db.py: missing module docstring
+[DB] D:\SparkHub\check_db.py: connection without WAL
+[DOC] D:\SparkHub\mempalace_autocollect_master.py: function 'run_level3_collector' missing docstring
+[DOC] D:\SparkHub\mempalace_autocollect_master.py: function '__init__' missing docstring
+[DOC] D:\SparkHub\mempalace_autocollect_master.py: function '_get_conn' missing docstring
+[DOC] D:\SparkHub\mempalace_autocollect_master.py: function '_init_db' missing docstring
+[DOC] D:\SparkHub\mempalace_autocollect_master.py: function 'collect_real_disk_guard' missing docstring
+[DOC] D:\SparkHub\mempalace_autocollect_master.py: function 'collect_real_storage_parser' missing docstring
+[DOC] D:\SparkHub\mempalace_autocollect_master.py: function 'collect_workspace_data' missing docstring
+[DOC] D:\SparkHub\mempalace_autocollect_master.py: function 'collect_shared_workspace_data' missing docstring
+[DOC] D:\SparkHub\mempalace_autocollect_master.py: function 'collect_google_docs' missing docstring
+[DOC] D:\SparkHub\mempalace_autocollect_master.py: function 'collect_devices_and_apps' missing docstring
+[DOC] D:\SparkHub\mempalace_autocollect_master.py: function 'collect_business_contacts' missing docstring
+[DOC] D:\SparkHub\mempalace_autocollect_master.py: function 'collect_browser_history_technical' missing docstring
+[DOC] D:\SparkHub\mempalace_autocollect_master.py: function 'collect_github_data' missing docstring
+[DOC] D:\SparkHub\mempalace_autocollect_master.py: function 'collect_moltbook_data' missing docstring
+[DB] D:\SparkHub\mempalace_autocollect_master.py: connection without WAL
+[DB] D:\SparkHub\mempalace_autocollect_master.py: connection without WAL
+[DOC] D:\SparkHub\patch_app.py: missing module docstring
+[DOC] D:\SparkHub\patch_app.py: function 'main' missing docstring
+[DOC] D:\SparkHub\patch_multi_mode.py: missing module docstring
+[DOC] D:\SparkHub\patch_multi_mode.py: function 'main' missing docstring
+[DOC] D:\SparkHub\router_ai.py: function 'call_llm_api' missing docstring
+[DOC] D:\SparkHub\router_ai.py: function 'route_ai_request' missing docstring
+[DOC] D:\SparkHub\seed_mempalace.py: function 'seed_mempalace' missing docstring
+[DB] D:\SparkHub\seed_mempalace.py: connection without WAL
+[DOC] D:\SparkHub\setup_staging_quadchannel.py: missing module docstring
+[DOC] D:\SparkHub\setup_staging_quadchannel.py: function 'clear_terminal' missing docstring
+[DOC] D:\SparkHub\setup_staging_quadchannel.py: function 'setup_sparkhub' missing docstring
+[DOC] D:\SparkHub\sparkhub_core.py: class 'MicroStep' missing docstring
+[DOC] D:\SparkHub\sparkhub_core.py: function '__init__' missing docstring
+[DOC] D:\SparkHub\sparkhub_core.py: function 'route_ai_request' missing docstring
+[PATH] D:\SparkHub\sparkhub_core.py: hard‑coded path 'Você é o IntentPlanner do SparkHub. Transforme a intenção do usuário em passos estritos.
+Retorne APENAS UM ARRAY JSON VÁLIDO. Sem formatações markdown.
+Exemplo:
+[
+  {"step_id": "step_1", "action_type": "CREATE_DIR", "target_path": "D:\\SparkHub\\novo", "description": "Criar pasta"},
+  {"step_id": "step_2", "action_type": "CREATE_FILE", "target_path": "D:\\SparkHub\\novo\\app.py", "description": "Criar arquivo"}
+]
+
+INTENÇÃO DO USUÁRIO: '
+[DOC] D:\SparkHub\sparkhub_core_mcp.py: function 'find_available_port' missing docstring
+[DOC] D:\SparkHub\sparkhub_core_mcp.py: class 'MemorySearchContract' missing docstring
+[DOC] D:\SparkHub\sparkhub_core_mcp.py: class 'SyncRequestContract' missing docstring
+[DOC] D:\SparkHub\sparkhub_core_mcp.py: class 'AppOpenContract' missing docstring
+[DB] D:\SparkHub\sparkhub_core_mcp.py: connection without WAL
+[DOC] D:\SparkHub\sparkhub_crypto.py: function '__init__' missing docstring
+[DOC] D:\SparkHub\sparkhub_crypto.py: function '_get_or_create_key' missing docstring
+[DOC] D:\SparkHub\sparkhub_crypto.py: function 'encrypt_text' missing docstring
+[DOC] D:\SparkHub\sparkhub_crypto.py: function 'decrypt_text' missing docstring
+[DOC] D:\SparkHub\sparkhub_dashboard.py: missing module docstring
+[DOC] D:\SparkHub\sparkhub_dashboard.py: function 'check_port' missing docstring
+[DOC] D:\SparkHub\sparkhub_dashboard.py: function 'get_disk_status' missing docstring
+[DOC] D:\SparkHub\sparkhub_dashboard.py: function 'get_mempalace_stats' missing docstring
+[DOC] D:\SparkHub\sparkhub_dashboard.py: function 'index' missing docstring
+[DOC] D:\SparkHub\sparkhub_dashboard.py: function 'check_process' missing docstring
+[DOC] D:\SparkHub\sparkhub_dashboard.py: function 'api_status' missing docstring
+[DOC] D:\SparkHub\sparkhub_dashboard.py: function 'api_chat' missing docstring
+[DOC] D:\SparkHub\sparkhub_dashboard.py: function 'get_social_insights' missing docstring
+[DB] D:\SparkHub\sparkhub_dashboard.py: connection without WAL
+[DB] D:\SparkHub\sparkhub_dashboard.py: connection without WAL
+[DB] D:\SparkHub\sparkhub_dashboard.py: connection without WAL
+[PATH] D:\SparkHub\sparkhub_dashboard.py: hard‑coded path 'C:\\'
+[DB] D:\SparkHub\sparkhub_fastmcp.py: connection without WAL
+[DB] D:\SparkHub\sparkhub_fastmcp.py: connection without WAL
+[DOC] D:\SparkHub\sparkhub_godot_blender.py: missing module docstring
+[DOC] D:\SparkHub\sparkhub_godot_blender.py: class 'HeadlessOrchestrator' missing docstring
+[DOC] D:\SparkHub\sparkhub_godot_blender.py: function '__init__' missing docstring
+[DOC] D:\SparkHub\sparkhub_godot_blender.py: function 'render_asset' missing docstring
+[DOC] D:\SparkHub\sparkhub_godot_blender.py: function '_fallback_cpu_render' missing docstring
+[DOC] D:\SparkHub\sparkhub_master_live.py: missing module docstring
+[DOC] D:\SparkHub\sparkhub_master_live.py: class 'CircuitBreaker' missing docstring
+[DOC] D:\SparkHub\sparkhub_master_live.py: class 'LiveOrchestrator' missing docstring
+[DOC] D:\SparkHub\sparkhub_master_live.py: function '__init__' missing docstring
+[DOC] D:\SparkHub\sparkhub_master_live.py: function 'trip' missing docstring
+[DOC] D:\SparkHub\sparkhub_master_live.py: function 'notify' missing docstring
+[DOC] D:\SparkHub\sparkhub_master_live.py: function '__init__' missing docstring
+[DB] D:\SparkHub\sparkhub_master_live.py: connection without WAL
+[DOC] D:\SparkHub\sparkhub_obs_tailscale.py: missing module docstring
+[DOC] D:\SparkHub\sparkhub_obs_tailscale.py: class 'OBSBridgeManager' missing docstring
+[DOC] D:\SparkHub\sparkhub_obs_tailscale.py: function '__init__' missing docstring
+[DOC] D:\SparkHub\sparkhub_obs_tailscale.py: function 'send_command' missing docstring
+[DOC] D:\SparkHub\sparkhub_paths.py: missing module docstring
+[DOC] D:\SparkHub\sparkhub_paths.py: function 'get_project_root' missing docstring
+[DOC] D:\SparkHub\sparkhub_paths.py: function 'get_path' missing docstring
+[DOC] D:\SparkHub\sparkhub_paths.py: function 'get_default_port' missing docstring
+[DOC] D:\SparkHub\sparkhub_state_inspector.py: missing module docstring
+[DOC] D:\SparkHub\sparkhub_state_inspector.py: class 'SystemStateInspector' missing docstring
+[DOC] D:\SparkHub\sparkhub_state_inspector.py: function '__init__' missing docstring
+[DOC] D:\SparkHub\sparkhub_state_inspector.py: function 'audit_target' missing docstring
+[DOC] D:\SparkHub\sparkhub_sync_antifragil.py: missing module docstring
+[DOC] D:\SparkHub\sparkhub_sync_antifragil.py: class 'CircuitBreakerState' missing docstring
+[DOC] D:\SparkHub\sparkhub_sync_antifragil.py: class 'AntifragileBridge' missing docstring
+[DOC] D:\SparkHub\sparkhub_sync_antifragil.py: function 'connect_obs_ws' missing docstring
+[DOC] D:\SparkHub\sparkhub_sync_antifragil.py: function '__init__' missing docstring
+[DOC] D:\SparkHub\sparkhub_sync_antifragil.py: function 'execute' missing docstring
+[DOC] D:\SparkHub\sparkhub_sync_antifragil.py: function '_fallback_strategy' missing docstring
+[DB] D:\SparkHub\sparkhub_sync_antifragil.py: connection without WAL
+[DOC] D:\SparkHub\sparkhub_systray.py: missing module docstring
+[DOC] D:\SparkHub\sparkhub_systray.py: function 'draw_circle' missing docstring
+[DOC] D:\SparkHub\sparkhub_systray.py: function 'animate_pulse' missing docstring
+[DOC] D:\SparkHub\sparkhub_systray.py: function '_apply_state' missing docstring
+[DOC] D:\SparkHub\sparkhub_systray.py: function 'set_state' missing docstring
+[DOC] D:\SparkHub\sparkhub_systray.py: function 'open_app' missing docstring
+[DOC] D:\SparkHub\sparkhub_systray.py: function 'udp_server' missing docstring
+[DOC] D:\SparkHub\sparkhub_systray.py: function 'show_menu' missing docstring
+[DOC] D:\SparkHub\sparkhub_systray.py: function 'on_enter' missing docstring
+[DOC] D:\SparkHub\sparkhub_systray.py: function 'on_leave' missing docstring
+[DOC] D:\SparkHub\sparkhub_systray.py: function 'main' missing docstring
+[DOC] D:\SparkHub\sparkhub_tiktok_chat.py: missing module docstring
+[DOC] D:\SparkHub\sparkhub_tiktok_chat.py: class 'TikTokGhostReader' missing docstring
+[DOC] D:\SparkHub\sparkhub_tiktok_chat.py: function '__init__' missing docstring
+[DOC] D:\SparkHub\sparkhub_tiktok_chat.py: function '_register_events' missing docstring
+[DOC] D:\SparkHub\sparkhub_tiktok_chat.py: function '_save_memory' missing docstring
+[DOC] D:\SparkHub\sparkhub_tiktok_chat.py: function 'start' missing docstring
+[DOC] D:\SparkHub\sparkhub_tiktok_chat.py: function 'on_connect' missing docstring
+[DOC] D:\SparkHub\sparkhub_tiktok_chat.py: function 'on_disconnect' missing docstring
+[DOC] D:\SparkHub\sparkhub_tiktok_chat.py: function 'on_comment' missing docstring
+[DOC] D:\SparkHub\sparkhub_tiktok_chat.py: function 'on_gift' missing docstring
+[DB] D:\SparkHub\sparkhub_tiktok_chat.py: connection without WAL
+[DOC] D:\SparkHub\sync_requisicoes_master.py: missing module docstring
+[DOC] D:\SparkHub\sync_requisicoes_master.py: class 'ProactiveNotifier' missing docstring
+[DOC] D:\SparkHub\sync_requisicoes_master.py: function 'main' missing docstring
+[DOC] D:\SparkHub\sync_requisicoes_master.py: function '__init__' missing docstring
+[DOC] D:\SparkHub\sync_requisicoes_master.py: function 'trigger_async_alert' missing docstring
+[DOC] D:\SparkHub\sync_requisicoes_master.py: function '_send_alert' missing docstring
+[DOC] D:\SparkHub\test_forum_collector.py: missing module docstring
+[DOC] D:\SparkHub\test_forum_collector.py: function 'fetch_reddit_json' missing docstring
+[DOC] D:\SparkHub\test_forum_collector.py: function 'collect_forums' missing docstring
+[DB] D:\SparkHub\test_forum_collector.py: connection without WAL
+[DOC] D:\SparkHub\test_hub.py: missing module docstring
+[DOC] D:\SparkHub\test_hub.py: function 'build_headers' missing docstring
+[DOC] D:\SparkHub\test_hub.py: function 'run_tests' missing docstring
+[DOC] D:\SparkHub\test_mcp_domain.py: missing module docstring
+[DOC] D:\SparkHub\test_system_full.py: function 'test_db' missing docstring
+[DOC] D:\SparkHub\test_system_full.py: function 'test_ipc' missing docstring
+[DOC] D:\SparkHub\test_system_full.py: function 'run_all' missing docstring
+[DOC] D:\SparkHub\test_systray_debug.py: missing module docstring
+[DOC] D:\SparkHub\test_systray_debug.py: function 'wnd_proc' missing docstring
+[DOC] D:\SparkHub\test_systray_debug.py: class 'WNDCLASSEX' missing docstring
+[DOC] D:\SparkHub\test_systray_debug.py: class 'NOTIFYICONDATA' missing docstring
+[DOC] D:\SparkHub\test_triple_cascade.py: missing module docstring
+[DOC] D:\SparkHub\whatsapp_gateway.py: class 'WhatsAppGatewayHandler' missing docstring
+[DOC] D:\SparkHub\whatsapp_gateway.py: function 'run_whatsapp_gateway' missing docstring
+[DOC] D:\SparkHub\whatsapp_gateway.py: function 'log_message' missing docstring
+[DOC] D:\SparkHub\workspace_agent.py: missing module docstring
+[DOC] D:\SparkHub\workspace_agent.py: function 'atualizar_status' missing docstring
+[DOC] D:\SparkHub\workspace_agent.py: function 'get_account_label' missing docstring

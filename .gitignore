@@ -1,0 +1,55 @@
+# SparkHub v3.0 - Git Ignore
+# Não permita que credenciais, binários pesados ou caches do WhatsApp subam para o repositório.
+
+# Binários pesados (.exe)
+*.exe
+cloudflared.exe
+ngrok.exe
+
+# Chaves e credenciais
+.env
+*.json
+!mcp_config.json
+!plugin.json
+.master_key
+
+# Banco de Dados do MemPalace
+*.db
+*.db-shm
+*.db-wal
+mempalace.db
+
+# Diretórios temporários, auth caches e node_modules
+staging/
+node_modules/
+__pycache__/
+*.pyc
+.wwebjs_auth/
+.wwebjs_cache/
+whatsapp-bot/.wwebjs_auth/
+whatsapp-bot/.wwebjs_cache/
+whatsapp-bot/node_modules/
+
+# Arquivos gerados por processos
+alerts.log
+mapa_executaveis.csv
+
+# Tokens e credenciais sensíveis (não versionar)
+credentials.json
+token*.json
+token.json
+token_trabalho.json
+.env
+.env.*
+*.env
+
+# Ignorar bancos locais e estados
+mempalace.db
+sync_requisicoes.db
+*.sqlite
+state.json
+task_state.json
+
+# Arquivos grandes e cache do WhatsApp
+whatsapp-bot/.wwebjs_auth/
+cloudflared.exe
