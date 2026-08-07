@@ -7,7 +7,6 @@ and safe transaction retries.
 import os
 import sqlite3
 import datetime
-import sparkhub_crypto
 
 DB_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "mempalace.db")
 
@@ -67,10 +66,6 @@ def init_and_migrate_db(db_path: str = DB_PATH):
             cursor.execute("ALTER TABLE memories ADD COLUMN timestamp TEXT;")
             print("[DB MIGRATION] Added 'timestamp' column to 'memories'.")
 
-        if "is_sensitive" not in columns:
-            cursor.execute("ALTER TABLE memories ADD COLUMN is_sensitive BOOLEAN DEFAULT FALSE;")
-            print("[DB MIGRATION] Added 'is_sensitive' column to 'memories'.")
-
         # 2. Chat history table
         cursor.execute("""
             CREATE TABLE IF NOT EXISTS chat_history (
@@ -101,32 +96,12 @@ def save_memory(wing: str, room: str, content: str, db_path: str = DB_PATH) -> b
     """Safely saves a memory entry into mempalace.db."""
     try:
         init_and_migrate_db(db_path)
-        
-        termos_sensiveis = ["laudo", "perícia", "pericial", "confidencial", "rh", "contrato", "extrato", "sigiloso"]
-        # Checa sensibilidade apenas na origem (wing) ou título/assunto (room). 
-        # Ignora menções no corpo do texto para evitar falsos positivos incidentais.
-        is_sensitive = ("Trabalho" in room) or ("Trabalho" in wing) or any(t in room.lower() for t in termos_sensiveis)
-        
-        if is_sensitive:
-            content = sparkhub_crypto.encrypt_content(content)
-            
         now_iso = datetime.datetime.now(datetime.timezone.utc).isoformat()
         with get_db_connection(db_path) as conn:
             conn.execute(
-                "INSERT INTO memories (wing, room, content, timestamp, updated_at, is_sensitive) VALUES (?, ?, ?, ?, ?, ?)",
-                (wing, room, content, now_iso, now_iso, is_sensitive)
+                "INSERT INTO memories (wing, room, content, timestamp, updated_at) VALUES (?, ?, ?, ?, ?)",
+                (wing, room, content, now_iso, now_iso)
             )
-            
-            # Atualizar FTS5 apenas para registros não-sensíveis
-            if not is_sensitive:
-                # O ID gerado pode ser pego com lastrowid
-                cur = conn.execute("SELECT last_insert_rowid()")
-                rowid = cur.fetchone()[0]
-                conn.execute(
-                    "INSERT INTO memories_fts(rowid, wing, room, content) VALUES (?, ?, ?, ?)",
-                    (rowid, wing, room, content)
-                )
-                
             conn.commit()
         return True
     except Exception as e:

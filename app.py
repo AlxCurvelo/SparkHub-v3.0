@@ -2,6 +2,7 @@ import argparse
 import csv
 import http.server
 import json
+from sparkhub_logger import logger
 import os
 import re
 import socket
@@ -9,14 +10,19 @@ import socketserver
 import sqlite3
 import subprocess
 import sys
+pyw = sys.executable.replace('python.exe', 'pythonw.exe')
 import uuid
 import urllib.error
 import urllib.request
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
+from dotenv import load_dotenv
 
 from sparkhub_paths import PROJECT_ROOT, get_default_port, get_path
+load_dotenv(get_path(".env"))
 import router_ai
+import ctypes
+import sparkhub_crypto
 
 # =========================================================
 # CONFIGURAÇÕES DO SPARKHUB v2.4.0 UNIVERSAL (SHELL EXECUTE + AUTO-DISCOVERY)
@@ -61,14 +67,15 @@ def find_available_port(start_port: int, max_tries: int = 20) -> int:
 PORT = find_available_port(PORT)
 
 
-def update_state(action, project_name="", app_name=""):
+def update_state(action, project_name="", app_name="", increment=True):
     try:
         data = {"active_project": "", "active_app": "", "total_requests": 0, "last_action": ""}
         if STATE_FILE.exists():
             with open(STATE_FILE, "r", encoding="utf-8") as f:
                 data = json.load(f)
         
-        data["total_requests"] += 1
+        if increment:
+            data["total_requests"] += 1
         data["last_action"] = action
         if project_name:
             data["active_project"] = str(project_name)
@@ -78,7 +85,7 @@ def update_state(action, project_name="", app_name=""):
         with open(STATE_FILE, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
     except Exception as e:
-        print(f"Erro ao atualizar estado: {e}")
+        logger.error(f"Erro ao atualizar estado: {e}")
 
 # =========================================================
 # MÓDULO AUTO-DISCOVERY DE EXECUTÁVEIS E ATALHOS NO WINDOWS
@@ -117,7 +124,7 @@ def auto_update_mapa_csv():
                                 "tipo": ext.replace(".", "").upper()
                             }
         except Exception as e:
-            print(f"Erro ao varrer diretório {base_dir}: {e}")
+            logger.error(f"Erro ao varrer diretório {base_dir}: {e}")
 
     try:
         with open(MAPA_CSV, "w", newline="", encoding="utf-8") as f:
@@ -125,9 +132,9 @@ def auto_update_mapa_csv():
             writer.writerow(["Nome", "Caminho", "Tipo"])
             for app in apps_map.values():
                 writer.writerow([app["nome"], app["caminho"], app["tipo"]])
-        print(f"[AUTO-DISCOVERY] Mapeados {len(apps_map)} programas/atalhos em {MAPA_CSV}")
+        logger.info(f"[AUTO-DISCOVERY] Mapeados {len(apps_map)} programas/atalhos em {MAPA_CSV}")
     except Exception as e:
-        print(f"Erro ao salvar mapa_executaveis.csv: {e}")
+        logger.error(f"Erro ao salvar mapa_executaveis.csv: {e}")
 
 auto_update_mapa_csv()
 
@@ -153,7 +160,7 @@ def find_executable_or_shortcut(app_query):
             if best_match:
                 return best_match
         except Exception as e:
-            print(f"Erro ao ler CSV: {e}")
+            logger.error(f"Erro ao ler CSV: {e}")
 
     auto_update_mapa_csv()
 
@@ -192,7 +199,7 @@ def launch_gui_app(app_cmd):
             
         subprocess.Popen(full_cmd, shell=True)
     except Exception as e:
-        print(f"Fallback no launch_gui_app: {e}")
+        logger.info(f"Fallback no launch_gui_app: {e}")
         subprocess.Popen(f'start "" "{app_cmd}"', shell=True)
 
 # =========================================================
@@ -238,7 +245,7 @@ def init_mempalace():
         import sparkhub_db
         sparkhub_db.init_and_migrate_db(DB_FILE)
     except Exception as e:
-        print(f"Erro ao inicializar MemPalace DB: {e}")
+        logger.error(f"Erro ao inicializar MemPalace DB: {e}")
 
 init_mempalace()
 
@@ -258,12 +265,12 @@ def mempalace_search(query, wing=None):
         cursor = conn.cursor()
         if wing:
             cursor.execute(
-                "SELECT id, wing, room, content, created_at FROM memories WHERE wing = ? AND content LIKE ? ORDER BY id DESC LIMIT 20",
+                "SELECT id, wing, room, content, created_at, is_sensitive FROM memories WHERE wing = ? AND content LIKE ? ORDER BY id DESC LIMIT 20",
                 (wing, f"%{query}%")
             )
         else:
             cursor.execute(
-                "SELECT id, wing, room, content, created_at FROM memories WHERE content LIKE ? OR wing LIKE ? OR room LIKE ? ORDER BY id DESC LIMIT 20",
+                "SELECT id, wing, room, content, created_at, is_sensitive FROM memories WHERE content LIKE ? OR wing LIKE ? OR room LIKE ? ORDER BY id DESC LIMIT 20",
                 (f"%{query}%", f"%{query}%", f"%{query}%")
             )
         rows = cursor.fetchall()
@@ -273,7 +280,10 @@ def mempalace_search(query, wing=None):
 
     results = []
     for r in rows:
-        results.append(f"• [ID #{r['id']}] [{r['wing']} -> {r['room']}] ({r['created_at']}): {r['content']}")
+        content = r['content']
+        if r['is_sensitive']:
+            content = sparkhub_crypto.decrypt_content(content)
+        results.append(f"• [ID #{r['id']}] [{r['wing']} -> {r['room']}] ({r['created_at']}): {content}")
     
     update_state("mempalace_search", app_name="MemPalace")
     return "\n".join(results)
@@ -283,11 +293,11 @@ def mempalace_list(wing=None, room=None, limit=10):
         conn.row_factory = sqlite3.Row
         cursor = conn.cursor()
         if wing and room:
-            cursor.execute("SELECT id, wing, room, content, created_at FROM memories WHERE wing = ? AND room = ? ORDER BY id DESC LIMIT ?", (wing, room, limit))
+            cursor.execute("SELECT id, wing, room, content, created_at, is_sensitive FROM memories WHERE wing = ? AND room = ? ORDER BY id DESC LIMIT ?", (wing, room, limit))
         elif wing:
-            cursor.execute("SELECT id, wing, room, content, created_at FROM memories WHERE wing = ? ORDER BY id DESC LIMIT ?", (wing, limit))
+            cursor.execute("SELECT id, wing, room, content, created_at, is_sensitive FROM memories WHERE wing = ? ORDER BY id DESC LIMIT ?", (wing, limit))
         else:
-            cursor.execute("SELECT id, wing, room, content, created_at FROM memories ORDER BY id DESC LIMIT ?", (limit,))
+            cursor.execute("SELECT id, wing, room, content, created_at, is_sensitive FROM memories ORDER BY id DESC LIMIT ?", (limit,))
         rows = cursor.fetchall()
 
     if not rows:
@@ -295,9 +305,21 @@ def mempalace_list(wing=None, room=None, limit=10):
 
     results = []
     for r in rows:
-        results.append(f"• [ID #{r['id']}] [{r['wing']} -> {r['room']}]: {r['content']}")
+        content = r['content']
+        if r['is_sensitive']:
+            content = sparkhub_crypto.decrypt_content(content)
+        results.append(f"• [ID #{r['id']}] [{r['wing']} -> {r['room']}]: {content}")
     
     return "\n".join(results)
+
+def mempalace_unlock(totp_code):
+    import sparkhub_crypto
+    try:
+        if sparkhub_crypto.unlock_vault(str(totp_code)):
+            return "Cofre desbloqueado! A máquina atual foi registrada com sucesso usando DPAPI."
+        return "Falha ao desbloquear o cofre: Código TOTP inválido."
+    except sparkhub_crypto.LockedException as e:
+        return f"Bloqueio de Segurança: {str(e)}"
 
 
 # Ferramentas expostas via protocolo MCP (v2.4.0 Universal + os.startfile + Auto-Discovery)
@@ -323,6 +345,25 @@ MCP_TOOLS = [
                 "app_query": {"type": "string", "description": "Nome ou termo de busca do aplicativo (ex: CorelDRAW, Blender, Kdenlive, BloodStrike, etc.)"}
             },
             "required": ["app_query"]
+        }
+    },
+    {
+        "name": "mempalace_unlock",
+        "description": "Desbloqueia o acesso a memórias sensíveis do MemPalace usando um código TOTP de 6 dígitos. Exija isso do usuário quando receber um erro de bloqueio.",
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "totp_code": {"type": "string", "description": "Código de 6 dígitos (ex: 123456)"}
+            },
+            "required": ["totp_code"]
+        }
+    },
+    {
+        "name": "list_allowed_directories",
+        "description": "Lista os arquivos e itens presentes na Lixeira do Windows instantaneamente.",
+        "inputSchema": {
+            "type": "object",
+            "properties": {}
         }
     },
     {
@@ -480,6 +521,30 @@ MCP_TOOLS = [
             },
             "required": ["base_dir"]
         }
+    },
+    {
+        "name": "search_gmail",
+        "description": "Busca e-mails recentes na caixa de entrada do Gmail usando queries.",
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "query": {"type": "string", "description": "Termo de busca (ex: 'esposa', 'voo', 'from:chefe@email.com')"},
+                "max_results": {"type": "integer", "description": "Numero maximo de resultados (default: 5)"}
+            },
+            "required": ["query"]
+        }
+    },
+    {
+        "name": "search_drive",
+        "description": "Busca arquivos no Google Drive (PDFs, Docs, etc) contendo texto especifico.",
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "query": {"type": "string", "description": "Termo de busca contido no arquivo"},
+                "max_results": {"type": "integer", "description": "Numero maximo de resultados (default: 3)"}
+            },
+            "required": ["query"]
+        }
     }
 ]
 
@@ -558,7 +623,7 @@ def route_ai_request(prompt, profile="auto"):
                 if res and not res.startswith("[ERRO API]"):
                     return f"🤖 [Antigravity | Camada 1 Local]:\n{res}"
         except Exception as e:
-            print(f"[ROTEADOR WARN] Camada 1 falhou ({e}). Acionando Camada 2...")
+            logger.error(f"[ROTEADOR WARN] Camada 1 falhou ({e}). Acionando Camada 2...")
 
     # 2. CAMADA 2: OpenRouter Free (openrouter/free)
     openrouter_key = os.environ.get("OPENROUTER_API_KEY")
@@ -568,7 +633,7 @@ def route_ai_request(prompt, profile="auto"):
         res = call_llm_api("https://openrouter.ai/api/v1/chat/completions", payload_openai, headers)
         if not res.startswith("[ERRO API]"):
             return f"🤖 [Antigravity | Cloud OpenRouter]:\n{res}"
-        print(f"[ROTEADOR WARN] Camada 2 falhou ({res}). Acionando Camada 3...")
+        logger.error(f"[ROTEADOR WARN] Camada 2 falhou ({res}). Acionando Camada 3...")
 
     # 3. CAMADA 3: Gemini Flash (Google AI Studio REST API)
     gemini_key = os.environ.get("GEMINI_API_KEY")
@@ -587,7 +652,7 @@ def route_ai_request(prompt, profile="auto"):
                 text = res_json.get("candidates", [{}])[0].get("content", {}).get("parts", [{}])[0].get("text", "")
                 return f"🤖 [Antigravity | Gemini 2.0 Flash]:\n{text}"
         except Exception as e:
-            print(f"[ROTEADOR WARN] Camada 3 também falhou: {e}")
+            logger.error(f"[ROTEADOR WARN] Camada 3 também falhou: {e}")
 
     return "[❌ AUDITORIA CRÍTICA] Colapso Total da Tríplice Cascata. Nenhum LLM disponível (Local, OpenRouter, Gemini)."
 
@@ -603,6 +668,15 @@ def load_env_phone():
                     return line.split("=", 1)[1].strip()
     return "Desconhecido"
 
+def load_workspace_secret():
+    env_path = BASE_DIR / ".env"
+    if env_path.exists():
+        with open(env_path, "r", encoding="utf-8") as f:
+            for line in f:
+                if line.startswith("WORKSPACE_TOOL_SECRET="):
+                    return line.split("=", 1)[1].strip()
+    return ""
+
 def proactive_memory_check(tool_name, args):
     if tool_name not in ["create_structure", "macro_setup_project", "run_command", "ask_ai"]:
         return ""
@@ -610,7 +684,7 @@ def proactive_memory_check(tool_name, args):
         with sqlite3.connect(DB_FILE) as conn:
             conn.row_factory = sqlite3.Row
             cursor = conn.cursor()
-            cursor.execute("SELECT wing, room, content FROM memories WHERE wing IN ('Profile', 'System', 'Projects', 'Skills', 'Projetos', 'Geral', 'Cloud') ORDER BY id DESC LIMIT 8")
+            cursor.execute("SELECT wing, room, content FROM memories WHERE wing IN ('Profile', 'System', 'Projects', 'Skills', 'Projetos', 'Geral', 'Cloud', 'Email', 'Documento') ORDER BY id DESC LIMIT 8")
             rows = cursor.fetchall()
             
         memories = ""
@@ -642,14 +716,14 @@ def execute_tool(name, args):
     if name == "ask_ai":
         prompt = args.get("prompt", "")
         profile = args.get("profile", "auto")
-        update_state("ask_ai", app_name=profile)
+        update_state("ask_ai", app_name=profile, increment=False)
         
         prompt_lower = prompt.lower().strip()
         
         try:
             # 1. Tipo 2: SyncRequisições Antifrágil (Delegação para o Script Mestre)
             if any(word in prompt_lower for word in ['sync', 'sincroniz', 'status', 'requisi']):
-                print(f"[ORQUESTRADOR] Rota 2 (Status/Sync) ativada.")
+                logger.info(f"[ORQUESTRADOR] Rota 2 (Status/Sync) ativada.")
                 try:
                     # Executa o script mestre diretamente e retorna apenas as últimas linhas limpas
                     out = subprocess.check_output([sys.executable, str(get_path("sync_requisicoes_master.py")), "--scope=sheets"], stderr=subprocess.STDOUT, text=True)
@@ -659,13 +733,13 @@ def execute_tool(name, args):
                     
             # 2. Tipo 1: Identidade (Leitura Direta Segura)
             elif any(word in prompt_lower for word in ['quem sou eu', 'meu telefone', 'onde eu moro', 'quem e voce']):
-                print(f"[ORQUESTRADOR] Rota 1 (Identidade) ativada.")
+                logger.info(f"[ORQUESTRADOR] Rota 1 (Identidade) ativada.")
                 clean_identity = proactive_context.replace("[💡 Contexto Proativo do Sistema]:\n", "")
                 return f"🤖 [Perfil Local Carregado]:\n{clean_identity}"
                 
             # 3. Tipo 3: Nuvem do Google Workspace (Drive / Gmail)
             elif any(word in prompt_lower for word in ['drive', 'documento', 'gdd', 'email', 'e-mail', 'gmail']):
-                print(f"[ORQUESTRADOR] Rota 3 (Workspace) ativada.")
+                logger.info(f"[ORQUESTRADOR] Rota 3 (Workspace) ativada.")
                 import workspace_agent
                 workspace_context = ""
                 
@@ -684,7 +758,7 @@ def execute_tool(name, args):
                     res = workspace_agent.search_drive_docs(termo)
                     workspace_context += f"\\n[Resultado Drive]: {res}"
                 
-                print(f"[ORQUESTRADOR] Injetando dados do Workspace na Rota 5...")
+                logger.info(f"[ORQUESTRADOR] Injetando dados do Workspace na Rota 5...")
                 if proactive_context:
                     prompt = f"{proactive_context}\\n{workspace_context}\\n\\n[PERGUNTA DO USUÁRIO]:\\n{prompt}"
                 else:
@@ -694,12 +768,12 @@ def execute_tool(name, args):
             # 4. Tipo 4: Comandos do SO
             elif prompt_lower.startswith('abre ') or prompt_lower.startswith('abrir '):
                 alvo = prompt_lower.replace('abre ', '').replace('abrir ', '').strip()
-                print(f"[ORQUESTRADOR] Rota 4 (Ação SO) ativada para '{alvo}'.")
+                logger.info(f"[ORQUESTRADOR] Rota 4 (Ação SO) ativada para '{alvo}'.")
                 return execute_tool("open_app", {"app_name_or_path": alvo})
                 
             # 4. Tipo 5: LLM (Gemini / Ollama) com injeção de contexto
             else:
-                print(f"[ORQUESTRADOR] Rota 5 (Raciocínio) ativada.")
+                logger.info(f"[ORQUESTRADOR] Rota 5 (Raciocínio) ativada.")
                 # O AI Roteador ingere o contexto proativo COMO PARTE DO PROMPT para a nuvem processar!
                 if proactive_context:
                     prompt = f"{proactive_context}\n\n[PERGUNTA DO USUÁRIO]:\n{prompt}"
@@ -711,7 +785,7 @@ def execute_tool(name, args):
     if name == "find_app":
         query = args.get("app_query", "")
         res_path = find_executable_or_shortcut(query)
-        update_state("find_app", app_name=query)
+        update_state("find_app", app_name=query, increment=False)
         return finalize(f"Auto-Discovery encontrou para '{query}': {res_path}")
 
     if name == "list_recycle_bin":
@@ -737,7 +811,7 @@ def execute_tool(name, args):
         cmd = [resolved_app]
         if extra_args: cmd.append(str(extra_args))
         launch_gui_app(cmd)
-        update_state("open_app", project_name=str(extra_args), app_name=resolved_app)
+        update_state("open_app", project_name=str(extra_args), app_name=resolved_app, increment=False)
         return finalize(f"[✅ AUDITORIA SUCESSO] Programa '{app_target}' (ShellExecute: {resolved_app}) aceito pelo Windows e iniciado visível.")
 
     elif name == "run_command":
@@ -750,7 +824,7 @@ def execute_tool(name, args):
 
         proc = subprocess.run(["powershell", "-Command", cmd_str], capture_output=True, text=True, timeout=30)
         out = proc.stdout.strip() or proc.stderr.strip() or "Comando executado com sucesso."
-        update_state("run_command", app_name="PowerShell")
+        update_state("run_command", app_name="PowerShell", increment=False)
         return finalize(f"[✅ AUDITORIA (Exit Code: {proc.returncode})]:\\n{out}")
 
     elif name == "mempalace_save":
@@ -762,12 +836,15 @@ def execute_tool(name, args):
     elif name == "mempalace_list":
         return finalize(mempalace_list(wing=args.get("wing"), room=args.get("room"), limit=args.get("limit", 10)))
 
+    elif name == "mempalace_unlock":
+        return finalize(mempalace_unlock(args.get("totp_code", "")))
+
     elif name == "open_kdenlive":
         path = args.get("path", "")
         target = find_executable_or_shortcut("kdenlive")
         kdenlive_cmd = [target, path] if path else [target]
         launch_gui_app(kdenlive_cmd)
-        update_state("open_kdenlive", project_name=path, app_name="Kdenlive")
+        update_state("open_kdenlive", project_name=path, app_name="Kdenlive", increment=False)
         return finalize(f"[✅ AUDITORIA] Kdenlive iniciado visível{' em: ' + path if path else ''}.")
 
     elif name == "open_tiktok_live":
@@ -775,21 +852,21 @@ def execute_tool(name, args):
         target = find_executable_or_shortcut("TikTok LIVE Studio")
         cmd = [path] if path else [target]
         launch_gui_app(cmd)
-        update_state("open_tiktok_live", app_name="TikTok LIVE Studio")
+        update_state("open_tiktok_live", app_name="TikTok LIVE Studio", increment=False)
         return finalize("[✅ AUDITORIA] TikTok LIVE Studio iniciado visível.")
 
     elif name == "open_tikfinity":
         path = args.get("path", "")
         cmd = [path] if path else ["https://tikfinity.zerody.one/"]
         launch_gui_app(cmd)
-        update_state("open_tikfinity", app_name="TikFinity")
+        update_state("open_tikfinity", app_name="TikFinity", increment=False)
         return finalize("[✅ AUDITORIA] TikFinity iniciado visível.")
 
     elif name == "open_vscode":
         path = args.get("path", ".")
         target = find_executable_or_shortcut("code")
         launch_gui_app([target, path])
-        update_state("open_vscode", project_name=path, app_name="VS Code")
+        update_state("open_vscode", project_name=path, app_name="VS Code", increment=False)
         return finalize(f"[✅ AUDITORIA] VS Code aberto visível em: {path}")
 
     elif name == "open_godot":
@@ -797,7 +874,7 @@ def execute_tool(name, args):
         target = find_executable_or_shortcut("godot")
         godot_cmd = [target, "--path", path] if path else [target]
         launch_gui_app(godot_cmd)
-        update_state("open_godot", project_name=path, app_name="Godot")
+        update_state("open_godot", project_name=path, app_name="Godot", increment=False)
         return finalize(f"[✅ AUDITORIA] Godot iniciado visível em: {path}")
 
     elif name == "run_blender_script":
@@ -808,10 +885,11 @@ def execute_tool(name, args):
         if file_path: cmd.append(file_path)
         if script_path: cmd.extend(["-P", script_path])
         launch_gui_app(cmd)
-        update_state("run_blender_script", project_name=file_path, app_name="Blender")
+        update_state("run_blender_script", project_name=script_path, app_name="Blender", increment=False)
         return finalize("[✅ AUDITORIA] Comando do Blender executado visível.")
         
     elif name == "sync_requisicoes":
+        update_state("sync_requisicoes", increment=False)
         script_path = get_path("sync_requisicoes_master.py")
         res = subprocess.run([sys.executable, str(script_path)], capture_output=True, text=True)
         out = res.stdout + ("\n" + res.stderr if res.stderr else "")
@@ -891,7 +969,22 @@ def execute_tool(name, args):
         if failed_items:
             audit_msg += "\\nFalhas:\\n- " + "\\n- ".join(failed_items)
             
-        return finalize(f"Macro concluida.\\n{audit_msg}")
+        return finalize(f"Macro Setup Concluído.\\n{audit_msg}")
+
+    elif name in ["search_gmail", "search_drive"]:
+        # Fase 5: Trava de Segurança Mínima
+        secret_token = load_workspace_secret()
+        if not secret_token:
+            return finalize("[❌ SEGURANÇA] Acesso negado. A variável WORKSPACE_TOOL_SECRET não foi configurada no .env.")
+        
+        try:
+            import google_workspace_tools
+            if name == "search_gmail":
+                return finalize(google_workspace_tools.search_gmail(args.get("query", ""), args.get("max_results", 5)))
+            else:
+                return finalize(google_workspace_tools.search_drive(args.get("query", ""), args.get("max_results", 3)))
+        except Exception as e:
+            return finalize(f"[ERRO WORKSPACE] {e}")
 
     else:
         parsed = parse_and_create_folder(name)
@@ -921,9 +1014,6 @@ class LocalHubMCPHandler(http.server.BaseHTTPRequestHandler):
         self._send_json(401, {"jsonrpc": "2.0", "error": {"code": -32001, "message": "Unauthorized"}})
 
     def _is_authenticated(self):
-        if not API_TOKEN:
-            return True
-
         query = parse_qs(urlparse(self.path).query)
         token_from_query = query.get("token", [""])[0]
         auth_header = self.headers.get("Authorization", "")
@@ -934,7 +1024,7 @@ class LocalHubMCPHandler(http.server.BaseHTTPRequestHandler):
             token_from_header = auth_header.strip()
 
         provided_token = token_from_header or token_from_query
-        return provided_token == API_TOKEN
+        return API_TOKEN != "" and provided_token == API_TOKEN
 
     def do_HEAD(self):
         if not self._is_authenticated():
@@ -1005,7 +1095,7 @@ class LocalHubMCPHandler(http.server.BaseHTTPRequestHandler):
             method = payload.get("method")
             params = payload.get("params", {})
 
-            print(f"[MCP METHOD] {method} (id={req_id})")
+            logger.info(f"[MCP METHOD] {method} (id={req_id})")
 
             if method == "initialize":
                 self._send_json(200, {
@@ -1039,6 +1129,7 @@ class LocalHubMCPHandler(http.server.BaseHTTPRequestHandler):
                 tool_name = params.get("name")
                 arguments = params.get("arguments", {})
                 try:
+                    update_state(tool_name, increment=True)
                     res_text = execute_tool(tool_name, arguments)
                     self._send_json(200, {
                         "jsonrpc": "2.0",
@@ -1081,6 +1172,7 @@ class LocalHubMCPHandler(http.server.BaseHTTPRequestHandler):
                 return
 
             try:
+                update_state(action, increment=True)
                 res_msg = execute_tool(action, params)
                 self._send_json(200, {"status": "sucesso", "mensagem": res_msg})
             except Exception as e:
@@ -1090,6 +1182,12 @@ class LocalHubMCPHandler(http.server.BaseHTTPRequestHandler):
 
 
 if __name__ == "__main__":
+    # Previne múltiplas instâncias da API Principal
+    mutex = ctypes.windll.kernel32.CreateMutexW(None, False, "SparkHubAPIMutex_v3")
+    if ctypes.windll.kernel32.GetLastError() == 183: # ERROR_ALREADY_EXISTS
+        logger.info("[API] Uma instância já está rodando. Encerrando.")
+        sys.exit(0)
+        
     parser = argparse.ArgumentParser(description="SparkHub v2.5.0 - CLI e Servidor MCP")
     parser.add_argument("tool", nargs="?", help="Nome da ferramenta para executar via CLI (ex: open_app, run_command)")
     parser.add_argument("args", nargs="*", help="Argumentos da ferramenta em formato chave=valor ou string direta")
@@ -1099,7 +1197,7 @@ if __name__ == "__main__":
     
     if cli_args.tool:
         # Modo CLI
-        print(f"=== SPARKHUB v2.5.0 MODO CLI ===")
+        logger.info(f"=== SPARKHUB v2.5.0 MODO CLI ===")
         tool_name = cli_args.tool
         # Parse simple arguments
         tool_kwargs = {}
@@ -1119,27 +1217,33 @@ if __name__ == "__main__":
         if cli_args.profile and tool_name == "ask_ai":
             tool_kwargs["profile"] = cli_args.profile
         
-        print(f"Executando ferramenta: {tool_name} com args: {tool_kwargs}\\n")
+        logger.info(f"Executando ferramenta: {tool_name} com args: {tool_kwargs}\\n")
         try:
             result = execute_tool(tool_name, tool_kwargs)
-            print("=== RESULTADO ===")
-            print(result)
+            logger.info("=== RESULTADO ===")
+            logger.info(result)
         except Exception as e:
-            print(f"[ERRO] {e}")
+            logger.error(f"[ERRO] {e}")
     else:
         # Modo Servidor MCP Original
-        print(f"=== SERVIDOR SPARKHUB v2.5.0 (SHELLEXECUTE / AUTO-DISCOVERY / CLI) RODANDO NA PORTA {PORT} ===")
-        print("Execucao nativa na sessao interativa com os.startfile() e auditoria pos-acao.")
+        logger.info(f"=== SERVIDOR SPARKHUB v2.5.0 (SHELLEXECUTE / AUTO-DISCOVERY / CLI) RODANDO NA PORTA {PORT} ===")
+        logger.info("Execucao nativa na sessao interativa com os.startfile() e auditoria pos-acao.")
         import subprocess
-        import sys
+        pyw = sys.executable.replace('python.exe', 'pythonw.exe')
         try:
-            pyw = sys.executable.replace("python.exe", "pythonw.exe")
-            subprocess.Popen([pyw, os.path.join(os.path.dirname(os.path.abspath(__file__)), "sparkhub_systray.py")], creationflags=subprocess.CREATE_NO_WINDOW)
+            
             subprocess.Popen([pyw, os.path.join(os.path.dirname(os.path.abspath(__file__)), "sparkhub_dashboard.py")], creationflags=subprocess.CREATE_NO_WINDOW)
+            
+            # Dispara mudança visual do atalho
+            import socket
+            try:
+                with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as sock:
+                    sock.sendto(b"icon_core", ("127.0.0.1", 8087))
+            except: pass
         except Exception as e:
-            print(f"[WARN] Nao foi possivel iniciar widgets/UI: {e}")
+            logger.warning(f"[WARN] Nao foi possivel iniciar widgets/UI: {e}")
             
         with SparkHubTCPServer(("", PORT), LocalHubMCPHandler) as httpd:
-            print(f"=== SERVIDOR SPARKHUB v2.5.0 RODANDO EM http://127.0.0.1:{PORT}/ ===")
+            logger.info(f"=== SERVIDOR SPARKHUB v2.5.0 RODANDO EM http://127.0.0.1:{PORT}/ ===")
             httpd.serve_forever()
 

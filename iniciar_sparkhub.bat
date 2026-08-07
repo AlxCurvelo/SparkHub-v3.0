@@ -22,7 +22,7 @@ start "SparkHub API" /min "C:\Users\ac_cu\AppData\Local\Programs\Python\Python31
 
 REM ?? 3. Dashboard (sparkhub_dashboard.py) ?????????????
 echo [3/5] Dashboard...
-start "SparkHub Dashboard" /min "C:\Users\ac_cu\AppData\Local\Programs\Python\Python312\python.exe" -u "%~dp0sparkhub_dashboard.py"
+start "SparkHub Dashboard" /min "C:\Users\ac_cu\AppData\Local\Programs\Python\Python312\python.exe" "%~dp0sparkhub_dashboard.py"
 
 REM ?? 4. Ngrok Tunnel ??????????????????????????????????
 echo [4/5] Ngrok Tunnel...

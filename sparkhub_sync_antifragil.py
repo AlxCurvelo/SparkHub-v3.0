@@ -61,9 +61,20 @@ def connect_obs_ws(port: int = 4455) -> Optional[socket.socket]:
     return s
 
 if __name__ == "__main__":
+    import socket
+    try:
+        with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as sock:
+            sock.sendto(b"icon_shield", ("127.0.0.1", 8087))
+    except: pass
+    
     obs_bridge = AntifragileBridge("OBS-WebSocket")
     print("[TESTE] Simulando conexão com OBS sem servidor ativo...")
     for i in range(5):
         print(f"\n--- Tentativa {i+1} ---")
         res = obs_bridge.execute(connect_obs_ws, port=4455)
         time.sleep(1)
+        
+    try:
+        with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as sock:
+            sock.sendto(b"icon_core", ("127.0.0.1", 8087))
+    except: pass

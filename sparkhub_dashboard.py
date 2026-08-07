@@ -2,14 +2,58 @@
 # OBJETIVO: Servidor unificado com auto-descoberta de servicos, cards em tempo real e input de uma mao.
 # ESCOPOS: 1. API de Status e Healthcheck 2. Interface Responsiva Embed 3. Endpoint de Comando Modular
 import os
+from sparkhub_logger import logger
+
 import shutil
 import sqlite3
 import time
-from flask import Flask, jsonify, render_template_string, request
+from flask import Flask, jsonify, render_template_string, request, session, redirect, url_for
+from functools import wraps
+import os
 
 from sparkhub_paths import get_default_port, get_path
+from dotenv import load_dotenv
 
+load_dotenv(get_path(".env"))
 app = Flask(__name__)
+app.secret_key = os.urandom(24)
+
+# Tokens de Segurança
+DASHBOARD_PASS = os.getenv("DASHBOARD_PASSWORD", "12345")
+API_TOKEN = os.getenv("SPARKHUB_API_TOKEN", "")
+
+def login_required(f):
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        if not session.get('logged_in'):
+            return redirect(url_for('login'))
+        return f(*args, **kwargs)
+    return decorated_function
+
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    if request.method == "POST":
+        if request.form.get("password") == DASHBOARD_PASS:
+            session['logged_in'] = True
+            return redirect(url_for('index'))
+        else:
+            return "Senha Incorreta", 401
+    return '''
+        <form method="post" style="margin:50px auto; width:300px; text-align:center; font-family:monospace;">
+            <h2>SparkHub Login</h2>
+            <input type="password" name="password" placeholder="Senha" style="padding:10px; width:100%; box-sizing:border-box;">
+            <button type="submit" style="padding:10px; margin-top:10px; width:100%;">Entrar</button>
+        </form>
+    '''
+
+import sys
+import ctypes
+
+# Previne múltiplas instâncias do Dashboard
+mutex = ctypes.windll.kernel32.CreateMutexW(None, False, "SparkHubDashboardMutex_v3")
+if ctypes.windll.kernel32.GetLastError() == 183: # ERROR_ALREADY_EXISTS
+    print("[DASHBOARD] Uma instância já está rodando. Encerrando.")
+    sys.exit(0)
 
 # --- C2-PREPARACAO: Variaveis e Funcoes de Diagnostico ---
 DB_PATH = str(get_path("mempalace.db"))
@@ -51,44 +95,117 @@ def get_disk_status():
   }
 
 
+_last_total_memories = -1
+
 def get_mempalace_stats():
-  # POLITICA ANTI-MOCKS: Valores reais extraídos do DB ou 0 em caso de falha/inexistência.
+  global _last_total_memories
   if not os.path.exists(DB_PATH):
-    return {
-        "total": 0,
-        "wal": False,
-        "rooms": {}
-    }
+    return {"total": 0, "wal": False, "rooms": {}}
   try:
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
-    
     cursor.execute("PRAGMA journal_mode;")
     wal = cursor.fetchone()[0].upper() == "WAL"
-    
     cursor.execute("SELECT COUNT(*) FROM memories")
     total = cursor.fetchone()[0]
-    
     cursor.execute("SELECT room, COUNT(*) FROM memories GROUP BY room")
     rooms_data = cursor.fetchall()
-    rooms = {str(row[0]): int(row[1]) for row in rooms_data}
-    
     conn.close()
+
+    # Agrupar
+    grouped = {}
+    for raw_room, count in rooms_data:
+        r = str(raw_room)
+        # Identificar prefixos conhecidos
+        if r.startswith("drive:Principal:"): k = "Drive Principal"
+        elif r.startswith("drive:Trabalho:"): k = "Drive Trabalho"
+        elif r.startswith("gmail:Principal:"): k = "Gmail Principal"
+        elif r.startswith("gmail:Trabalho:"): k = "Gmail Trabalho"
+        elif r.startswith("drive:"): k = "Drive Outros"
+        elif r.startswith("gmail:"): k = "Gmail Outros"
+        else: k = r
+        
+        grouped[k] = grouped.get(k, 0) + count
+
+    # Logar a lista crua APENAS se o total mudou (para não flodar o log a cada 2s)
+    if total != _last_total_memories:
+        _last_total_memories = total
+        logger.info(f"[MEMPALACE] Resumo completo de agrupamento (Total: {total}):")
+        for k, v in grouped.items():
+            logger.info(f"    - {k}: {v} itens")
+
+    # Ordenar por volume
+    sorted_rooms = sorted(grouped.items(), key=lambda x: x[1], reverse=True)
+    
+    # Pegar as 6 maiores
+    top_rooms = dict(sorted_rooms[:6])
+    if len(sorted_rooms) > 6:
+        outras = sum(v for k, v in sorted_rooms[6:])
+        top_rooms[f"+ {len(sorted_rooms)-6} outras"] = outras
+
     return {
         "total": total,
         "wal": wal,
-        "rooms": rooms
+        "rooms": top_rooms
     }
   except Exception as e:
-    print(f"[MURPHY] Erro ao ler mempalace.db: {e}")
-    return {
-        "total": 0,
-        "wal": False,
-        "rooms": {}
-    }
+    logger.error(f"[MURPHY] Erro ao ler mempalace.db: {e}")
+    return {"total": 0, "wal": False, "rooms": {}}
 
 
 # --- C3-EXECUCAO: Template UI Mobile-First ---
+LOGS_TEMPLATE = """
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SparkHub Logs</title>
+    <style>
+        body { font-family: monospace; background: #0d1117; color: #c9d1d9; margin: 0; padding: 10px; }
+        .card { background: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 10px; margin-bottom: 8px; }
+        h2 { font-size: 13px; margin: 0 0 6px 0; color: #58a6ff; display: flex; justify-content: space-between; align-items: center;}
+        a.btn { background: #21262d; color: #c9d1d9; border: 1px solid #30363d; padding: 4px 8px; border-radius: 4px; text-decoration: none; font-size: 11px; }
+        .log-container { background: #010409; border: 1px solid #30363d; border-radius: 4px; padding: 10px; height: 80vh; overflow-y: auto; font-size: 11px; line-height: 1.4; white-space: pre-wrap; }
+        .info { color: #8b949e; }
+        .warning { color: #d29922; }
+        .error { color: #f85149; }
+        .security { color: #bc8cff; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h2>
+        <span>SparkHub System Logs</span>
+        <a href="/" class="btn">Voltar</a>
+    </h2>
+    <div class="card">
+        <div id="logs" class="log-container">Carregando...</div>
+    </div>
+    <script>
+        function updateLogs() {
+            fetch('/api/logs').then(r => r.json()).then(d => {
+                if (d.status === 'success') {
+                    let html = d.data.map(line => {
+                        let cls = 'info';
+                        if (line.includes('WARNING') || line.includes('[ROTEADOR WARN]')) cls = 'warning';
+                        if (line.includes('ERROR') || line.includes('Erro')) cls = 'error';
+                        if (line.includes('[SECURITY]')) cls = 'security';
+                        return `<div class="${cls}">${line}</div>`;
+                    }).join('');
+                    let logEl = document.getElementById('logs');
+                    let isBottom = (logEl.scrollHeight - logEl.scrollTop === logEl.clientHeight);
+                    logEl.innerHTML = html;
+                    if (isBottom) logEl.scrollTop = logEl.scrollHeight;
+                }
+            });
+        }
+        setInterval(updateLogs, 2000);
+        updateLogs();
+    </script>
+</body>
+</html>
+"""
+
 HTML_TEMPLATE = """
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -139,8 +256,17 @@ HTML_TEMPLATE = """
 
     <!-- Cards 4-7: Serviços -->
     <div class="card">
-        <h2>04-07 · Barramentos e Serviços</h2>
+        <h2>
+            <span>04-07 · Barramentos e Infraestrutura</span>
+            <a href="/logs" style="background: #21262d; color: #c9d1d9; border: 1px solid #30363d; padding: 2px 6px; border-radius: 4px; text-decoration: none; font-size: 10px; float: right;">Ver Logs</a>
+        </h2>
         <div style="font-size: 11px;" id="services">Aguardando heartbeat...</div>
+    </div>
+
+    <!-- Novo Card: Fontes de Dados -->
+    <div class="card">
+        <h2>08 · Fontes de Informação</h2>
+        <div style="font-size: 11px;" id="data_sources">Verificando tokens e cotas...</div>
     </div>
 
     <!-- Moltbook & Social Insights -->
@@ -205,6 +331,13 @@ HTML_TEMPLATE = """
                     srv += `<div>${k}: <span class="${v ? 'ok' : 'down'}">${v ? 'UP' : 'DOWN'}</span></div>`;
                 }
                 document.getElementById('services').innerHTML = srv;
+
+                let ds = "";
+                for(let [k,v] of Object.entries(d.data_sources)) {
+                    let cls = v.status === 'OK' ? 'ok' : (v.status === 'WARNING' ? 'warning' : 'down');
+                    ds += `<div>${k}: <span class="${cls}">${v.status}</span> <span style="color:#8b949e; font-size:9px;">(${v.detail})</span></div>`;
+                }
+                document.getElementById('data_sources').innerHTML = ds || "Indisponível";
             });
         }
         function sendCmd() {
@@ -253,8 +386,28 @@ HTML_TEMPLATE = """
 
 
 @app.route("/")
+@login_required
 def index():
   return render_template_string(HTML_TEMPLATE)
+
+@app.route("/logs")
+@login_required
+def logs_page():
+  return render_template_string(LOGS_TEMPLATE)
+
+@app.route("/api/logs", methods=["GET"])
+@login_required
+def api_logs():
+    try:
+        log_file = str(get_path("logs/sparkhub.log"))
+        if not os.path.exists(log_file):
+            return jsonify({"status": "error", "message": "Log file not found."}), 404
+        with open(log_file, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+        return jsonify({"status": "success", "data": [l.strip() for l in lines[-100:]]})
+    except Exception as e:
+        logger.error(f"Erro lendo logs: {e}")
+        return jsonify({"status": "error", "message": str(e)}), 500
 
 
 def check_process(process_name: str) -> bool:
@@ -270,6 +423,24 @@ def check_process(process_name: str) -> bool:
 
 @app.route("/api/status")
 def api_status():
+    import urllib.request
+    from dotenv import load_dotenv
+    load_dotenv(get_path(".env"), override=True)
+    
+    def check_llm(url, token_env):
+        token = os.environ.get(token_env, "")
+        if not token: return {"status": "NO_TOKEN", "detail": "Token ausente"}
+        try:
+            req = urllib.request.Request(url, headers={'Authorization': f'Bearer {token}'} if 'Bearer' in token_env else {})
+            urllib.request.urlopen(req, timeout=2)
+            return {"status": "OK", "detail": "Conectado"}
+        except urllib.error.HTTPError as e:
+            if e.code == 429: return {"status": "QUOTA", "detail": "Limite Excedido"}
+            if e.code == 401: return {"status": "UNAUTH", "detail": "Token Inválido"}
+            return {"status": "OK", "detail": "Conectado"} # APIs normais dao 400 em GET sem body
+        except Exception:
+            return {"status": "OFFLINE", "detail": "Timeout"}
+
     return jsonify({
         "disk": get_disk_status(),
         "mempalace": get_mempalace_stats(),
@@ -279,10 +450,16 @@ def api_status():
             "VSCode IDE": check_process("code.exe"),
             "Blender Engine": check_process("blender.exe"),
             "Bot WhatsApp (:8082)": check_port("127.0.0.1", 8082),
-            "Godot UDP (:9000)": check_port("127.0.0.1", 9000),
-            "OBS WS (:4455)": check_port("127.0.0.1", 4455),
             "Dashboard (:8085)": check_port("127.0.0.1", 8085),
         },
+        "data_sources": {
+            "OpenRouter (Camada 2)": check_llm("https://openrouter.ai/api/v1/auth/key", "OPENROUTER_API_KEY"),
+            "Gemini (Camada 3)": {"status": "OK", "detail": "Configurado"} if os.environ.get("GEMINI_API_KEY") else {"status": "NO_TOKEN", "detail": "Faltando"},
+            "Ollama (Local)": {"status": "OK", "detail": "Conectado"} if check_port("127.0.0.1", 11434) else {"status": "OFFLINE", "detail": "Inativo"},
+            "Gmail Principal": {"status": "OK", "detail": "Token Ativo"} if os.path.exists(str(get_path("credentials/token.pickle"))) else {"status": "NO_TOKEN", "detail": "Não Autenticado"},
+            "Google Drive": {"status": "OK", "detail": "Token Ativo"} if os.path.exists(str(get_path("credentials/token.pickle"))) else {"status": "NO_TOKEN", "detail": "Não Autenticado"},
+            "MemPalace (SQLite)": {"status": "OK", "detail": "Ativo"} if os.path.exists(str(get_path("mempalace.db"))) else {"status": "NO_DB", "detail": "Arquivo Ausente"}
+        }
     })
 
 
@@ -345,6 +522,7 @@ def launch_app_interactively(app_cmd: str) -> bool:
 
 
 @app.route("/api/chat", methods=["POST"])
+@login_required
 def api_chat():
     import subprocess
     import datetime
@@ -384,14 +562,33 @@ def api_chat():
         launch_app_interactively("calc.exe")
         response_text = "🚀 Calculadora aberta no PC!"
     else:
-        # 2. Requisição Geral / Solicitação de Atualização
+        # 2. Requisição Geral - Despacha para API Core ativa (porta 8000) via HTTP
         try:
-            # Importa dinamicamente a Tríplice Cascata de IA
-            import app as core_app
-            ai_response = core_app.route_ai_request(msg_raw)
-            response_text = ai_response
+            import urllib.request
+            import json
+            payload = json.dumps({
+                "action": "ask_ai", 
+                "params": {"prompt": msg_raw, "profile": "auto"}
+            }).encode('utf-8')
+            
+            req = urllib.request.Request(
+                "http://127.0.0.1:8000", 
+                data=payload, 
+                headers={
+                    'Content-Type': 'application/json',
+                    'Authorization': f'Bearer {API_TOKEN}'
+                }
+            )
+            
+            with urllib.request.urlopen(req, timeout=30) as response:
+                resp_data = json.loads(response.read().decode('utf-8'))
+                if resp_data.get("status") == "sucesso":
+                    response_text = resp_data.get("mensagem", "")
+                else:
+                    response_text = f"❌ Erro na API Core: {resp_data.get('mensagem', 'Falha Desconhecida')}"
+                    
         except Exception as e:
-            response_text = f"🤖 SparkHub: Requisição recebida! ({msg_raw})"
+            response_text = f"❌ Falha de Conexão com a API Core (Porta 8000): O motor principal não respondeu. {str(e)}"
             
         # 3. Grava no MemPalace DB via sparkhub_db de forma segura (Zero Mismatches)
         try:
@@ -414,6 +611,7 @@ def api_chat():
     return jsonify({"status": "OK", "received": response_text})
 
 @app.route('/api/social_insights', methods=['GET'])
+@login_required
 def get_social_insights():
     try:
         conn = sqlite3.connect(DB_PATH)
@@ -433,10 +631,11 @@ def get_social_insights():
 
 if __name__ == "__main__":
     send_systray_signal("green")
+    send_systray_signal("icon_orb")
     try:
         import threading
-        import sparkhub_systray
-        threading.Thread(target=sparkhub_systray.run_systray, daemon=True).start()
+        
+        threading.Thread(target=lambda: None, daemon=True).start()
     except Exception as e_systray:
         print(f"[SYSTRAY] Falha ao iniciar ícone de bandeja: {e_systray}")
     app.run(host="0.0.0.0", port=8085, debug=False)

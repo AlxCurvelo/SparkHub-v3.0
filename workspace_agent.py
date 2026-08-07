@@ -1,12 +1,13 @@
+from sparkhub_logger import logger
 # workspace_agent.py – Multi‑Account Google Workspace Agent (Antifrágil)
 
 """Utility to manage Google Drive / Gmail searches across multiple Google accounts.
 
 Features:
 - Dynamic token discovery (token.json and token_<alias>.json).
-- CLI flag ``--add-account <alias>`` to create a new OAuth token in isolation.
+- CLI flag `--add-account <alias>` to create a new OAuth token in isolation.
 - Antifrágil per‑account loops with try/except; results are tagged with the account label.
-- Optional ``--token-file <path>`` argument for functions that need a specific token.
+- Optional `--token-file <path>` argument for functions that need a specific token.
 """
 
 import argparse
@@ -84,7 +85,7 @@ def get_authenticated_service(api_name: str, version: str, token_file: str | Non
         API version (e.g., "v3").
     token_file : str | None, optional
         Path to the token JSON. If omitted the function falls back to
-        ``token.json`` in the workspace root.
+        `token.json` in the workspace root.
     """
     token_path = Path(token_file) if token_file else get_path("token.json")
     creds = None
@@ -111,11 +112,11 @@ def get_authenticated_service(api_name: str, version: str, token_file: str | Non
 # ---------------------------------------------------------------------------
 
 def add_new_account(alias: str):
-    """Run the OAuth flow for a new *alias* and store ``token_<alias>.json``."""
+    """Run the OAuth flow for a new *alias* and store `token_<alias>.json`."""
     token_path = get_path(f"token_{alias}.json")
-    print(f"[*] Starting OAuth flow for account '{alias}' …")
+    logger.info(f"[*] Starting OAuth flow for account '{alias}' …")
     get_authenticated_service("drive", "v3", str(token_path))
-    print(f"[✔] Account '{alias}' connected! Token saved at {token_path}")
+    logger.info(f"[✔] Account '{alias}' connected! Token saved at {token_path}")
 
 
 def get_all_tokens():
@@ -131,8 +132,8 @@ def get_all_tokens():
 def get_account_label(token_path: str) -> str:
     """Derive a human‑readable label from a token file name.
 
-    ``token.json`` → ``Principal``
-    ``token_trabalho.json`` → ``Trabalho``
+    `token.json` → `Principal`
+    `token_trabalho.json` → `Trabalho`
     """
     name = os.path.basename(token_path)
     if name == "token.json":
@@ -158,7 +159,7 @@ def _clean_query(query_text: str) -> list:
 def search_drive_docs(query_text: str):
     """Search Google Drive (name *or* full‑text) across **all** accounts.
 
-    Results are tagged with ``[Alias]`` so the caller knows their origin.
+    Results are tagged with `[Alias]` so the caller knows their origin.
     """
     req_id = registrar_requisicao("DRIVE_SEARCH", query_text)
     all_items = []
@@ -186,7 +187,7 @@ def search_drive_docs(query_text: str):
                 item["name"] = f"[{label}] {item['name']}"
                 all_items.append(item)
         except Exception as e:
-            print(f"[WORKSPACE WARN] Drive query failed for {label}: {e}")
+            logger.info(f"[WORKSPACE WARN] Drive query failed for {label}: {e}")
             all_items.append({"name": f"[{label}] Erro de Conexão", "snippet": str(e)})
     atualizar_status(req_id, "SUCCESS")
     return all_items
@@ -216,7 +217,7 @@ def search_shared_drive_docs():
                 item["name"] = f"[{label}] {item['name']}"
                 all_items.append(item)
         except Exception as e:
-            print(f"[WORKSPACE WARN] Shared Drive query failed for {label}: {e}")
+            logger.info(f"[WORKSPACE WARN] Shared Drive query failed for {label}: {e}")
     atualizar_status(req_id, "SUCCESS")
     return all_items
 
@@ -241,7 +242,7 @@ def search_all_google_docs():
                 item["name"] = f"[{label}] {item['name']}"
                 all_items.append(item)
         except Exception as e:
-            print(f"[WORKSPACE WARN] Docs query failed for {label}: {e}")
+            logger.info(f"[WORKSPACE WARN] Docs query failed for {label}: {e}")
     atualizar_status(req_id, "SUCCESS")
     return all_items
 
@@ -267,10 +268,83 @@ def search_gmail(query_text: str):
                     "labels": m_data.get("labelIds", []),
                 })
         except Exception as e:
-            print(f"[WORKSPACE WARN] Gmail query failed for {label}: {e}")
+            logger.info(f"[WORKSPACE WARN] Gmail query failed for {label}: {e}")
             all_messages.append({"id": f"[{label}] error", "snippet": str(e), "labels": []})
     atualizar_status(req_id, "SUCCESS")
     return all_messages
+
+# ---------------------------------------------------------------------------
+# Full-content readers (needed for real ingestion, not just search snippets)
+# ---------------------------------------------------------------------------
+
+def get_drive_file_fulltext(file_id: str, mime_type: str, token_path: str) -> str:
+    """Return the full text content of a Drive file (best-effort).
+
+    Google Docs are exported as plain text. Other native binary types
+    (PDF, DOCX) are returned as raw bytes; caller parses them (e.g. with
+    pypdf / python-docx) before summarizing.
+    """
+    service = get_authenticated_service("drive", "v3", token_path)
+    if mime_type == "application/vnd.google-apps.document":
+        data = service.files().export(fileId=file_id, mimeType="text/plain").execute()
+        return data.decode("utf-8") if isinstance(data, bytes) else data
+    request = service.files().get_media(fileId=file_id)
+    return request.execute()
+
+
+def get_gmail_full_message(msg_id: str, token_path: str) -> dict:
+    """Return sender, subject, date, and full plain-text body of a Gmail message."""
+    import base64
+    import re
+    service = get_authenticated_service("gmail", "v1", token_path)
+    m = service.users().messages().get(userId="me", id=msg_id, format="full").execute()
+    headers = {h["name"]: h["value"] for h in m["payload"].get("headers", [])}
+    body = ""
+
+    def _walk(part):
+        nonlocal body
+        # Se houver text/plain, pega. Senão pega text/html.
+        mime = part.get("mimeType", "")
+        if mime in ("text/plain", "text/html") and "data" in part.get("body", {}):
+            body += base64.urlsafe_b64decode(part["body"]["data"]).decode("utf-8", errors="ignore")
+        for sub in part.get("parts", []):
+            _walk(sub)
+
+    _walk(m["payload"])
+    
+    # Higienização antifrágil (remove lixo de CSS e tags HTML)
+    body = re.sub(r'(?is)<style.*?>.*?</style>', ' ', body)
+    body = re.sub(r'(?is)<script.*?>.*?</script>', ' ', body)
+    body = re.sub(r'(?is)<[^>]+>', ' ', body)
+    body = re.sub(r'(?is)\{[^\}]*\}', ' ', body)  # Remove blocos CSS puros
+    body = re.sub(r'\s+', ' ', body).strip()
+
+    return {
+        "from": headers.get("From", ""),
+        "subject": headers.get("Subject", ""),
+        "date": headers.get("Date", ""),
+        "body": body,
+    }
+
+
+def list_recent_gmail_ids(token_path: str, max_results: int = 25, query: str = "") -> list:
+    """List recent message IDs for bulk ingestion (not a keyword search)."""
+    service = get_authenticated_service("gmail", "v1", token_path)
+    results = service.users().messages().list(userId="me", q=query, maxResults=max_results).execute()
+    return [m["id"] for m in results.get("messages", [])]
+
+
+def list_recent_drive_files(token_path: str, max_results: int = 50) -> list:
+    """List recent Drive files (id, name, mimeType) for bulk ingestion."""
+    service = get_authenticated_service("drive", "v3", token_path)
+    results = service.files().list(
+        q="trashed=false",
+        pageSize=max_results,
+        orderBy="modifiedTime desc",
+        fields="files(id, name, mimeType, modifiedTime)",
+    ).execute()
+    return results.get("files", [])
+
 
 # ---------------------------------------------------------------------------
 # CLI entry point
@@ -286,7 +360,7 @@ if __name__ == "__main__":
     if args.add_account:
         add_new_account(args.add_account)
     else:
-        print("[*] Running Multi‑Workspace authentication test…")
+        logger.info("[*] Running Multi‑Workspace authentication test…")
         if not get_all_tokens():
             get_authenticated_service("drive", "v3")
-        print("[✔] Multi‑Workspace authentication validated. Tokens are securely stored.")
+        logger.info("[✔] Multi‑Workspace authentication validated. Tokens are securely stored.")
