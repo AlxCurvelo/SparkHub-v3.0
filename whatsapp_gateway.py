@@ -39,8 +39,25 @@ class WhatsAppGatewayHandler(BaseHTTPRequestHandler):
         """
         self.wfile.write(html_content.encode("utf-8"))
 
+    def check_auth(self):
+        import os
+        from dotenv import load_dotenv
+        load_dotenv("D:\\SparkHub\\.env")
+        token = os.getenv("SPARKHUB_API_TOKEN", "")
+        auth_header = self.headers.get("Authorization")
+        if not token or auth_header != f"Bearer {token}":
+            self.send_response(401)
+            self.send_header("Content-Type", "application/json")
+            self.end_headers()
+            self.wfile.write(b'{"status": "error", "message": "Unauthorized"}')
+            return False
+        return True
+
     def do_POST(self):
         """Recebe notificações via POST HTTP do SparkHub."""
+        if not self.check_auth():
+            return
+            
         content_length = int(self.headers.get("Content-Length", 0))
         post_data = self.rfile.read(content_length)
         

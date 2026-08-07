@@ -44,7 +44,7 @@ def proactive_memory_check(tool_name, args):
         pattern = re.compile(r'def execute_tool\(name, args\):.*?(?=class LocalHubMCPHandler)', re.DOTALL)
         
         new_execute_tool = '''def execute_tool(name, args):
-    """Executa as acoes nativas no Windows e MemPalace v2.5.0 com os.startfile(), Auto-Discovery, Auditoria e Contexto Proativo"""
+    """Executa as acoes nativas no Windows e MemPalace v3.0 com os.startfile(), Auto-Discovery, Auditoria e Contexto Proativo"""
     
     # 1. Recuperar contexto proativo
     proactive_context = proactive_memory_check(name, args)
@@ -245,7 +245,7 @@ def proactive_memory_check(tool_name, args):
         main_pattern = re.compile(r'if __name__ == "__main__":.*?$', re.DOTALL)
         
         new_main = '''if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="SparkHub v2.5.0 - CLI e Servidor MCP")
+    parser = argparse.ArgumentParser(description="SparkHub v3.0 - CLI e Servidor MCP")
     parser.add_argument("tool", nargs="?", help="Nome da ferramenta para executar via CLI (ex: open_app, run_command)")
     parser.add_argument("args", nargs="*", help="Argumentos da ferramenta em formato chave=valor ou string direta")
     
@@ -253,7 +253,7 @@ def proactive_memory_check(tool_name, args):
     
     if cli_args.tool:
         # Modo CLI
-        print(f"=== SPARKHUB v2.5.0 MODO CLI ===")
+        print(f"=== SPARKHUB v3.0 MODO CLI ===")
         tool_name = cli_args.tool
         # Parse simple arguments
         tool_kwargs = {}
@@ -278,7 +278,7 @@ def proactive_memory_check(tool_name, args):
             print(f"[ERRO] {e}")
     else:
         # Modo Servidor MCP Original
-        print(f"=== SERVIDOR SPARKHUB v2.5.0 (SHELLEXECUTE / AUTO-DISCOVERY / CLI) RODANDO NA PORTA {PORT} ===")
+        print(f"=== SERVIDOR SPARKHUB v3.0 (SHELLEXECUTE / AUTO-DISCOVERY / CLI) RODANDO NA PORTA {PORT} ===")
         print("Execucao nativa na sessao interativa com os.startfile() e auditoria pos-acao.")
         with socketserver.TCPServer(("", PORT), LocalHubMCPHandler) as httpd:
             httpd.serve_forever()
@@ -287,7 +287,7 @@ def proactive_memory_check(tool_name, args):
 
         # Update version strings in LocalHubMCPHandler
         content = content.replace('"version": "2.4.0"', '"version": "2.5.0"')
-        content = content.replace('SparkHub v2.4.0', 'SparkHub v2.5.0')
+        content = content.replace('SparkHub v2.5.0', 'SparkHub v3.0')
         
         with open(app_path, 'w', encoding='utf-8') as f:
             f.write(content)

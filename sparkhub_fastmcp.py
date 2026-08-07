@@ -21,15 +21,30 @@ DB_PATH = str(get_path("mempalace.db"))
 # Centralized FTS initialization imported from sparkhub_db
 from sparkhub_db import init_fts5_if_needed
 
+import json
+import math
+import sys
+try:
+    from sparkhub_embed_worker import get_embedding
+except ImportError:
+    get_embedding = None
+
+def cosine_similarity(v1: list[float], v2: list[float]) -> float:
+    dot = sum(a*b for a,b in zip(v1, v2))
+    norm1 = math.sqrt(sum(a*a for a in v1))
+    norm2 = math.sqrt(sum(b*b for b in v2))
+    if norm1 == 0 or norm2 == 0: return 0.0
+    return dot / (norm1 * norm2)
+
 @mcp.tool()
 def search_mempalace(query: str, limit: int = 5) -> str:
     """
-    Busca memórias e contextos no MemPalace do SparkHub usando FTS5 (BM25).
-    Use esta ferramenta para buscar informações sobre a vida do usuário, projetos (como Jubileu), regras de sistema e tecnologias.
+    Busca memórias e contextos no MemPalace do SparkHub usando Busca Híbrida (FTS5 BM25 + Semântica Vetorial).
+    Use esta ferramenta para buscar informações sobre a vida do usuário, projetos, regras de sistema e tecnologias.
     
     Args:
         query: A palavra-chave ou termo de busca.
-        limit: Número máximo de resultados.
+        limit: Número máximo de resultados de cada método.
     """
     if not os.path.exists(DB_PATH):
         return "Erro: Banco de dados mempalace.db não encontrado."
@@ -37,35 +52,74 @@ def search_mempalace(query: str, limit: int = 5) -> str:
     init_fts5_if_needed()
     
     try:
+        combined_results = {} # id -> (wing, room, content, score_type)
+        
         with sqlite3.connect(DB_PATH) as conn:
             cur = conn.cursor()
-            # Busca usando o índice FTS5
+            
+            # 1. Busca Lexical (FTS5 BM25)
             cur.execute("""
-                SELECT wing, room, content 
+                SELECT rowid, wing, room, content 
                 FROM memories_fts 
                 WHERE memories_fts MATCH ? 
                 ORDER BY rank 
                 LIMIT ?;
             """, (query, limit))
             
-            rows = cur.fetchall()
-            
-            if not rows:
-                # Fallback para LIKE se a query FTS falhar por sintaxe estrita
+            for rowid, w, r, c in cur.fetchall():
+                combined_results[rowid] = (w, r, c, "FTS5/BM25")
+                
+            # Fallback Lexical (LIKE) se FTS5 falhar
+            if not combined_results:
                 cur.execute("""
-                    SELECT wing, room, content 
+                    SELECT id, wing, room, content 
                     FROM memories 
                     WHERE content LIKE ? 
                     LIMIT ?;
                 """, (f"%{query}%", limit))
-                rows = cur.fetchall()
+                for rowid, w, r, c in cur.fetchall():
+                    combined_results[rowid] = (w, r, c, "LIKE")
 
-            if not rows:
+            # 2. Busca Semântica (Vetorial / Cosine)
+            if get_embedding:
+                q_vec = get_embedding(query)
+                if q_vec:
+                    cur.execute("SELECT memory_id, embedding FROM memories_embeddings")
+                    sem_scores = []
+                    for mem_id, emb_str in cur.fetchall():
+                        try:
+                            emb_vec = json.loads(emb_str)
+                            sim = cosine_similarity(q_vec, emb_vec)
+                            sem_scores.append((sim, mem_id))
+                        except:
+                            pass
+                    
+                    sem_scores.sort(reverse=True, key=lambda x: x[0])
+                    top_sem = sem_scores[:limit]
+                    
+                    for sim, mem_id in top_sem:
+                        if sim < 0.3: continue # threshold mínimo de similaridade
+                        if mem_id not in combined_results:
+                            cur.execute("SELECT wing, room, content FROM memories WHERE id = ?", (mem_id,))
+                            row = cur.fetchone()
+                            if row:
+                                combined_results[mem_id] = (row[0], row[1], row[2], f"Semântica ({sim:.2f})")
+
+            if not combined_results:
                 return "Nenhuma memória encontrada para esta busca."
                 
-            result_str = f"🧠 Resultados do MemPalace para '{query}':\n"
-            for w, r, c in rows:
-                result_str += f"- [{w}/{r}] {c}\n"
+            # --- GANCHO: ESPECIALISTA 6 (RERANKER) ---
+            try:
+                from sparkhub_reranker import rerank_mempalace_results
+                # Passa a lista de tuplas (w, r, c, stype) para o juiz final
+                final_results = rerank_mempalace_results(query, list(combined_results.values()))
+            except ImportError:
+                # Fallback se o módulo não estiver disponível
+                final_results = list(combined_results.values())[:5]
+                
+            result_str = f"🧠 Resultados Rerankeados do MemPalace para '{query}':\n"
+            for w, r, c, stype in final_results:
+                result_str += f"- [{stype}] [{w}/{r}] {c}\n"
                 
             return result_str
             

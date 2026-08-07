@@ -17,9 +17,6 @@ import workspace_agent as wa
 from sparkhub_db import save_memory
 from sparkhub_logger import logger
 
-# ---------------------------------------------------------------------------
-# PLACEHOLDER — substituir pela chamada real ao MemPalace
-# ---------------------------------------------------------------------------
 
 def mempalace_save(texto: str, categoria: str, origem: str):
     """

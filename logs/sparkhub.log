@@ -5774,3 +5774,3063 @@ l | Sala=gmail:Trabalho:19fd20a4745c865c
 2026-08-06 09:37:46 | INFO    | [ORQUESTRADOR] Rota 5 (Raciocínio) ativada.
 2026-08-06 09:37:51 | ERROR   | [ROTEADOR WARN] Camada 1 falhou (<urlopen error [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente>). Acionando Camada 2...
 2026-08-06 09:38:00 | INFO    | [ROTEADOR SUCESSO] Resposta via Camada 2 (Tamanho: 74)
+2026-08-06 13:48:54 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 585):
+2026-08-06 13:48:54 | INFO    |     - 3d: 1 itens
+2026-08-06 13:48:54 | INFO    |     - Diretorios: 4 itens
+2026-08-06 13:48:54 | INFO    |     - Edicao: 1 itens
+2026-08-06 13:48:54 | INFO    |     - Fisica: 1 itens
+2026-08-06 13:48:54 | INFO    |     - MCP: 1 itens
+2026-08-06 13:48:54 | INFO    |     - RH: 8 itens
+2026-08-06 13:48:54 | INFO    |     - SalaComum: 9 itens
+2026-08-06 13:48:54 | INFO    |     - TestRoom: 5 itens
+2026-08-06 13:48:54 | INFO    |     - Validacao: 1 itens
+2026-08-06 13:48:54 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 13:48:54 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 13:48:54 | INFO    |     - agent_tasks: 33 itens
+2026-08-06 13:48:54 | INFO    |     - alerts: 13 itens
+2026-08-06 13:48:54 | INFO    |     - android_and_pc_registrations: 21 itens
+2026-08-06 13:48:54 | INFO    |     - antigravity: 1 itens
+2026-08-06 13:48:54 | INFO    |     - career: 1 itens
+2026-08-06 13:48:54 | INFO    |     - delika: 1 itens
+2026-08-06 13:48:54 | INFO    |     - design: 1 itens
+2026-08-06 13:48:54 | INFO    |     - dev: 1 itens
+2026-08-06 13:48:54 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 13:48:54 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 13:48:54 | INFO    |     - drive_docs: 21 itens
+2026-08-06 13:48:54 | INFO    |     - drive_shared_files: 10 itens
+2026-08-06 13:48:54 | INFO    |     - education: 1 itens
+2026-08-06 13:48:54 | INFO    |     - family: 1 itens
+2026-08-06 13:48:54 | INFO    |     - github_repos: 2 itens
+2026-08-06 13:48:54 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 13:48:54 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 13:48:54 | INFO    |     - gmail_linked_accounts: 11 itens
+2026-08-06 13:48:54 | INFO    |     - gmail_notifications: 16 itens
+2026-08-06 13:48:54 | INFO    |     - google_docs: 36 itens
+2026-08-06 13:48:54 | INFO    |     - hardware: 2 itens
+2026-08-06 13:48:54 | INFO    |     - jubileu: 4 itens
+2026-08-06 13:48:54 | INFO    |     - mary_kay: 1 itens
+2026-08-06 13:48:54 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 13:48:54 | INFO    |     - onedrive: 1 itens
+2026-08-06 13:48:54 | INFO    |     - personal: 2 itens
+2026-08-06 13:48:54 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 13:48:54 | INFO    |     - router: 1 itens
+2026-08-06 13:48:54 | INFO    |     - security: 1 itens
+2026-08-06 13:48:54 | INFO    |     - sparkhub: 1 itens
+2026-08-06 13:48:54 | INFO    |     - storage_parser: 1 itens
+2026-08-06 13:48:54 | INFO    |     - sync_audit: 24 itens
+2026-08-06 13:48:54 | INFO    |     - system_status: 13 itens
+2026-08-06 13:48:54 | INFO    |     - terabox: 1 itens
+2026-08-06 13:48:54 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 13:48:54 | INFO    |     - web_research_insights: 62 itens
+2026-08-06 13:49:05 | INFO    | [AUTO-DISCOVERY] Mapeados 752 programas/atalhos em D:\SparkHub\mapa_executaveis.csv
+2026-08-06 13:49:05 | INFO    | === SERVIDOR SPARKHUB v2.5.0 (SHELLEXECUTE / AUTO-DISCOVERY / CLI) RODANDO NA PORTA 8000 ===
+2026-08-06 13:49:05 | INFO    | Execucao nativa na sessao interativa com os.startfile() e auditoria pos-acao.
+2026-08-06 13:49:05 | INFO    | === SERVIDOR SPARKHUB v2.5.0 RODANDO EM http://127.0.0.1:8000/ ===
+2026-08-06 13:55:44 | INFO    | [AUTO-DISCOVERY] Mapeados 752 programas/atalhos em D:\SparkHub\mapa_executaveis.csv
+2026-08-06 13:55:44 | INFO    | === SERVIDOR SPARKHUB v2.5.0 (SHELLEXECUTE / AUTO-DISCOVERY / CLI) RODANDO NA PORTA 8000 ===
+2026-08-06 13:55:44 | INFO    | Execucao nativa na sessao interativa com os.startfile() e auditoria pos-acao.
+2026-08-06 13:55:44 | INFO    | === SERVIDOR SPARKHUB v2.5.0 RODANDO EM http://127.0.0.1:8000/ ===
+2026-08-06 13:55:49 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 585):
+2026-08-06 13:55:49 | INFO    |     - 3d: 1 itens
+2026-08-06 13:55:49 | INFO    |     - Diretorios: 4 itens
+2026-08-06 13:55:49 | INFO    |     - Edicao: 1 itens
+2026-08-06 13:55:49 | INFO    |     - Fisica: 1 itens
+2026-08-06 13:55:49 | INFO    |     - MCP: 1 itens
+2026-08-06 13:55:49 | INFO    |     - RH: 8 itens
+2026-08-06 13:55:49 | INFO    |     - SalaComum: 9 itens
+2026-08-06 13:55:49 | INFO    |     - TestRoom: 5 itens
+2026-08-06 13:55:49 | INFO    |     - Validacao: 1 itens
+2026-08-06 13:55:49 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 13:55:49 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 13:55:49 | INFO    |     - agent_tasks: 33 itens
+2026-08-06 13:55:49 | INFO    |     - alerts: 13 itens
+2026-08-06 13:55:49 | INFO    |     - android_and_pc_registrations: 21 itens
+2026-08-06 13:55:49 | INFO    |     - antigravity: 1 itens
+2026-08-06 13:55:49 | INFO    |     - career: 1 itens
+2026-08-06 13:55:49 | INFO    |     - delika: 1 itens
+2026-08-06 13:55:49 | INFO    |     - design: 1 itens
+2026-08-06 13:55:49 | INFO    |     - dev: 1 itens
+2026-08-06 13:55:49 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 13:55:49 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 13:55:49 | INFO    |     - drive_docs: 21 itens
+2026-08-06 13:55:49 | INFO    |     - drive_shared_files: 10 itens
+2026-08-06 13:55:49 | INFO    |     - education: 1 itens
+2026-08-06 13:55:49 | INFO    |     - family: 1 itens
+2026-08-06 13:55:49 | INFO    |     - github_repos: 2 itens
+2026-08-06 13:55:49 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 13:55:49 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 13:55:49 | INFO    |     - gmail_linked_accounts: 11 itens
+2026-08-06 13:55:49 | INFO    |     - gmail_notifications: 16 itens
+2026-08-06 13:55:49 | INFO    |     - google_docs: 36 itens
+2026-08-06 13:55:49 | INFO    |     - hardware: 2 itens
+2026-08-06 13:55:49 | INFO    |     - jubileu: 4 itens
+2026-08-06 13:55:49 | INFO    |     - mary_kay: 1 itens
+2026-08-06 13:55:49 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 13:55:49 | INFO    |     - onedrive: 1 itens
+2026-08-06 13:55:49 | INFO    |     - personal: 2 itens
+2026-08-06 13:55:49 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 13:55:49 | INFO    |     - router: 1 itens
+2026-08-06 13:55:49 | INFO    |     - security: 1 itens
+2026-08-06 13:55:49 | INFO    |     - sparkhub: 1 itens
+2026-08-06 13:55:49 | INFO    |     - storage_parser: 1 itens
+2026-08-06 13:55:49 | INFO    |     - sync_audit: 24 itens
+2026-08-06 13:55:49 | INFO    |     - system_status: 13 itens
+2026-08-06 13:55:49 | INFO    |     - terabox: 1 itens
+2026-08-06 13:55:49 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 13:55:49 | INFO    |     - web_research_insights: 62 itens
+2026-08-06 15:27:13 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 585):
+2026-08-06 15:27:13 | INFO    |     - 3d: 1 itens
+2026-08-06 15:27:13 | INFO    |     - Diretorios: 4 itens
+2026-08-06 15:27:13 | INFO    |     - Edicao: 1 itens
+2026-08-06 15:27:13 | INFO    |     - Fisica: 1 itens
+2026-08-06 15:27:13 | INFO    |     - MCP: 1 itens
+2026-08-06 15:27:13 | INFO    |     - RH: 8 itens
+2026-08-06 15:27:13 | INFO    |     - SalaComum: 9 itens
+2026-08-06 15:27:13 | INFO    |     - TestRoom: 5 itens
+2026-08-06 15:27:13 | INFO    |     - Validacao: 1 itens
+2026-08-06 15:27:13 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 15:27:13 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 15:27:13 | INFO    |     - agent_tasks: 33 itens
+2026-08-06 15:27:13 | INFO    |     - alerts: 13 itens
+2026-08-06 15:27:13 | INFO    |     - android_and_pc_registrations: 21 itens
+2026-08-06 15:27:13 | INFO    |     - antigravity: 1 itens
+2026-08-06 15:27:13 | INFO    |     - career: 1 itens
+2026-08-06 15:27:13 | INFO    |     - delika: 1 itens
+2026-08-06 15:27:13 | INFO    |     - design: 1 itens
+2026-08-06 15:27:13 | INFO    |     - dev: 1 itens
+2026-08-06 15:27:13 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 15:27:13 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 15:27:13 | INFO    |     - drive_docs: 21 itens
+2026-08-06 15:27:13 | INFO    |     - drive_shared_files: 10 itens
+2026-08-06 15:27:13 | INFO    |     - education: 1 itens
+2026-08-06 15:27:13 | INFO    |     - family: 1 itens
+2026-08-06 15:27:13 | INFO    |     - github_repos: 2 itens
+2026-08-06 15:27:13 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 15:27:13 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 15:27:13 | INFO    |     - gmail_linked_accounts: 11 itens
+2026-08-06 15:27:13 | INFO    |     - gmail_notifications: 16 itens
+2026-08-06 15:27:13 | INFO    |     - google_docs: 36 itens
+2026-08-06 15:27:13 | INFO    |     - hardware: 2 itens
+2026-08-06 15:27:13 | INFO    |     - jubileu: 4 itens
+2026-08-06 15:27:13 | INFO    |     - mary_kay: 1 itens
+2026-08-06 15:27:13 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 15:27:13 | INFO    |     - onedrive: 1 itens
+2026-08-06 15:27:13 | INFO    |     - personal: 2 itens
+2026-08-06 15:27:13 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 15:27:13 | INFO    |     - router: 1 itens
+2026-08-06 15:27:13 | INFO    |     - security: 1 itens
+2026-08-06 15:27:13 | INFO    |     - sparkhub: 1 itens
+2026-08-06 15:27:13 | INFO    |     - storage_parser: 1 itens
+2026-08-06 15:27:13 | INFO    |     - sync_audit: 24 itens
+2026-08-06 15:27:13 | INFO    |     - system_status: 13 itens
+2026-08-06 15:27:13 | INFO    |     - terabox: 1 itens
+2026-08-06 15:27:13 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 15:27:13 | INFO    |     - web_research_insights: 62 itens
+2026-08-06 15:27:19 | INFO    | [AUTO-DISCOVERY] Mapeados 752 programas/atalhos em D:\SparkHub\mapa_executaveis.csv
+2026-08-06 15:27:19 | INFO    | === SERVIDOR SPARKHUB v3.0 (SHELLEXECUTE / AUTO-DISCOVERY / CLI) RODANDO NA PORTA 8000 ===
+2026-08-06 15:27:19 | INFO    | Execucao nativa na sessao interativa com os.startfile() e auditoria pos-acao.
+2026-08-06 15:27:19 | INFO    | === SERVIDOR SPARKHUB v3.0 RODANDO EM http://127.0.0.1:8000/ ===
+2026-08-06 16:11:19 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 585):
+2026-08-06 16:11:19 | INFO    |     - 3d: 1 itens
+2026-08-06 16:11:19 | INFO    |     - Diretorios: 4 itens
+2026-08-06 16:11:19 | INFO    |     - Edicao: 1 itens
+2026-08-06 16:11:19 | INFO    |     - Fisica: 1 itens
+2026-08-06 16:11:19 | INFO    |     - MCP: 1 itens
+2026-08-06 16:11:19 | INFO    |     - RH: 8 itens
+2026-08-06 16:11:19 | INFO    |     - SalaComum: 9 itens
+2026-08-06 16:11:19 | INFO    |     - TestRoom: 5 itens
+2026-08-06 16:11:19 | INFO    |     - Validacao: 1 itens
+2026-08-06 16:11:19 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 16:11:19 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 16:11:19 | INFO    |     - agent_tasks: 33 itens
+2026-08-06 16:11:19 | INFO    |     - alerts: 13 itens
+2026-08-06 16:11:19 | INFO    |     - android_and_pc_registrations: 21 itens
+2026-08-06 16:11:19 | INFO    |     - antigravity: 1 itens
+2026-08-06 16:11:19 | INFO    |     - career: 1 itens
+2026-08-06 16:11:19 | INFO    |     - delika: 1 itens
+2026-08-06 16:11:19 | INFO    |     - design: 1 itens
+2026-08-06 16:11:19 | INFO    |     - dev: 1 itens
+2026-08-06 16:11:19 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 16:11:19 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 16:11:19 | INFO    |     - drive_docs: 21 itens
+2026-08-06 16:11:19 | INFO    |     - drive_shared_files: 10 itens
+2026-08-06 16:11:19 | INFO    |     - education: 1 itens
+2026-08-06 16:11:19 | INFO    |     - family: 1 itens
+2026-08-06 16:11:19 | INFO    |     - github_repos: 2 itens
+2026-08-06 16:11:19 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 16:11:19 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 16:11:19 | INFO    |     - gmail_linked_accounts: 11 itens
+2026-08-06 16:11:19 | INFO    |     - gmail_notifications: 16 itens
+2026-08-06 16:11:19 | INFO    |     - google_docs: 36 itens
+2026-08-06 16:11:19 | INFO    |     - hardware: 2 itens
+2026-08-06 16:11:19 | INFO    |     - jubileu: 4 itens
+2026-08-06 16:11:19 | INFO    |     - mary_kay: 1 itens
+2026-08-06 16:11:19 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 16:11:19 | INFO    |     - onedrive: 1 itens
+2026-08-06 16:11:19 | INFO    |     - personal: 2 itens
+2026-08-06 16:11:19 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 16:11:19 | INFO    |     - router: 1 itens
+2026-08-06 16:11:19 | INFO    |     - security: 1 itens
+2026-08-06 16:11:19 | INFO    |     - sparkhub: 1 itens
+2026-08-06 16:11:19 | INFO    |     - storage_parser: 1 itens
+2026-08-06 16:11:19 | INFO    |     - sync_audit: 24 itens
+2026-08-06 16:11:19 | INFO    |     - system_status: 13 itens
+2026-08-06 16:11:19 | INFO    |     - terabox: 1 itens
+2026-08-06 16:11:19 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 16:11:19 | INFO    |     - web_research_insights: 62 itens
+2026-08-06 16:11:20 | INFO    | [AUTO-DISCOVERY] Mapeados 752 programas/atalhos em D:\SparkHub\mapa_executaveis.csv
+2026-08-06 16:11:20 | INFO    | === SERVIDOR SPARKHUB v3.0 (SHELLEXECUTE / AUTO-DISCOVERY / CLI) RODANDO NA PORTA 8000 ===
+2026-08-06 16:11:20 | INFO    | Execucao nativa na sessao interativa com os.startfile() e auditoria pos-acao.
+2026-08-06 16:11:20 | INFO    | === SERVIDOR SPARKHUB v3.0 RODANDO EM http://127.0.0.1:8000/ ===
+2026-08-06 16:35:04 | INFO    | [AUTO-DISCOVERY] Mapeados 752 programas/atalhos em D:\SparkHub\mapa_executaveis.csv
+2026-08-06 16:35:04 | INFO    | === SERVIDOR SPARKHUB v3.0 (SHELLEXECUTE / AUTO-DISCOVERY / CLI) RODANDO NA PORTA 8000 ===
+2026-08-06 16:35:04 | INFO    | Execucao nativa na sessao interativa com os.startfile() e auditoria pos-acao.
+2026-08-06 16:35:04 | INFO    | === SERVIDOR SPARKHUB v3.0 RODANDO EM http://127.0.0.1:8000/ ===
+2026-08-06 16:35:09 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 585):
+2026-08-06 16:35:09 | INFO    |     - 3d: 1 itens
+2026-08-06 16:35:09 | INFO    |     - Diretorios: 4 itens
+2026-08-06 16:35:09 | INFO    |     - Edicao: 1 itens
+2026-08-06 16:35:09 | INFO    |     - Fisica: 1 itens
+2026-08-06 16:35:09 | INFO    |     - MCP: 1 itens
+2026-08-06 16:35:09 | INFO    |     - RH: 8 itens
+2026-08-06 16:35:09 | INFO    |     - SalaComum: 9 itens
+2026-08-06 16:35:09 | INFO    |     - TestRoom: 5 itens
+2026-08-06 16:35:09 | INFO    |     - Validacao: 1 itens
+2026-08-06 16:35:09 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 16:35:09 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 16:35:09 | INFO    |     - agent_tasks: 33 itens
+2026-08-06 16:35:09 | INFO    |     - alerts: 13 itens
+2026-08-06 16:35:09 | INFO    |     - android_and_pc_registrations: 21 itens
+2026-08-06 16:35:09 | INFO    |     - antigravity: 1 itens
+2026-08-06 16:35:09 | INFO    |     - career: 1 itens
+2026-08-06 16:35:09 | INFO    |     - delika: 1 itens
+2026-08-06 16:35:09 | INFO    |     - design: 1 itens
+2026-08-06 16:35:09 | INFO    |     - dev: 1 itens
+2026-08-06 16:35:09 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 16:35:09 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 16:35:09 | INFO    |     - drive_docs: 21 itens
+2026-08-06 16:35:09 | INFO    |     - drive_shared_files: 10 itens
+2026-08-06 16:35:09 | INFO    |     - education: 1 itens
+2026-08-06 16:35:09 | INFO    |     - family: 1 itens
+2026-08-06 16:35:09 | INFO    |     - github_repos: 2 itens
+2026-08-06 16:35:09 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 16:35:09 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 16:35:09 | INFO    |     - gmail_linked_accounts: 11 itens
+2026-08-06 16:35:09 | INFO    |     - gmail_notifications: 16 itens
+2026-08-06 16:35:09 | INFO    |     - google_docs: 36 itens
+2026-08-06 16:35:09 | INFO    |     - hardware: 2 itens
+2026-08-06 16:35:09 | INFO    |     - jubileu: 4 itens
+2026-08-06 16:35:09 | INFO    |     - mary_kay: 1 itens
+2026-08-06 16:35:09 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 16:35:09 | INFO    |     - onedrive: 1 itens
+2026-08-06 16:35:09 | INFO    |     - personal: 2 itens
+2026-08-06 16:35:09 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 16:35:09 | INFO    |     - router: 1 itens
+2026-08-06 16:35:09 | INFO    |     - security: 1 itens
+2026-08-06 16:35:09 | INFO    |     - sparkhub: 1 itens
+2026-08-06 16:35:09 | INFO    |     - storage_parser: 1 itens
+2026-08-06 16:35:09 | INFO    |     - sync_audit: 24 itens
+2026-08-06 16:35:09 | INFO    |     - system_status: 13 itens
+2026-08-06 16:35:09 | INFO    |     - terabox: 1 itens
+2026-08-06 16:35:09 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 16:35:09 | INFO    |     - web_research_insights: 62 itens
+2026-08-06 16:37:24 | INFO    | [ORQUESTRADOR] Rota 2 (Status/Sync) ativada.
+2026-08-06 16:37:29 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 587):
+2026-08-06 16:37:29 | INFO    |     - 3d: 1 itens
+2026-08-06 16:37:29 | INFO    |     - Diretorios: 4 itens
+2026-08-06 16:37:29 | INFO    |     - Edicao: 1 itens
+2026-08-06 16:37:29 | INFO    |     - Fisica: 1 itens
+2026-08-06 16:37:29 | INFO    |     - MCP: 1 itens
+2026-08-06 16:37:29 | INFO    |     - RH: 8 itens
+2026-08-06 16:37:29 | INFO    |     - SalaComum: 9 itens
+2026-08-06 16:37:29 | INFO    |     - TestRoom: 5 itens
+2026-08-06 16:37:29 | INFO    |     - Validacao: 1 itens
+2026-08-06 16:37:29 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 16:37:29 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 16:37:29 | INFO    |     - agent_tasks: 33 itens
+2026-08-06 16:37:29 | INFO    |     - alerts: 14 itens
+2026-08-06 16:37:29 | INFO    |     - android_and_pc_registrations: 21 itens
+2026-08-06 16:37:29 | INFO    |     - antigravity: 1 itens
+2026-08-06 16:37:29 | INFO    |     - career: 1 itens
+2026-08-06 16:37:29 | INFO    |     - delika: 1 itens
+2026-08-06 16:37:29 | INFO    |     - design: 1 itens
+2026-08-06 16:37:29 | INFO    |     - dev: 1 itens
+2026-08-06 16:37:29 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 16:37:29 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 16:37:29 | INFO    |     - drive_docs: 21 itens
+2026-08-06 16:37:29 | INFO    |     - drive_shared_files: 10 itens
+2026-08-06 16:37:29 | INFO    |     - education: 1 itens
+2026-08-06 16:37:29 | INFO    |     - family: 1 itens
+2026-08-06 16:37:29 | INFO    |     - github_repos: 2 itens
+2026-08-06 16:37:29 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 16:37:29 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 16:37:29 | INFO    |     - gmail_linked_accounts: 11 itens
+2026-08-06 16:37:29 | INFO    |     - gmail_notifications: 16 itens
+2026-08-06 16:37:29 | INFO    |     - google_docs: 36 itens
+2026-08-06 16:37:29 | INFO    |     - hardware: 2 itens
+2026-08-06 16:37:29 | INFO    |     - jubileu: 4 itens
+2026-08-06 16:37:29 | INFO    |     - mary_kay: 1 itens
+2026-08-06 16:37:29 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 16:37:29 | INFO    |     - onedrive: 1 itens
+2026-08-06 16:37:29 | INFO    |     - personal: 2 itens
+2026-08-06 16:37:29 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 16:37:29 | INFO    |     - router: 1 itens
+2026-08-06 16:37:29 | INFO    |     - security: 1 itens
+2026-08-06 16:37:29 | INFO    |     - sparkhub: 1 itens
+2026-08-06 16:37:29 | INFO    |     - storage_parser: 1 itens
+2026-08-06 16:37:29 | INFO    |     - sync_audit: 25 itens
+2026-08-06 16:37:29 | INFO    |     - system_status: 13 itens
+2026-08-06 16:37:29 | INFO    |     - terabox: 1 itens
+2026-08-06 16:37:29 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 16:37:29 | INFO    |     - web_research_insights: 62 itens
+2026-08-06 16:37:31 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 588):
+2026-08-06 16:37:31 | INFO    |     - 3d: 1 itens
+2026-08-06 16:37:31 | INFO    |     - Diretorios: 4 itens
+2026-08-06 16:37:31 | INFO    |     - Edicao: 1 itens
+2026-08-06 16:37:31 | INFO    |     - Fisica: 1 itens
+2026-08-06 16:37:31 | INFO    |     - MCP: 1 itens
+2026-08-06 16:37:31 | INFO    |     - RH: 8 itens
+2026-08-06 16:37:31 | INFO    |     - SalaComum: 9 itens
+2026-08-06 16:37:31 | INFO    |     - TestRoom: 5 itens
+2026-08-06 16:37:31 | INFO    |     - Validacao: 1 itens
+2026-08-06 16:37:31 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 16:37:31 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 16:37:31 | INFO    |     - agent_tasks: 34 itens
+2026-08-06 16:37:31 | INFO    |     - alerts: 14 itens
+2026-08-06 16:37:31 | INFO    |     - android_and_pc_registrations: 21 itens
+2026-08-06 16:37:31 | INFO    |     - antigravity: 1 itens
+2026-08-06 16:37:31 | INFO    |     - career: 1 itens
+2026-08-06 16:37:31 | INFO    |     - delika: 1 itens
+2026-08-06 16:37:31 | INFO    |     - design: 1 itens
+2026-08-06 16:37:31 | INFO    |     - dev: 1 itens
+2026-08-06 16:37:31 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 16:37:31 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 16:37:31 | INFO    |     - drive_docs: 21 itens
+2026-08-06 16:37:31 | INFO    |     - drive_shared_files: 10 itens
+2026-08-06 16:37:31 | INFO    |     - education: 1 itens
+2026-08-06 16:37:31 | INFO    |     - family: 1 itens
+2026-08-06 16:37:31 | INFO    |     - github_repos: 2 itens
+2026-08-06 16:37:31 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 16:37:31 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 16:37:31 | INFO    |     - gmail_linked_accounts: 11 itens
+2026-08-06 16:37:31 | INFO    |     - gmail_notifications: 16 itens
+2026-08-06 16:37:31 | INFO    |     - google_docs: 36 itens
+2026-08-06 16:37:31 | INFO    |     - hardware: 2 itens
+2026-08-06 16:37:31 | INFO    |     - jubileu: 4 itens
+2026-08-06 16:37:31 | INFO    |     - mary_kay: 1 itens
+2026-08-06 16:37:31 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 16:37:31 | INFO    |     - onedrive: 1 itens
+2026-08-06 16:37:31 | INFO    |     - personal: 2 itens
+2026-08-06 16:37:31 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 16:37:31 | INFO    |     - router: 1 itens
+2026-08-06 16:37:31 | INFO    |     - security: 1 itens
+2026-08-06 16:37:31 | INFO    |     - sparkhub: 1 itens
+2026-08-06 16:37:31 | INFO    |     - storage_parser: 1 itens
+2026-08-06 16:37:31 | INFO    |     - sync_audit: 25 itens
+2026-08-06 16:37:31 | INFO    |     - system_status: 13 itens
+2026-08-06 16:37:31 | INFO    |     - terabox: 1 itens
+2026-08-06 16:37:31 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 16:37:31 | INFO    |     - web_research_insights: 62 itens
+2026-08-06 17:20:43 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 588):
+2026-08-06 17:20:43 | INFO    |     - 3d: 1 itens
+2026-08-06 17:20:43 | INFO    |     - Diretorios: 4 itens
+2026-08-06 17:20:43 | INFO    |     - Edicao: 1 itens
+2026-08-06 17:20:43 | INFO    |     - Fisica: 1 itens
+2026-08-06 17:20:43 | INFO    |     - MCP: 1 itens
+2026-08-06 17:20:43 | INFO    |     - RH: 8 itens
+2026-08-06 17:20:43 | INFO    |     - SalaComum: 9 itens
+2026-08-06 17:20:43 | INFO    |     - TestRoom: 5 itens
+2026-08-06 17:20:43 | INFO    |     - Validacao: 1 itens
+2026-08-06 17:20:43 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 17:20:43 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 17:20:43 | INFO    |     - agent_tasks: 34 itens
+2026-08-06 17:20:43 | INFO    |     - alerts: 14 itens
+2026-08-06 17:20:43 | INFO    |     - android_and_pc_registrations: 21 itens
+2026-08-06 17:20:43 | INFO    |     - antigravity: 1 itens
+2026-08-06 17:20:43 | INFO    |     - career: 1 itens
+2026-08-06 17:20:43 | INFO    |     - delika: 1 itens
+2026-08-06 17:20:43 | INFO    |     - design: 1 itens
+2026-08-06 17:20:43 | INFO    |     - dev: 1 itens
+2026-08-06 17:20:43 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 17:20:43 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 17:20:43 | INFO    |     - drive_docs: 21 itens
+2026-08-06 17:20:43 | INFO    |     - drive_shared_files: 10 itens
+2026-08-06 17:20:43 | INFO    |     - education: 1 itens
+2026-08-06 17:20:43 | INFO    |     - family: 1 itens
+2026-08-06 17:20:43 | INFO    |     - github_repos: 2 itens
+2026-08-06 17:20:43 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 17:20:43 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 17:20:43 | INFO    |     - gmail_linked_accounts: 11 itens
+2026-08-06 17:20:43 | INFO    |     - gmail_notifications: 16 itens
+2026-08-06 17:20:43 | INFO    |     - google_docs: 36 itens
+2026-08-06 17:20:43 | INFO    |     - hardware: 2 itens
+2026-08-06 17:20:43 | INFO    |     - jubileu: 4 itens
+2026-08-06 17:20:43 | INFO    |     - mary_kay: 1 itens
+2026-08-06 17:20:43 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 17:20:43 | INFO    |     - onedrive: 1 itens
+2026-08-06 17:20:43 | INFO    |     - personal: 2 itens
+2026-08-06 17:20:43 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 17:20:43 | INFO    |     - router: 1 itens
+2026-08-06 17:20:43 | INFO    |     - security: 1 itens
+2026-08-06 17:20:43 | INFO    |     - sparkhub: 1 itens
+2026-08-06 17:20:43 | INFO    |     - storage_parser: 1 itens
+2026-08-06 17:20:43 | INFO    |     - sync_audit: 25 itens
+2026-08-06 17:20:43 | INFO    |     - system_status: 13 itens
+2026-08-06 17:20:43 | INFO    |     - terabox: 1 itens
+2026-08-06 17:20:43 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 17:20:43 | INFO    |     - web_research_insights: 62 itens
+2026-08-06 17:22:31 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 589):
+2026-08-06 17:22:31 | INFO    |     - 3d: 1 itens
+2026-08-06 17:22:31 | INFO    |     - Diretorios: 4 itens
+2026-08-06 17:22:31 | INFO    |     - Edicao: 1 itens
+2026-08-06 17:22:31 | INFO    |     - Fisica: 1 itens
+2026-08-06 17:22:31 | INFO    |     - MCP: 1 itens
+2026-08-06 17:22:31 | INFO    |     - RH: 8 itens
+2026-08-06 17:22:31 | INFO    |     - SalaComum: 9 itens
+2026-08-06 17:22:31 | INFO    |     - TestRoom: 5 itens
+2026-08-06 17:22:31 | INFO    |     - Validacao: 1 itens
+2026-08-06 17:22:31 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 17:22:31 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 17:22:31 | INFO    |     - agent_tasks: 35 itens
+2026-08-06 17:22:31 | INFO    |     - alerts: 14 itens
+2026-08-06 17:22:31 | INFO    |     - android_and_pc_registrations: 21 itens
+2026-08-06 17:22:31 | INFO    |     - antigravity: 1 itens
+2026-08-06 17:22:31 | INFO    |     - career: 1 itens
+2026-08-06 17:22:31 | INFO    |     - delika: 1 itens
+2026-08-06 17:22:31 | INFO    |     - design: 1 itens
+2026-08-06 17:22:31 | INFO    |     - dev: 1 itens
+2026-08-06 17:22:31 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 17:22:31 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 17:22:31 | INFO    |     - drive_docs: 21 itens
+2026-08-06 17:22:31 | INFO    |     - drive_shared_files: 10 itens
+2026-08-06 17:22:31 | INFO    |     - education: 1 itens
+2026-08-06 17:22:31 | INFO    |     - family: 1 itens
+2026-08-06 17:22:31 | INFO    |     - github_repos: 2 itens
+2026-08-06 17:22:31 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 17:22:31 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 17:22:31 | INFO    |     - gmail_linked_accounts: 11 itens
+2026-08-06 17:22:31 | INFO    |     - gmail_notifications: 16 itens
+2026-08-06 17:22:31 | INFO    |     - google_docs: 36 itens
+2026-08-06 17:22:31 | INFO    |     - hardware: 2 itens
+2026-08-06 17:22:31 | INFO    |     - jubileu: 4 itens
+2026-08-06 17:22:31 | INFO    |     - mary_kay: 1 itens
+2026-08-06 17:22:31 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 17:22:31 | INFO    |     - onedrive: 1 itens
+2026-08-06 17:22:31 | INFO    |     - personal: 2 itens
+2026-08-06 17:22:31 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 17:22:31 | INFO    |     - router: 1 itens
+2026-08-06 17:22:31 | INFO    |     - security: 1 itens
+2026-08-06 17:22:31 | INFO    |     - sparkhub: 1 itens
+2026-08-06 17:22:31 | INFO    |     - storage_parser: 1 itens
+2026-08-06 17:22:31 | INFO    |     - sync_audit: 25 itens
+2026-08-06 17:22:31 | INFO    |     - system_status: 13 itens
+2026-08-06 17:22:31 | INFO    |     - terabox: 1 itens
+2026-08-06 17:22:31 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 17:22:31 | INFO    |     - web_research_insights: 62 itens
+2026-08-06 17:24:33 | INFO    | [AUTO-DISCOVERY] Mapeados 754 programas/atalhos em D:\SparkHub\mapa_executaveis.csv
+2026-08-06 17:24:33 | INFO    | === SERVIDOR SPARKHUB v3.0 (SHELLEXECUTE / AUTO-DISCOVERY / CLI) RODANDO NA PORTA 8000 ===
+2026-08-06 17:24:33 | INFO    | Execucao nativa na sessao interativa com os.startfile() e auditoria pos-acao.
+2026-08-06 17:24:33 | INFO    | === SERVIDOR SPARKHUB v3.0 RODANDO EM http://127.0.0.1:8000/ ===
+2026-08-06 17:25:39 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 591):
+2026-08-06 17:25:39 | INFO    |     - 3d: 1 itens
+2026-08-06 17:25:39 | INFO    |     - Diretorios: 4 itens
+2026-08-06 17:25:39 | INFO    |     - Edicao: 1 itens
+2026-08-06 17:25:39 | INFO    |     - Fisica: 1 itens
+2026-08-06 17:25:39 | INFO    |     - MCP: 1 itens
+2026-08-06 17:25:39 | INFO    |     - RH: 8 itens
+2026-08-06 17:25:39 | INFO    |     - SalaComum: 9 itens
+2026-08-06 17:25:39 | INFO    |     - TestRoom: 5 itens
+2026-08-06 17:25:39 | INFO    |     - Validacao: 1 itens
+2026-08-06 17:25:39 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 17:25:39 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 17:25:39 | INFO    |     - agent_tasks: 35 itens
+2026-08-06 17:25:39 | INFO    |     - alerts: 14 itens
+2026-08-06 17:25:39 | INFO    |     - android_and_pc_registrations: 21 itens
+2026-08-06 17:25:39 | INFO    |     - antigravity: 1 itens
+2026-08-06 17:25:39 | INFO    |     - career: 1 itens
+2026-08-06 17:25:39 | INFO    |     - delika: 1 itens
+2026-08-06 17:25:39 | INFO    |     - design: 1 itens
+2026-08-06 17:25:39 | INFO    |     - dev: 1 itens
+2026-08-06 17:25:39 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 17:25:39 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 17:25:39 | INFO    |     - drive_docs: 21 itens
+2026-08-06 17:25:39 | INFO    |     - drive_shared_files: 10 itens
+2026-08-06 17:25:39 | INFO    |     - education: 1 itens
+2026-08-06 17:25:39 | INFO    |     - family: 1 itens
+2026-08-06 17:25:39 | INFO    |     - github_repos: 2 itens
+2026-08-06 17:25:39 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 17:25:39 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 17:25:39 | INFO    |     - gmail_linked_accounts: 11 itens
+2026-08-06 17:25:39 | INFO    |     - gmail_notifications: 16 itens
+2026-08-06 17:25:39 | INFO    |     - google_docs: 36 itens
+2026-08-06 17:25:39 | INFO    |     - hardware: 2 itens
+2026-08-06 17:25:39 | INFO    |     - jubileu: 4 itens
+2026-08-06 17:25:39 | INFO    |     - mary_kay: 1 itens
+2026-08-06 17:25:39 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 17:25:39 | INFO    |     - onedrive: 1 itens
+2026-08-06 17:25:39 | INFO    |     - personal: 2 itens
+2026-08-06 17:25:39 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 17:25:39 | INFO    |     - router: 1 itens
+2026-08-06 17:25:39 | INFO    |     - security: 1 itens
+2026-08-06 17:25:39 | INFO    |     - sparkhub: 1 itens
+2026-08-06 17:25:39 | INFO    |     - storage_parser: 1 itens
+2026-08-06 17:25:39 | INFO    |     - sync_audit: 25 itens
+2026-08-06 17:25:39 | INFO    |     - system_status: 15 itens
+2026-08-06 17:25:39 | INFO    |     - terabox: 1 itens
+2026-08-06 17:25:39 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 17:25:39 | INFO    |     - web_research_insights: 62 itens
+2026-08-06 17:25:47 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 597):
+2026-08-06 17:25:47 | INFO    |     - 3d: 1 itens
+2026-08-06 17:25:47 | INFO    |     - Diretorios: 4 itens
+2026-08-06 17:25:47 | INFO    |     - Edicao: 1 itens
+2026-08-06 17:25:47 | INFO    |     - Fisica: 1 itens
+2026-08-06 17:25:47 | INFO    |     - MCP: 1 itens
+2026-08-06 17:25:47 | INFO    |     - RH: 8 itens
+2026-08-06 17:25:47 | INFO    |     - SalaComum: 9 itens
+2026-08-06 17:25:47 | INFO    |     - TestRoom: 5 itens
+2026-08-06 17:25:47 | INFO    |     - Validacao: 1 itens
+2026-08-06 17:25:47 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 17:25:47 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 17:25:47 | INFO    |     - agent_tasks: 35 itens
+2026-08-06 17:25:47 | INFO    |     - alerts: 14 itens
+2026-08-06 17:25:47 | INFO    |     - android_and_pc_registrations: 21 itens
+2026-08-06 17:25:47 | INFO    |     - antigravity: 1 itens
+2026-08-06 17:25:47 | INFO    |     - career: 1 itens
+2026-08-06 17:25:47 | INFO    |     - delika: 1 itens
+2026-08-06 17:25:47 | INFO    |     - design: 1 itens
+2026-08-06 17:25:47 | INFO    |     - dev: 1 itens
+2026-08-06 17:25:47 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 17:25:47 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 17:25:47 | INFO    |     - drive_docs: 21 itens
+2026-08-06 17:25:47 | INFO    |     - drive_shared_files: 10 itens
+2026-08-06 17:25:47 | INFO    |     - education: 1 itens
+2026-08-06 17:25:47 | INFO    |     - family: 1 itens
+2026-08-06 17:25:47 | INFO    |     - github_repos: 2 itens
+2026-08-06 17:25:47 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 17:25:47 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 17:25:47 | INFO    |     - gmail_linked_accounts: 11 itens
+2026-08-06 17:25:47 | INFO    |     - gmail_notifications: 22 itens
+2026-08-06 17:25:47 | INFO    |     - google_docs: 36 itens
+2026-08-06 17:25:47 | INFO    |     - hardware: 2 itens
+2026-08-06 17:25:47 | INFO    |     - jubileu: 4 itens
+2026-08-06 17:25:47 | INFO    |     - mary_kay: 1 itens
+2026-08-06 17:25:47 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 17:25:47 | INFO    |     - onedrive: 1 itens
+2026-08-06 17:25:47 | INFO    |     - personal: 2 itens
+2026-08-06 17:25:47 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 17:25:47 | INFO    |     - router: 1 itens
+2026-08-06 17:25:47 | INFO    |     - security: 1 itens
+2026-08-06 17:25:47 | INFO    |     - sparkhub: 1 itens
+2026-08-06 17:25:47 | INFO    |     - storage_parser: 1 itens
+2026-08-06 17:25:47 | INFO    |     - sync_audit: 25 itens
+2026-08-06 17:25:47 | INFO    |     - system_status: 15 itens
+2026-08-06 17:25:47 | INFO    |     - terabox: 1 itens
+2026-08-06 17:25:47 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 17:25:47 | INFO    |     - web_research_insights: 62 itens
+2026-08-06 17:25:59 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 598):
+2026-08-06 17:25:59 | INFO    |     - 3d: 1 itens
+2026-08-06 17:25:59 | INFO    |     - Diretorios: 4 itens
+2026-08-06 17:25:59 | INFO    |     - Edicao: 1 itens
+2026-08-06 17:25:59 | INFO    |     - Fisica: 1 itens
+2026-08-06 17:25:59 | INFO    |     - MCP: 1 itens
+2026-08-06 17:25:59 | INFO    |     - RH: 8 itens
+2026-08-06 17:25:59 | INFO    |     - SalaComum: 9 itens
+2026-08-06 17:25:59 | INFO    |     - TestRoom: 5 itens
+2026-08-06 17:25:59 | INFO    |     - Validacao: 1 itens
+2026-08-06 17:25:59 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 17:25:59 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 17:25:59 | INFO    |     - agent_tasks: 35 itens
+2026-08-06 17:25:59 | INFO    |     - alerts: 14 itens
+2026-08-06 17:25:59 | INFO    |     - android_and_pc_registrations: 21 itens
+2026-08-06 17:25:59 | INFO    |     - antigravity: 1 itens
+2026-08-06 17:25:59 | INFO    |     - career: 1 itens
+2026-08-06 17:25:59 | INFO    |     - delika: 1 itens
+2026-08-06 17:25:59 | INFO    |     - design: 1 itens
+2026-08-06 17:25:59 | INFO    |     - dev: 1 itens
+2026-08-06 17:25:59 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 17:25:59 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 17:25:59 | INFO    |     - drive_docs: 22 itens
+2026-08-06 17:25:59 | INFO    |     - drive_shared_files: 10 itens
+2026-08-06 17:25:59 | INFO    |     - education: 1 itens
+2026-08-06 17:25:59 | INFO    |     - family: 1 itens
+2026-08-06 17:25:59 | INFO    |     - github_repos: 2 itens
+2026-08-06 17:25:59 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 17:25:59 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 17:25:59 | INFO    |     - gmail_linked_accounts: 11 itens
+2026-08-06 17:25:59 | INFO    |     - gmail_notifications: 22 itens
+2026-08-06 17:25:59 | INFO    |     - google_docs: 36 itens
+2026-08-06 17:25:59 | INFO    |     - hardware: 2 itens
+2026-08-06 17:25:59 | INFO    |     - jubileu: 4 itens
+2026-08-06 17:25:59 | INFO    |     - mary_kay: 1 itens
+2026-08-06 17:25:59 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 17:25:59 | INFO    |     - onedrive: 1 itens
+2026-08-06 17:25:59 | INFO    |     - personal: 2 itens
+2026-08-06 17:25:59 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 17:25:59 | INFO    |     - router: 1 itens
+2026-08-06 17:25:59 | INFO    |     - security: 1 itens
+2026-08-06 17:25:59 | INFO    |     - sparkhub: 1 itens
+2026-08-06 17:25:59 | INFO    |     - storage_parser: 1 itens
+2026-08-06 17:25:59 | INFO    |     - sync_audit: 25 itens
+2026-08-06 17:25:59 | INFO    |     - system_status: 15 itens
+2026-08-06 17:25:59 | INFO    |     - terabox: 1 itens
+2026-08-06 17:25:59 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 17:25:59 | INFO    |     - web_research_insights: 62 itens
+2026-08-06 17:26:07 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 600):
+2026-08-06 17:26:07 | INFO    |     - 3d: 1 itens
+2026-08-06 17:26:07 | INFO    |     - Diretorios: 4 itens
+2026-08-06 17:26:07 | INFO    |     - Edicao: 1 itens
+2026-08-06 17:26:07 | INFO    |     - Fisica: 1 itens
+2026-08-06 17:26:07 | INFO    |     - MCP: 1 itens
+2026-08-06 17:26:07 | INFO    |     - RH: 8 itens
+2026-08-06 17:26:07 | INFO    |     - SalaComum: 9 itens
+2026-08-06 17:26:07 | INFO    |     - TestRoom: 5 itens
+2026-08-06 17:26:07 | INFO    |     - Validacao: 1 itens
+2026-08-06 17:26:07 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 17:26:07 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 17:26:07 | INFO    |     - agent_tasks: 35 itens
+2026-08-06 17:26:07 | INFO    |     - alerts: 14 itens
+2026-08-06 17:26:07 | INFO    |     - android_and_pc_registrations: 21 itens
+2026-08-06 17:26:07 | INFO    |     - antigravity: 1 itens
+2026-08-06 17:26:07 | INFO    |     - career: 1 itens
+2026-08-06 17:26:07 | INFO    |     - delika: 1 itens
+2026-08-06 17:26:07 | INFO    |     - design: 1 itens
+2026-08-06 17:26:07 | INFO    |     - dev: 1 itens
+2026-08-06 17:26:07 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 17:26:07 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 17:26:07 | INFO    |     - drive_docs: 22 itens
+2026-08-06 17:26:07 | INFO    |     - drive_shared_files: 12 itens
+2026-08-06 17:26:07 | INFO    |     - education: 1 itens
+2026-08-06 17:26:07 | INFO    |     - family: 1 itens
+2026-08-06 17:26:07 | INFO    |     - github_repos: 2 itens
+2026-08-06 17:26:07 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 17:26:07 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 17:26:07 | INFO    |     - gmail_linked_accounts: 11 itens
+2026-08-06 17:26:07 | INFO    |     - gmail_notifications: 22 itens
+2026-08-06 17:26:07 | INFO    |     - google_docs: 36 itens
+2026-08-06 17:26:07 | INFO    |     - hardware: 2 itens
+2026-08-06 17:26:07 | INFO    |     - jubileu: 4 itens
+2026-08-06 17:26:07 | INFO    |     - mary_kay: 1 itens
+2026-08-06 17:26:07 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 17:26:07 | INFO    |     - onedrive: 1 itens
+2026-08-06 17:26:07 | INFO    |     - personal: 2 itens
+2026-08-06 17:26:07 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 17:26:07 | INFO    |     - router: 1 itens
+2026-08-06 17:26:07 | INFO    |     - security: 1 itens
+2026-08-06 17:26:07 | INFO    |     - sparkhub: 1 itens
+2026-08-06 17:26:07 | INFO    |     - storage_parser: 1 itens
+2026-08-06 17:26:07 | INFO    |     - sync_audit: 25 itens
+2026-08-06 17:26:07 | INFO    |     - system_status: 15 itens
+2026-08-06 17:26:07 | INFO    |     - terabox: 1 itens
+2026-08-06 17:26:07 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 17:26:07 | INFO    |     - web_research_insights: 62 itens
+2026-08-06 17:26:13 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 606):
+2026-08-06 17:26:13 | INFO    |     - 3d: 1 itens
+2026-08-06 17:26:13 | INFO    |     - Diretorios: 4 itens
+2026-08-06 17:26:13 | INFO    |     - Edicao: 1 itens
+2026-08-06 17:26:13 | INFO    |     - Fisica: 1 itens
+2026-08-06 17:26:13 | INFO    |     - MCP: 1 itens
+2026-08-06 17:26:13 | INFO    |     - RH: 8 itens
+2026-08-06 17:26:13 | INFO    |     - SalaComum: 9 itens
+2026-08-06 17:26:13 | INFO    |     - TestRoom: 5 itens
+2026-08-06 17:26:13 | INFO    |     - Validacao: 1 itens
+2026-08-06 17:26:13 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 17:26:13 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 17:26:13 | INFO    |     - agent_tasks: 35 itens
+2026-08-06 17:26:13 | INFO    |     - alerts: 14 itens
+2026-08-06 17:26:13 | INFO    |     - android_and_pc_registrations: 21 itens
+2026-08-06 17:26:13 | INFO    |     - antigravity: 1 itens
+2026-08-06 17:26:13 | INFO    |     - career: 1 itens
+2026-08-06 17:26:13 | INFO    |     - delika: 1 itens
+2026-08-06 17:26:13 | INFO    |     - design: 1 itens
+2026-08-06 17:26:13 | INFO    |     - dev: 1 itens
+2026-08-06 17:26:13 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 17:26:13 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 17:26:13 | INFO    |     - drive_docs: 22 itens
+2026-08-06 17:26:13 | INFO    |     - drive_shared_files: 12 itens
+2026-08-06 17:26:13 | INFO    |     - education: 1 itens
+2026-08-06 17:26:13 | INFO    |     - family: 1 itens
+2026-08-06 17:26:13 | INFO    |     - github_repos: 2 itens
+2026-08-06 17:26:13 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 17:26:13 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 17:26:13 | INFO    |     - gmail_linked_accounts: 17 itens
+2026-08-06 17:26:13 | INFO    |     - gmail_notifications: 22 itens
+2026-08-06 17:26:13 | INFO    |     - google_docs: 36 itens
+2026-08-06 17:26:13 | INFO    |     - hardware: 2 itens
+2026-08-06 17:26:13 | INFO    |     - jubileu: 4 itens
+2026-08-06 17:26:13 | INFO    |     - mary_kay: 1 itens
+2026-08-06 17:26:13 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 17:26:13 | INFO    |     - onedrive: 1 itens
+2026-08-06 17:26:13 | INFO    |     - personal: 2 itens
+2026-08-06 17:26:13 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 17:26:13 | INFO    |     - router: 1 itens
+2026-08-06 17:26:13 | INFO    |     - security: 1 itens
+2026-08-06 17:26:13 | INFO    |     - sparkhub: 1 itens
+2026-08-06 17:26:13 | INFO    |     - storage_parser: 1 itens
+2026-08-06 17:26:13 | INFO    |     - sync_audit: 25 itens
+2026-08-06 17:26:13 | INFO    |     - system_status: 15 itens
+2026-08-06 17:26:13 | INFO    |     - terabox: 1 itens
+2026-08-06 17:26:13 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 17:26:13 | INFO    |     - web_research_insights: 62 itens
+2026-08-06 17:26:17 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 637):
+2026-08-06 17:26:17 | INFO    |     - 3d: 1 itens
+2026-08-06 17:26:17 | INFO    |     - Diretorios: 4 itens
+2026-08-06 17:26:17 | INFO    |     - Edicao: 1 itens
+2026-08-06 17:26:17 | INFO    |     - Fisica: 1 itens
+2026-08-06 17:26:17 | INFO    |     - MCP: 1 itens
+2026-08-06 17:26:17 | INFO    |     - RH: 8 itens
+2026-08-06 17:26:17 | INFO    |     - SalaComum: 9 itens
+2026-08-06 17:26:17 | INFO    |     - TestRoom: 5 itens
+2026-08-06 17:26:17 | INFO    |     - Validacao: 1 itens
+2026-08-06 17:26:17 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 17:26:17 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 17:26:17 | INFO    |     - agent_tasks: 35 itens
+2026-08-06 17:26:17 | INFO    |     - alerts: 14 itens
+2026-08-06 17:26:17 | INFO    |     - android_and_pc_registrations: 35 itens
+2026-08-06 17:26:17 | INFO    |     - antigravity: 1 itens
+2026-08-06 17:26:17 | INFO    |     - career: 1 itens
+2026-08-06 17:26:17 | INFO    |     - delika: 1 itens
+2026-08-06 17:26:17 | INFO    |     - design: 1 itens
+2026-08-06 17:26:17 | INFO    |     - dev: 1 itens
+2026-08-06 17:26:17 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 17:26:17 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 17:26:17 | INFO    |     - drive_docs: 22 itens
+2026-08-06 17:26:17 | INFO    |     - drive_shared_files: 12 itens
+2026-08-06 17:26:17 | INFO    |     - education: 1 itens
+2026-08-06 17:26:17 | INFO    |     - family: 1 itens
+2026-08-06 17:26:17 | INFO    |     - github_repos: 2 itens
+2026-08-06 17:26:17 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 17:26:17 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 17:26:17 | INFO    |     - gmail_linked_accounts: 17 itens
+2026-08-06 17:26:17 | INFO    |     - gmail_notifications: 22 itens
+2026-08-06 17:26:17 | INFO    |     - google_docs: 39 itens
+2026-08-06 17:26:17 | INFO    |     - hardware: 2 itens
+2026-08-06 17:26:17 | INFO    |     - jubileu: 4 itens
+2026-08-06 17:26:17 | INFO    |     - mary_kay: 1 itens
+2026-08-06 17:26:17 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 17:26:17 | INFO    |     - onedrive: 1 itens
+2026-08-06 17:26:17 | INFO    |     - personal: 2 itens
+2026-08-06 17:26:17 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 17:26:17 | INFO    |     - router: 1 itens
+2026-08-06 17:26:17 | INFO    |     - security: 1 itens
+2026-08-06 17:26:17 | INFO    |     - sparkhub: 1 itens
+2026-08-06 17:26:17 | INFO    |     - storage_parser: 1 itens
+2026-08-06 17:26:17 | INFO    |     - sync_audit: 25 itens
+2026-08-06 17:26:17 | INFO    |     - system_status: 15 itens
+2026-08-06 17:26:17 | INFO    |     - terabox: 1 itens
+2026-08-06 17:26:17 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 17:26:17 | INFO    |     - web_research_insights: 76 itens
+2026-08-06 17:26:19 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 697):
+2026-08-06 17:26:19 | INFO    |     - 3d: 1 itens
+2026-08-06 17:26:19 | INFO    |     - Diretorios: 4 itens
+2026-08-06 17:26:19 | INFO    |     - Edicao: 1 itens
+2026-08-06 17:26:19 | INFO    |     - Fisica: 1 itens
+2026-08-06 17:26:19 | INFO    |     - MCP: 1 itens
+2026-08-06 17:26:19 | INFO    |     - RH: 8 itens
+2026-08-06 17:26:19 | INFO    |     - SalaComum: 9 itens
+2026-08-06 17:26:19 | INFO    |     - TestRoom: 5 itens
+2026-08-06 17:26:19 | INFO    |     - Validacao: 1 itens
+2026-08-06 17:26:19 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 17:26:19 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 17:26:19 | INFO    |     - agent_tasks: 35 itens
+2026-08-06 17:26:19 | INFO    |     - alerts: 14 itens
+2026-08-06 17:26:19 | INFO    |     - android_and_pc_registrations: 35 itens
+2026-08-06 17:26:19 | INFO    |     - antigravity: 1 itens
+2026-08-06 17:26:19 | INFO    |     - career: 1 itens
+2026-08-06 17:26:19 | INFO    |     - delika: 1 itens
+2026-08-06 17:26:19 | INFO    |     - design: 1 itens
+2026-08-06 17:26:19 | INFO    |     - dev: 1 itens
+2026-08-06 17:26:19 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 17:26:19 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 17:26:19 | INFO    |     - drive_docs: 22 itens
+2026-08-06 17:26:19 | INFO    |     - drive_shared_files: 12 itens
+2026-08-06 17:26:19 | INFO    |     - education: 1 itens
+2026-08-06 17:26:19 | INFO    |     - family: 1 itens
+2026-08-06 17:26:19 | INFO    |     - github_repos: 2 itens
+2026-08-06 17:26:19 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 17:26:19 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 17:26:19 | INFO    |     - gmail_linked_accounts: 17 itens
+2026-08-06 17:26:19 | INFO    |     - gmail_notifications: 22 itens
+2026-08-06 17:26:19 | INFO    |     - google_docs: 39 itens
+2026-08-06 17:26:19 | INFO    |     - hardware: 2 itens
+2026-08-06 17:26:19 | INFO    |     - jubileu: 4 itens
+2026-08-06 17:26:19 | INFO    |     - mary_kay: 1 itens
+2026-08-06 17:26:19 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 17:26:19 | INFO    |     - onedrive: 1 itens
+2026-08-06 17:26:19 | INFO    |     - personal: 2 itens
+2026-08-06 17:26:19 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 17:26:19 | INFO    |     - router: 1 itens
+2026-08-06 17:26:19 | INFO    |     - security: 1 itens
+2026-08-06 17:26:19 | INFO    |     - sparkhub: 1 itens
+2026-08-06 17:26:19 | INFO    |     - storage_parser: 1 itens
+2026-08-06 17:26:19 | INFO    |     - sync_audit: 25 itens
+2026-08-06 17:26:19 | INFO    |     - system_status: 15 itens
+2026-08-06 17:26:19 | INFO    |     - terabox: 1 itens
+2026-08-06 17:26:19 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 17:26:19 | INFO    |     - web_research_insights: 136 itens
+2026-08-06 17:26:21 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 698):
+2026-08-06 17:26:21 | INFO    |     - 3d: 1 itens
+2026-08-06 17:26:21 | INFO    |     - Diretorios: 4 itens
+2026-08-06 17:26:21 | INFO    |     - Edicao: 1 itens
+2026-08-06 17:26:21 | INFO    |     - Fisica: 1 itens
+2026-08-06 17:26:21 | INFO    |     - MCP: 1 itens
+2026-08-06 17:26:21 | INFO    |     - RH: 8 itens
+2026-08-06 17:26:21 | INFO    |     - SalaComum: 9 itens
+2026-08-06 17:26:21 | INFO    |     - TestRoom: 5 itens
+2026-08-06 17:26:21 | INFO    |     - Validacao: 1 itens
+2026-08-06 17:26:21 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 17:26:21 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 17:26:21 | INFO    |     - agent_tasks: 35 itens
+2026-08-06 17:26:21 | INFO    |     - alerts: 14 itens
+2026-08-06 17:26:21 | INFO    |     - android_and_pc_registrations: 35 itens
+2026-08-06 17:26:21 | INFO    |     - antigravity: 1 itens
+2026-08-06 17:26:21 | INFO    |     - career: 1 itens
+2026-08-06 17:26:21 | INFO    |     - delika: 1 itens
+2026-08-06 17:26:21 | INFO    |     - design: 1 itens
+2026-08-06 17:26:21 | INFO    |     - dev: 1 itens
+2026-08-06 17:26:21 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 17:26:21 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 17:26:21 | INFO    |     - drive_docs: 22 itens
+2026-08-06 17:26:21 | INFO    |     - drive_shared_files: 12 itens
+2026-08-06 17:26:21 | INFO    |     - education: 1 itens
+2026-08-06 17:26:21 | INFO    |     - family: 1 itens
+2026-08-06 17:26:21 | INFO    |     - github_repos: 3 itens
+2026-08-06 17:26:21 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 17:26:21 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 17:26:21 | INFO    |     - gmail_linked_accounts: 17 itens
+2026-08-06 17:26:21 | INFO    |     - gmail_notifications: 22 itens
+2026-08-06 17:26:21 | INFO    |     - google_docs: 39 itens
+2026-08-06 17:26:21 | INFO    |     - hardware: 2 itens
+2026-08-06 17:26:21 | INFO    |     - jubileu: 4 itens
+2026-08-06 17:26:21 | INFO    |     - mary_kay: 1 itens
+2026-08-06 17:26:21 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 17:26:21 | INFO    |     - onedrive: 1 itens
+2026-08-06 17:26:21 | INFO    |     - personal: 2 itens
+2026-08-06 17:26:21 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 17:26:21 | INFO    |     - router: 1 itens
+2026-08-06 17:26:21 | INFO    |     - security: 1 itens
+2026-08-06 17:26:21 | INFO    |     - sparkhub: 1 itens
+2026-08-06 17:26:21 | INFO    |     - storage_parser: 1 itens
+2026-08-06 17:26:21 | INFO    |     - sync_audit: 25 itens
+2026-08-06 17:26:21 | INFO    |     - system_status: 15 itens
+2026-08-06 17:26:21 | INFO    |     - terabox: 1 itens
+2026-08-06 17:26:21 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 17:26:21 | INFO    |     - web_research_insights: 136 itens
+2026-08-06 17:27:13 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 699):
+2026-08-06 17:27:13 | INFO    |     - 3d: 1 itens
+2026-08-06 17:27:13 | INFO    |     - Diretorios: 4 itens
+2026-08-06 17:27:13 | INFO    |     - Edicao: 1 itens
+2026-08-06 17:27:13 | INFO    |     - Fisica: 1 itens
+2026-08-06 17:27:13 | INFO    |     - MCP: 1 itens
+2026-08-06 17:27:13 | INFO    |     - RH: 8 itens
+2026-08-06 17:27:13 | INFO    |     - SalaComum: 9 itens
+2026-08-06 17:27:13 | INFO    |     - TestRoom: 5 itens
+2026-08-06 17:27:13 | INFO    |     - Validacao: 1 itens
+2026-08-06 17:27:13 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 17:27:13 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 17:27:13 | INFO    |     - agent_tasks: 35 itens
+2026-08-06 17:27:13 | INFO    |     - alerts: 14 itens
+2026-08-06 17:27:13 | INFO    |     - android_and_pc_registrations: 35 itens
+2026-08-06 17:27:13 | INFO    |     - antigravity: 1 itens
+2026-08-06 17:27:13 | INFO    |     - career: 1 itens
+2026-08-06 17:27:13 | INFO    |     - delika: 1 itens
+2026-08-06 17:27:13 | INFO    |     - design: 1 itens
+2026-08-06 17:27:13 | INFO    |     - dev: 1 itens
+2026-08-06 17:27:13 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 17:27:13 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 17:27:13 | INFO    |     - drive_docs: 22 itens
+2026-08-06 17:27:13 | INFO    |     - drive_shared_files: 12 itens
+2026-08-06 17:27:13 | INFO    |     - education: 1 itens
+2026-08-06 17:27:13 | INFO    |     - family: 1 itens
+2026-08-06 17:27:13 | INFO    |     - github_repos: 3 itens
+2026-08-06 17:27:13 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 17:27:13 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 17:27:13 | INFO    |     - gmail_linked_accounts: 17 itens
+2026-08-06 17:27:13 | INFO    |     - gmail_notifications: 22 itens
+2026-08-06 17:27:13 | INFO    |     - google_docs: 39 itens
+2026-08-06 17:27:13 | INFO    |     - hardware: 2 itens
+2026-08-06 17:27:13 | INFO    |     - jubileu: 4 itens
+2026-08-06 17:27:13 | INFO    |     - mary_kay: 1 itens
+2026-08-06 17:27:13 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 17:27:13 | INFO    |     - onedrive: 1 itens
+2026-08-06 17:27:13 | INFO    |     - personal: 2 itens
+2026-08-06 17:27:13 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 17:27:13 | INFO    |     - router: 1 itens
+2026-08-06 17:27:13 | INFO    |     - security: 1 itens
+2026-08-06 17:27:13 | INFO    |     - sparkhub: 1 itens
+2026-08-06 17:27:13 | INFO    |     - storage_parser: 1 itens
+2026-08-06 17:27:13 | INFO    |     - sync_audit: 25 itens
+2026-08-06 17:27:13 | INFO    |     - system_status: 16 itens
+2026-08-06 17:27:13 | INFO    |     - terabox: 1 itens
+2026-08-06 17:27:13 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 17:27:13 | INFO    |     - web_research_insights: 136 itens
+2026-08-06 17:27:21 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 700):
+2026-08-06 17:27:21 | INFO    |     - 3d: 1 itens
+2026-08-06 17:27:21 | INFO    |     - Diretorios: 4 itens
+2026-08-06 17:27:21 | INFO    |     - Edicao: 1 itens
+2026-08-06 17:27:21 | INFO    |     - Fisica: 1 itens
+2026-08-06 17:27:21 | INFO    |     - MCP: 1 itens
+2026-08-06 17:27:21 | INFO    |     - RH: 8 itens
+2026-08-06 17:27:21 | INFO    |     - SalaComum: 9 itens
+2026-08-06 17:27:21 | INFO    |     - TestRoom: 5 itens
+2026-08-06 17:27:21 | INFO    |     - Validacao: 1 itens
+2026-08-06 17:27:21 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 17:27:21 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 17:27:21 | INFO    |     - agent_tasks: 35 itens
+2026-08-06 17:27:21 | INFO    |     - alerts: 14 itens
+2026-08-06 17:27:21 | INFO    |     - android_and_pc_registrations: 35 itens
+2026-08-06 17:27:21 | INFO    |     - antigravity: 1 itens
+2026-08-06 17:27:21 | INFO    |     - career: 1 itens
+2026-08-06 17:27:21 | INFO    |     - delika: 1 itens
+2026-08-06 17:27:21 | INFO    |     - design: 1 itens
+2026-08-06 17:27:21 | INFO    |     - dev: 1 itens
+2026-08-06 17:27:21 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 17:27:21 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 17:27:21 | INFO    |     - drive_docs: 23 itens
+2026-08-06 17:27:21 | INFO    |     - drive_shared_files: 12 itens
+2026-08-06 17:27:21 | INFO    |     - education: 1 itens
+2026-08-06 17:27:21 | INFO    |     - family: 1 itens
+2026-08-06 17:27:21 | INFO    |     - github_repos: 3 itens
+2026-08-06 17:27:21 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 17:27:21 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 17:27:21 | INFO    |     - gmail_linked_accounts: 17 itens
+2026-08-06 17:27:21 | INFO    |     - gmail_notifications: 22 itens
+2026-08-06 17:27:21 | INFO    |     - google_docs: 39 itens
+2026-08-06 17:27:21 | INFO    |     - hardware: 2 itens
+2026-08-06 17:27:21 | INFO    |     - jubileu: 4 itens
+2026-08-06 17:27:21 | INFO    |     - mary_kay: 1 itens
+2026-08-06 17:27:21 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 17:27:21 | INFO    |     - onedrive: 1 itens
+2026-08-06 17:27:21 | INFO    |     - personal: 2 itens
+2026-08-06 17:27:21 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 17:27:21 | INFO    |     - router: 1 itens
+2026-08-06 17:27:21 | INFO    |     - security: 1 itens
+2026-08-06 17:27:21 | INFO    |     - sparkhub: 1 itens
+2026-08-06 17:27:21 | INFO    |     - storage_parser: 1 itens
+2026-08-06 17:27:21 | INFO    |     - sync_audit: 25 itens
+2026-08-06 17:27:21 | INFO    |     - system_status: 16 itens
+2026-08-06 17:27:21 | INFO    |     - terabox: 1 itens
+2026-08-06 17:27:21 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 17:27:21 | INFO    |     - web_research_insights: 136 itens
+2026-08-06 17:27:47 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 703):
+2026-08-06 17:27:47 | INFO    |     - 3d: 1 itens
+2026-08-06 17:27:47 | INFO    |     - Diretorios: 4 itens
+2026-08-06 17:27:47 | INFO    |     - Edicao: 1 itens
+2026-08-06 17:27:47 | INFO    |     - Fisica: 1 itens
+2026-08-06 17:27:47 | INFO    |     - MCP: 1 itens
+2026-08-06 17:27:47 | INFO    |     - RH: 8 itens
+2026-08-06 17:27:47 | INFO    |     - SalaComum: 9 itens
+2026-08-06 17:27:47 | INFO    |     - TestRoom: 5 itens
+2026-08-06 17:27:47 | INFO    |     - Validacao: 1 itens
+2026-08-06 17:27:47 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 17:27:47 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 17:27:47 | INFO    |     - agent_tasks: 35 itens
+2026-08-06 17:27:47 | INFO    |     - alerts: 14 itens
+2026-08-06 17:27:47 | INFO    |     - android_and_pc_registrations: 37 itens
+2026-08-06 17:27:47 | INFO    |     - antigravity: 1 itens
+2026-08-06 17:27:47 | INFO    |     - career: 1 itens
+2026-08-06 17:27:47 | INFO    |     - delika: 1 itens
+2026-08-06 17:27:47 | INFO    |     - design: 1 itens
+2026-08-06 17:27:47 | INFO    |     - dev: 1 itens
+2026-08-06 17:27:47 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 17:27:47 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 17:27:47 | INFO    |     - drive_docs: 23 itens
+2026-08-06 17:27:47 | INFO    |     - drive_shared_files: 12 itens
+2026-08-06 17:27:47 | INFO    |     - education: 1 itens
+2026-08-06 17:27:47 | INFO    |     - family: 1 itens
+2026-08-06 17:27:47 | INFO    |     - github_repos: 3 itens
+2026-08-06 17:27:47 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 17:27:47 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 17:27:47 | INFO    |     - gmail_linked_accounts: 17 itens
+2026-08-06 17:27:47 | INFO    |     - gmail_notifications: 22 itens
+2026-08-06 17:27:47 | INFO    |     - google_docs: 40 itens
+2026-08-06 17:27:47 | INFO    |     - hardware: 2 itens
+2026-08-06 17:27:47 | INFO    |     - jubileu: 4 itens
+2026-08-06 17:27:47 | INFO    |     - mary_kay: 1 itens
+2026-08-06 17:27:47 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 17:27:47 | INFO    |     - onedrive: 1 itens
+2026-08-06 17:27:47 | INFO    |     - personal: 2 itens
+2026-08-06 17:27:47 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 17:27:47 | INFO    |     - router: 1 itens
+2026-08-06 17:27:47 | INFO    |     - security: 1 itens
+2026-08-06 17:27:47 | INFO    |     - sparkhub: 1 itens
+2026-08-06 17:27:47 | INFO    |     - storage_parser: 1 itens
+2026-08-06 17:27:47 | INFO    |     - sync_audit: 25 itens
+2026-08-06 17:27:47 | INFO    |     - system_status: 16 itens
+2026-08-06 17:27:47 | INFO    |     - terabox: 1 itens
+2026-08-06 17:27:47 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 17:27:47 | INFO    |     - web_research_insights: 136 itens
+2026-08-06 17:27:49 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 711):
+2026-08-06 17:27:49 | INFO    |     - 3d: 1 itens
+2026-08-06 17:27:49 | INFO    |     - Diretorios: 4 itens
+2026-08-06 17:27:49 | INFO    |     - Edicao: 1 itens
+2026-08-06 17:27:49 | INFO    |     - Fisica: 1 itens
+2026-08-06 17:27:49 | INFO    |     - MCP: 1 itens
+2026-08-06 17:27:49 | INFO    |     - RH: 8 itens
+2026-08-06 17:27:49 | INFO    |     - SalaComum: 9 itens
+2026-08-06 17:27:49 | INFO    |     - TestRoom: 5 itens
+2026-08-06 17:27:49 | INFO    |     - Validacao: 1 itens
+2026-08-06 17:27:49 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 17:27:49 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 17:27:49 | INFO    |     - agent_tasks: 35 itens
+2026-08-06 17:27:49 | INFO    |     - alerts: 14 itens
+2026-08-06 17:27:49 | INFO    |     - android_and_pc_registrations: 37 itens
+2026-08-06 17:27:49 | INFO    |     - antigravity: 1 itens
+2026-08-06 17:27:49 | INFO    |     - career: 1 itens
+2026-08-06 17:27:49 | INFO    |     - delika: 1 itens
+2026-08-06 17:27:49 | INFO    |     - design: 1 itens
+2026-08-06 17:27:49 | INFO    |     - dev: 1 itens
+2026-08-06 17:27:49 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 17:27:49 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 17:27:49 | INFO    |     - drive_docs: 23 itens
+2026-08-06 17:27:49 | INFO    |     - drive_shared_files: 12 itens
+2026-08-06 17:27:49 | INFO    |     - education: 1 itens
+2026-08-06 17:27:49 | INFO    |     - family: 1 itens
+2026-08-06 17:27:49 | INFO    |     - github_repos: 3 itens
+2026-08-06 17:27:49 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 17:27:49 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 17:27:49 | INFO    |     - gmail_linked_accounts: 17 itens
+2026-08-06 17:27:49 | INFO    |     - gmail_notifications: 22 itens
+2026-08-06 17:27:49 | INFO    |     - google_docs: 40 itens
+2026-08-06 17:27:49 | INFO    |     - hardware: 2 itens
+2026-08-06 17:27:49 | INFO    |     - jubileu: 4 itens
+2026-08-06 17:27:49 | INFO    |     - mary_kay: 1 itens
+2026-08-06 17:27:49 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 17:27:49 | INFO    |     - onedrive: 1 itens
+2026-08-06 17:27:49 | INFO    |     - personal: 2 itens
+2026-08-06 17:27:49 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 17:27:49 | INFO    |     - router: 1 itens
+2026-08-06 17:27:49 | INFO    |     - security: 1 itens
+2026-08-06 17:27:49 | INFO    |     - sparkhub: 1 itens
+2026-08-06 17:27:49 | INFO    |     - storage_parser: 1 itens
+2026-08-06 17:27:49 | INFO    |     - sync_audit: 25 itens
+2026-08-06 17:27:49 | INFO    |     - system_status: 16 itens
+2026-08-06 17:27:49 | INFO    |     - terabox: 1 itens
+2026-08-06 17:27:49 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 17:27:49 | INFO    |     - web_research_insights: 144 itens
+2026-08-06 17:28:05 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 711):
+2026-08-06 17:28:05 | INFO    |     - 3d: 1 itens
+2026-08-06 17:28:05 | INFO    |     - Diretorios: 4 itens
+2026-08-06 17:28:05 | INFO    |     - Edicao: 1 itens
+2026-08-06 17:28:05 | INFO    |     - Fisica: 1 itens
+2026-08-06 17:28:05 | INFO    |     - MCP: 1 itens
+2026-08-06 17:28:05 | INFO    |     - RH: 8 itens
+2026-08-06 17:28:05 | INFO    |     - SalaComum: 9 itens
+2026-08-06 17:28:05 | INFO    |     - TestRoom: 5 itens
+2026-08-06 17:28:05 | INFO    |     - Validacao: 1 itens
+2026-08-06 17:28:05 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 17:28:05 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 17:28:05 | INFO    |     - agent_tasks: 35 itens
+2026-08-06 17:28:05 | INFO    |     - alerts: 14 itens
+2026-08-06 17:28:05 | INFO    |     - android_and_pc_registrations: 37 itens
+2026-08-06 17:28:05 | INFO    |     - antigravity: 1 itens
+2026-08-06 17:28:05 | INFO    |     - career: 1 itens
+2026-08-06 17:28:05 | INFO    |     - delika: 1 itens
+2026-08-06 17:28:05 | INFO    |     - design: 1 itens
+2026-08-06 17:28:05 | INFO    |     - dev: 1 itens
+2026-08-06 17:28:05 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 17:28:05 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 17:28:05 | INFO    |     - drive_docs: 23 itens
+2026-08-06 17:28:05 | INFO    |     - drive_shared_files: 12 itens
+2026-08-06 17:28:05 | INFO    |     - education: 1 itens
+2026-08-06 17:28:05 | INFO    |     - family: 1 itens
+2026-08-06 17:28:05 | INFO    |     - github_repos: 3 itens
+2026-08-06 17:28:05 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 17:28:05 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 17:28:05 | INFO    |     - gmail_linked_accounts: 17 itens
+2026-08-06 17:28:05 | INFO    |     - gmail_notifications: 22 itens
+2026-08-06 17:28:05 | INFO    |     - google_docs: 40 itens
+2026-08-06 17:28:05 | INFO    |     - hardware: 2 itens
+2026-08-06 17:28:05 | INFO    |     - jubileu: 4 itens
+2026-08-06 17:28:05 | INFO    |     - mary_kay: 1 itens
+2026-08-06 17:28:05 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 17:28:05 | INFO    |     - onedrive: 1 itens
+2026-08-06 17:28:05 | INFO    |     - personal: 2 itens
+2026-08-06 17:28:05 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 17:28:05 | INFO    |     - router: 1 itens
+2026-08-06 17:28:05 | INFO    |     - security: 1 itens
+2026-08-06 17:28:05 | INFO    |     - sparkhub: 1 itens
+2026-08-06 17:28:05 | INFO    |     - storage_parser: 1 itens
+2026-08-06 17:28:05 | INFO    |     - sync_audit: 25 itens
+2026-08-06 17:28:05 | INFO    |     - system_status: 16 itens
+2026-08-06 17:28:05 | INFO    |     - terabox: 1 itens
+2026-08-06 17:28:05 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 17:28:05 | INFO    |     - web_research_insights: 144 itens
+2026-08-06 17:50:27 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 711):
+2026-08-06 17:50:27 | INFO    |     - 3d: 1 itens
+2026-08-06 17:50:27 | INFO    |     - Diretorios: 4 itens
+2026-08-06 17:50:27 | INFO    |     - Edicao: 1 itens
+2026-08-06 17:50:27 | INFO    |     - Fisica: 1 itens
+2026-08-06 17:50:27 | INFO    |     - MCP: 1 itens
+2026-08-06 17:50:27 | INFO    |     - RH: 8 itens
+2026-08-06 17:50:27 | INFO    |     - SalaComum: 9 itens
+2026-08-06 17:50:27 | INFO    |     - TestRoom: 5 itens
+2026-08-06 17:50:27 | INFO    |     - Validacao: 1 itens
+2026-08-06 17:50:27 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 17:50:27 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 17:50:27 | INFO    |     - agent_tasks: 35 itens
+2026-08-06 17:50:27 | INFO    |     - alerts: 14 itens
+2026-08-06 17:50:27 | INFO    |     - android_and_pc_registrations: 37 itens
+2026-08-06 17:50:27 | INFO    |     - antigravity: 1 itens
+2026-08-06 17:50:27 | INFO    |     - career: 1 itens
+2026-08-06 17:50:27 | INFO    |     - delika: 1 itens
+2026-08-06 17:50:27 | INFO    |     - design: 1 itens
+2026-08-06 17:50:27 | INFO    |     - dev: 1 itens
+2026-08-06 17:50:27 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 17:50:27 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 17:50:27 | INFO    |     - drive_docs: 23 itens
+2026-08-06 17:50:27 | INFO    |     - drive_shared_files: 12 itens
+2026-08-06 17:50:27 | INFO    |     - education: 1 itens
+2026-08-06 17:50:27 | INFO    |     - family: 1 itens
+2026-08-06 17:50:27 | INFO    |     - github_repos: 3 itens
+2026-08-06 17:50:27 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 17:50:27 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 17:50:27 | INFO    |     - gmail_linked_accounts: 17 itens
+2026-08-06 17:50:27 | INFO    |     - gmail_notifications: 22 itens
+2026-08-06 17:50:27 | INFO    |     - google_docs: 40 itens
+2026-08-06 17:50:27 | INFO    |     - hardware: 2 itens
+2026-08-06 17:50:27 | INFO    |     - jubileu: 4 itens
+2026-08-06 17:50:27 | INFO    |     - mary_kay: 1 itens
+2026-08-06 17:50:27 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 17:50:27 | INFO    |     - onedrive: 1 itens
+2026-08-06 17:50:27 | INFO    |     - personal: 2 itens
+2026-08-06 17:50:27 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 17:50:27 | INFO    |     - router: 1 itens
+2026-08-06 17:50:27 | INFO    |     - security: 1 itens
+2026-08-06 17:50:27 | INFO    |     - sparkhub: 1 itens
+2026-08-06 17:50:27 | INFO    |     - storage_parser: 1 itens
+2026-08-06 17:50:27 | INFO    |     - sync_audit: 25 itens
+2026-08-06 17:50:27 | INFO    |     - system_status: 16 itens
+2026-08-06 17:50:27 | INFO    |     - terabox: 1 itens
+2026-08-06 17:50:27 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 17:50:27 | INFO    |     - web_research_insights: 144 itens
+2026-08-06 18:47:07 | INFO    | [AUTO-DISCOVERY] Mapeados 756 programas/atalhos em D:\SparkHub\mapa_executaveis.csv
+2026-08-06 18:47:11 | INFO    | [AUTO-DISCOVERY] Mapeados 756 programas/atalhos em D:\SparkHub\mapa_executaveis.csv
+2026-08-06 18:47:26 | INFO    | [AUTO-DISCOVERY] Mapeados 756 programas/atalhos em D:\SparkHub\mapa_executaveis.csv
+2026-08-06 18:48:08 | INFO    | [AUTO-DISCOVERY] Mapeados 756 programas/atalhos em D:\SparkHub\mapa_executaveis.csv
+2026-08-06 18:48:08 | INFO    | === SERVIDOR SPARKHUB v3.0 (SHELLEXECUTE / AUTO-DISCOVERY / CLI) RODANDO NA PORTA 8000 ===
+2026-08-06 18:48:08 | INFO    | Execucao nativa na sessao interativa com os.startfile() e auditoria pos-acao.
+2026-08-06 18:48:08 | INFO    | === SERVIDOR SPARKHUB v3.0 RODANDO EM http://127.0.0.1:8000/ ===
+2026-08-06 18:50:36 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 711):
+2026-08-06 18:50:36 | INFO    |     - 3d: 1 itens
+2026-08-06 18:50:36 | INFO    |     - Diretorios: 4 itens
+2026-08-06 18:50:36 | INFO    |     - Edicao: 1 itens
+2026-08-06 18:50:36 | INFO    |     - Fisica: 1 itens
+2026-08-06 18:50:36 | INFO    |     - MCP: 1 itens
+2026-08-06 18:50:36 | INFO    |     - RH: 8 itens
+2026-08-06 18:50:36 | INFO    |     - SalaComum: 9 itens
+2026-08-06 18:50:36 | INFO    |     - TestRoom: 5 itens
+2026-08-06 18:50:36 | INFO    |     - Validacao: 1 itens
+2026-08-06 18:50:36 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 18:50:36 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 18:50:36 | INFO    |     - agent_tasks: 35 itens
+2026-08-06 18:50:36 | INFO    |     - alerts: 14 itens
+2026-08-06 18:50:36 | INFO    |     - android_and_pc_registrations: 37 itens
+2026-08-06 18:50:36 | INFO    |     - antigravity: 1 itens
+2026-08-06 18:50:36 | INFO    |     - career: 1 itens
+2026-08-06 18:50:36 | INFO    |     - delika: 1 itens
+2026-08-06 18:50:36 | INFO    |     - design: 1 itens
+2026-08-06 18:50:36 | INFO    |     - dev: 1 itens
+2026-08-06 18:50:36 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 18:50:36 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 18:50:36 | INFO    |     - drive_docs: 23 itens
+2026-08-06 18:50:36 | INFO    |     - drive_shared_files: 12 itens
+2026-08-06 18:50:36 | INFO    |     - education: 1 itens
+2026-08-06 18:50:36 | INFO    |     - family: 1 itens
+2026-08-06 18:50:36 | INFO    |     - github_repos: 3 itens
+2026-08-06 18:50:36 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 18:50:36 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 18:50:36 | INFO    |     - gmail_linked_accounts: 17 itens
+2026-08-06 18:50:36 | INFO    |     - gmail_notifications: 22 itens
+2026-08-06 18:50:36 | INFO    |     - google_docs: 40 itens
+2026-08-06 18:50:36 | INFO    |     - hardware: 2 itens
+2026-08-06 18:50:36 | INFO    |     - jubileu: 4 itens
+2026-08-06 18:50:36 | INFO    |     - mary_kay: 1 itens
+2026-08-06 18:50:36 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 18:50:36 | INFO    |     - onedrive: 1 itens
+2026-08-06 18:50:36 | INFO    |     - personal: 2 itens
+2026-08-06 18:50:36 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 18:50:36 | INFO    |     - router: 1 itens
+2026-08-06 18:50:36 | INFO    |     - security: 1 itens
+2026-08-06 18:50:36 | INFO    |     - sparkhub: 1 itens
+2026-08-06 18:50:36 | INFO    |     - storage_parser: 1 itens
+2026-08-06 18:50:36 | INFO    |     - sync_audit: 25 itens
+2026-08-06 18:50:36 | INFO    |     - system_status: 16 itens
+2026-08-06 18:50:36 | INFO    |     - terabox: 1 itens
+2026-08-06 18:50:36 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 18:50:36 | INFO    |     - web_research_insights: 144 itens
+2026-08-06 19:08:24 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 711):
+2026-08-06 19:08:24 | INFO    |     - 3d: 1 itens
+2026-08-06 19:08:24 | INFO    |     - Diretorios: 4 itens
+2026-08-06 19:08:24 | INFO    |     - Edicao: 1 itens
+2026-08-06 19:08:24 | INFO    |     - Fisica: 1 itens
+2026-08-06 19:08:24 | INFO    |     - MCP: 1 itens
+2026-08-06 19:08:24 | INFO    |     - RH: 8 itens
+2026-08-06 19:08:24 | INFO    |     - SalaComum: 9 itens
+2026-08-06 19:08:24 | INFO    |     - TestRoom: 5 itens
+2026-08-06 19:08:24 | INFO    |     - Validacao: 1 itens
+2026-08-06 19:08:24 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 19:08:24 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 19:08:24 | INFO    |     - agent_tasks: 35 itens
+2026-08-06 19:08:24 | INFO    |     - alerts: 14 itens
+2026-08-06 19:08:24 | INFO    |     - android_and_pc_registrations: 37 itens
+2026-08-06 19:08:24 | INFO    |     - antigravity: 1 itens
+2026-08-06 19:08:24 | INFO    |     - career: 1 itens
+2026-08-06 19:08:24 | INFO    |     - delika: 1 itens
+2026-08-06 19:08:24 | INFO    |     - design: 1 itens
+2026-08-06 19:08:24 | INFO    |     - dev: 1 itens
+2026-08-06 19:08:24 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 19:08:24 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 19:08:24 | INFO    |     - drive_docs: 23 itens
+2026-08-06 19:08:24 | INFO    |     - drive_shared_files: 12 itens
+2026-08-06 19:08:24 | INFO    |     - education: 1 itens
+2026-08-06 19:08:24 | INFO    |     - family: 1 itens
+2026-08-06 19:08:24 | INFO    |     - github_repos: 3 itens
+2026-08-06 19:08:24 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 19:08:24 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 19:08:24 | INFO    |     - gmail_linked_accounts: 17 itens
+2026-08-06 19:08:24 | INFO    |     - gmail_notifications: 22 itens
+2026-08-06 19:08:24 | INFO    |     - google_docs: 40 itens
+2026-08-06 19:08:24 | INFO    |     - hardware: 2 itens
+2026-08-06 19:08:24 | INFO    |     - jubileu: 4 itens
+2026-08-06 19:08:24 | INFO    |     - mary_kay: 1 itens
+2026-08-06 19:08:24 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 19:08:24 | INFO    |     - onedrive: 1 itens
+2026-08-06 19:08:24 | INFO    |     - personal: 2 itens
+2026-08-06 19:08:24 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 19:08:24 | INFO    |     - router: 1 itens
+2026-08-06 19:08:24 | INFO    |     - security: 1 itens
+2026-08-06 19:08:24 | INFO    |     - sparkhub: 1 itens
+2026-08-06 19:08:24 | INFO    |     - storage_parser: 1 itens
+2026-08-06 19:08:24 | INFO    |     - sync_audit: 25 itens
+2026-08-06 19:08:24 | INFO    |     - system_status: 16 itens
+2026-08-06 19:08:24 | INFO    |     - terabox: 1 itens
+2026-08-06 19:08:24 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 19:08:24 | INFO    |     - web_research_insights: 144 itens
+2026-08-06 19:10:38 | INFO    | [ORQUESTRADOR] Rota 5 (Raciocínio) ativada.
+2026-08-06 19:10:40 | ERROR   | [ROTEADOR WARN] Camada 1 falhou (HTTP Error 404: Not Found). Acionando Camada 2...
+2026-08-06 19:10:41 | ERROR   | [ROTEADOR WARN] Camada 2 falhou ([ERRO API] HTTP Error 401: Unauthorized). Acionando Camada 3...
+2026-08-06 19:10:41 | ERROR   | [ROTEADOR WARN] Camada 3 falhou com HTTP 429:
+{
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 18.29342399s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "18s"
+      }
+    ]
+  }
+}
+
+2026-08-06 19:10:42 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 712):
+2026-08-06 19:10:42 | INFO    |     - 3d: 1 itens
+2026-08-06 19:10:42 | INFO    |     - Diretorios: 4 itens
+2026-08-06 19:10:42 | INFO    |     - Edicao: 1 itens
+2026-08-06 19:10:42 | INFO    |     - Fisica: 1 itens
+2026-08-06 19:10:42 | INFO    |     - MCP: 1 itens
+2026-08-06 19:10:42 | INFO    |     - RH: 8 itens
+2026-08-06 19:10:42 | INFO    |     - SalaComum: 9 itens
+2026-08-06 19:10:42 | INFO    |     - TestRoom: 5 itens
+2026-08-06 19:10:42 | INFO    |     - Validacao: 1 itens
+2026-08-06 19:10:42 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 19:10:42 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 19:10:42 | INFO    |     - agent_tasks: 36 itens
+2026-08-06 19:10:42 | INFO    |     - alerts: 14 itens
+2026-08-06 19:10:42 | INFO    |     - android_and_pc_registrations: 37 itens
+2026-08-06 19:10:42 | INFO    |     - antigravity: 1 itens
+2026-08-06 19:10:42 | INFO    |     - career: 1 itens
+2026-08-06 19:10:42 | INFO    |     - delika: 1 itens
+2026-08-06 19:10:42 | INFO    |     - design: 1 itens
+2026-08-06 19:10:42 | INFO    |     - dev: 1 itens
+2026-08-06 19:10:42 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 19:10:42 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 19:10:42 | INFO    |     - drive_docs: 23 itens
+2026-08-06 19:10:42 | INFO    |     - drive_shared_files: 12 itens
+2026-08-06 19:10:42 | INFO    |     - education: 1 itens
+2026-08-06 19:10:42 | INFO    |     - family: 1 itens
+2026-08-06 19:10:42 | INFO    |     - github_repos: 3 itens
+2026-08-06 19:10:42 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 19:10:42 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 19:10:42 | INFO    |     - gmail_linked_accounts: 17 itens
+2026-08-06 19:10:42 | INFO    |     - gmail_notifications: 22 itens
+2026-08-06 19:10:42 | INFO    |     - google_docs: 40 itens
+2026-08-06 19:10:42 | INFO    |     - hardware: 2 itens
+2026-08-06 19:10:42 | INFO    |     - jubileu: 4 itens
+2026-08-06 19:10:42 | INFO    |     - mary_kay: 1 itens
+2026-08-06 19:10:42 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 19:10:42 | INFO    |     - onedrive: 1 itens
+2026-08-06 19:10:42 | INFO    |     - personal: 2 itens
+2026-08-06 19:10:42 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 19:10:42 | INFO    |     - router: 1 itens
+2026-08-06 19:10:42 | INFO    |     - security: 1 itens
+2026-08-06 19:10:42 | INFO    |     - sparkhub: 1 itens
+2026-08-06 19:10:42 | INFO    |     - storage_parser: 1 itens
+2026-08-06 19:10:42 | INFO    |     - sync_audit: 25 itens
+2026-08-06 19:10:42 | INFO    |     - system_status: 16 itens
+2026-08-06 19:10:42 | INFO    |     - terabox: 1 itens
+2026-08-06 19:10:42 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 19:10:42 | INFO    |     - web_research_insights: 144 itens
+2026-08-06 19:14:27 | INFO    | [ORQUESTRADOR] Rota 5 (Raciocínio) ativada.
+2026-08-06 19:14:30 | ERROR   | [ROTEADOR WARN] Camada 1 falhou (HTTP Error 404: Not Found). Acionando Camada 2...
+2026-08-06 19:14:30 | ERROR   | [ROTEADOR WARN] Camada 2 falhou ([ERRO API] HTTP Error 401: Unauthorized). Acionando Camada 3...
+2026-08-06 19:14:30 | ERROR   | [ROTEADOR WARN] Camada 3 falhou com HTTP 429:
+{
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 28.932734917s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "28s"
+      }
+    ]
+  }
+}
+
+2026-08-06 19:14:31 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 713):
+2026-08-06 19:14:31 | INFO    |     - 3d: 1 itens
+2026-08-06 19:14:31 | INFO    |     - Diretorios: 4 itens
+2026-08-06 19:14:31 | INFO    |     - Edicao: 1 itens
+2026-08-06 19:14:31 | INFO    |     - Fisica: 1 itens
+2026-08-06 19:14:31 | INFO    |     - MCP: 1 itens
+2026-08-06 19:14:31 | INFO    |     - RH: 8 itens
+2026-08-06 19:14:31 | INFO    |     - SalaComum: 9 itens
+2026-08-06 19:14:31 | INFO    |     - TestRoom: 5 itens
+2026-08-06 19:14:31 | INFO    |     - Validacao: 1 itens
+2026-08-06 19:14:31 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 19:14:31 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 19:14:31 | INFO    |     - agent_tasks: 37 itens
+2026-08-06 19:14:31 | INFO    |     - alerts: 14 itens
+2026-08-06 19:14:31 | INFO    |     - android_and_pc_registrations: 37 itens
+2026-08-06 19:14:31 | INFO    |     - antigravity: 1 itens
+2026-08-06 19:14:31 | INFO    |     - career: 1 itens
+2026-08-06 19:14:31 | INFO    |     - delika: 1 itens
+2026-08-06 19:14:31 | INFO    |     - design: 1 itens
+2026-08-06 19:14:31 | INFO    |     - dev: 1 itens
+2026-08-06 19:14:31 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 19:14:31 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 19:14:31 | INFO    |     - drive_docs: 23 itens
+2026-08-06 19:14:31 | INFO    |     - drive_shared_files: 12 itens
+2026-08-06 19:14:31 | INFO    |     - education: 1 itens
+2026-08-06 19:14:31 | INFO    |     - family: 1 itens
+2026-08-06 19:14:31 | INFO    |     - github_repos: 3 itens
+2026-08-06 19:14:31 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 19:14:31 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 19:14:31 | INFO    |     - gmail_linked_accounts: 17 itens
+2026-08-06 19:14:31 | INFO    |     - gmail_notifications: 22 itens
+2026-08-06 19:14:31 | INFO    |     - google_docs: 40 itens
+2026-08-06 19:14:31 | INFO    |     - hardware: 2 itens
+2026-08-06 19:14:31 | INFO    |     - jubileu: 4 itens
+2026-08-06 19:14:31 | INFO    |     - mary_kay: 1 itens
+2026-08-06 19:14:31 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 19:14:31 | INFO    |     - onedrive: 1 itens
+2026-08-06 19:14:31 | INFO    |     - personal: 2 itens
+2026-08-06 19:14:31 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 19:14:31 | INFO    |     - router: 1 itens
+2026-08-06 19:14:31 | INFO    |     - security: 1 itens
+2026-08-06 19:14:31 | INFO    |     - sparkhub: 1 itens
+2026-08-06 19:14:31 | INFO    |     - storage_parser: 1 itens
+2026-08-06 19:14:31 | INFO    |     - sync_audit: 25 itens
+2026-08-06 19:14:31 | INFO    |     - system_status: 16 itens
+2026-08-06 19:14:31 | INFO    |     - terabox: 1 itens
+2026-08-06 19:14:31 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 19:14:31 | INFO    |     - web_research_insights: 144 itens
+2026-08-06 19:17:43 | INFO    | [AUTO-DISCOVERY] Mapeados 756 programas/atalhos em D:\SparkHub\mapa_executaveis.csv
+2026-08-06 19:17:43 | INFO    | === SERVIDOR SPARKHUB v3.0 (SHELLEXECUTE / AUTO-DISCOVERY / CLI) RODANDO NA PORTA 8000 ===
+2026-08-06 19:17:43 | INFO    | Execucao nativa na sessao interativa com os.startfile() e auditoria pos-acao.
+2026-08-06 19:17:43 | INFO    | === SERVIDOR SPARKHUB v3.0 RODANDO EM http://127.0.0.1:8000/ ===
+2026-08-06 19:17:44 | INFO    | [ORQUESTRADOR] Rota 5 (Raciocínio) ativada.
+2026-08-06 19:17:47 | ERROR   | [ROTEADOR WARN] Camada 1 falhou (HTTP Error 404: Not Found). Acionando Camada 2...
+2026-08-06 19:17:47 | ERROR   | [ROTEADOR WARN] Camada 2 falhou ([ERRO API] HTTP Error 429: Too Many Requests). Acionando Camada 3...
+2026-08-06 19:17:47 | ERROR   | [ROTEADOR WARN] Camada 3 falhou com HTTP 429:
+{
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 11.858594043s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "11s"
+      }
+    ]
+  }
+}
+
+2026-08-06 19:29:03 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 713):
+2026-08-06 19:29:03 | INFO    |     - 3d: 1 itens
+2026-08-06 19:29:03 | INFO    |     - Diretorios: 4 itens
+2026-08-06 19:29:03 | INFO    |     - Edicao: 1 itens
+2026-08-06 19:29:03 | INFO    |     - Fisica: 1 itens
+2026-08-06 19:29:03 | INFO    |     - MCP: 1 itens
+2026-08-06 19:29:03 | INFO    |     - RH: 8 itens
+2026-08-06 19:29:03 | INFO    |     - SalaComum: 9 itens
+2026-08-06 19:29:03 | INFO    |     - TestRoom: 5 itens
+2026-08-06 19:29:03 | INFO    |     - Validacao: 1 itens
+2026-08-06 19:29:03 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 19:29:03 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 19:29:03 | INFO    |     - agent_tasks: 37 itens
+2026-08-06 19:29:03 | INFO    |     - alerts: 14 itens
+2026-08-06 19:29:03 | INFO    |     - android_and_pc_registrations: 37 itens
+2026-08-06 19:29:03 | INFO    |     - antigravity: 1 itens
+2026-08-06 19:29:03 | INFO    |     - career: 1 itens
+2026-08-06 19:29:03 | INFO    |     - delika: 1 itens
+2026-08-06 19:29:03 | INFO    |     - design: 1 itens
+2026-08-06 19:29:03 | INFO    |     - dev: 1 itens
+2026-08-06 19:29:03 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 19:29:03 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 19:29:03 | INFO    |     - drive_docs: 23 itens
+2026-08-06 19:29:03 | INFO    |     - drive_shared_files: 12 itens
+2026-08-06 19:29:03 | INFO    |     - education: 1 itens
+2026-08-06 19:29:03 | INFO    |     - family: 1 itens
+2026-08-06 19:29:03 | INFO    |     - github_repos: 3 itens
+2026-08-06 19:29:03 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 19:29:03 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 19:29:03 | INFO    |     - gmail_linked_accounts: 17 itens
+2026-08-06 19:29:03 | INFO    |     - gmail_notifications: 22 itens
+2026-08-06 19:29:03 | INFO    |     - google_docs: 40 itens
+2026-08-06 19:29:03 | INFO    |     - hardware: 2 itens
+2026-08-06 19:29:03 | INFO    |     - jubileu: 4 itens
+2026-08-06 19:29:03 | INFO    |     - mary_kay: 1 itens
+2026-08-06 19:29:03 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 19:29:03 | INFO    |     - onedrive: 1 itens
+2026-08-06 19:29:03 | INFO    |     - personal: 2 itens
+2026-08-06 19:29:03 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 19:29:03 | INFO    |     - router: 1 itens
+2026-08-06 19:29:03 | INFO    |     - security: 1 itens
+2026-08-06 19:29:03 | INFO    |     - sparkhub: 1 itens
+2026-08-06 19:29:03 | INFO    |     - storage_parser: 1 itens
+2026-08-06 19:29:03 | INFO    |     - sync_audit: 25 itens
+2026-08-06 19:29:03 | INFO    |     - system_status: 16 itens
+2026-08-06 19:29:03 | INFO    |     - terabox: 1 itens
+2026-08-06 19:29:03 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 19:29:03 | INFO    |     - web_research_insights: 144 itens
+2026-08-06 19:29:16 | INFO    | [AUTO-DISCOVERY] Mapeados 756 programas/atalhos em D:\SparkHub\mapa_executaveis.csv
+2026-08-06 19:29:16 | INFO    | === SERVIDOR SPARKHUB v3.0 (SHELLEXECUTE / AUTO-DISCOVERY / CLI) RODANDO NA PORTA 8000 ===
+2026-08-06 19:29:16 | INFO    | Execucao nativa na sessao interativa com os.startfile() e auditoria pos-acao.
+2026-08-06 19:29:16 | INFO    | === SERVIDOR SPARKHUB v3.0 RODANDO EM http://127.0.0.1:8000/ ===
+2026-08-06 19:36:51 | ERROR   | [ROTEADOR WARN] Camada 1 falhou (timed out). Acionando Camada 2...
+2026-08-06 19:36:51 | ERROR   | [ROTEADOR WARN] Camada 2 falhou ([ERRO API] HTTP Error 401: Unauthorized). Acionando Camada 3...
+2026-08-06 19:36:51 | ERROR   | [ROTEADOR WARN] Camada 3 falhou com HTTP 429:
+{
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 7.888163343s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "7s"
+      }
+    ]
+  }
+}
+
+2026-08-06 19:39:28 | ERROR   | [ROTEADOR WARN] Camada 1 falhou (timed out). Acionando Camada 2...
+2026-08-06 19:39:28 | ERROR   | [ROTEADOR WARN] Camada 2 falhou ([ERRO API] HTTP Error 401: Unauthorized). Acionando Camada 3...
+2026-08-06 19:39:28 | ERROR   | [ROTEADOR WARN] Camada 3 falhou com HTTP 429:
+{
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 31.171060227s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "31s"
+      }
+    ]
+  }
+}
+
+2026-08-06 19:44:51 | INFO    | [ROTEADOR SUCESSO] Resposta via Camada 1 (Tamanho: 114)
+2026-08-06 19:47:41 | INFO    | [ORQUESTRADOR] Rota 5 (Raciocínio) ativada.
+2026-08-06 19:47:54 | ERROR   | [ROTEADOR WARN] Camada 1 falhou (timed out). Acionando Camada 2...
+2026-08-06 19:47:54 | ERROR   | [ROTEADOR WARN] Camada 2 falhou ([ERRO API] HTTP Error 429: Too Many Requests). Acionando Camada 3...
+2026-08-06 19:47:54 | ERROR   | [ROTEADOR WARN] Camada 3 falhou com HTTP 429:
+{
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 5.254175441s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "5s"
+      }
+    ]
+  }
+}
+
+2026-08-06 19:47:56 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 714):
+2026-08-06 19:47:56 | INFO    |     - 3d: 1 itens
+2026-08-06 19:47:56 | INFO    |     - Diretorios: 4 itens
+2026-08-06 19:47:56 | INFO    |     - Edicao: 1 itens
+2026-08-06 19:47:56 | INFO    |     - Fisica: 1 itens
+2026-08-06 19:47:56 | INFO    |     - MCP: 1 itens
+2026-08-06 19:47:56 | INFO    |     - RH: 8 itens
+2026-08-06 19:47:56 | INFO    |     - SalaComum: 9 itens
+2026-08-06 19:47:56 | INFO    |     - TestRoom: 5 itens
+2026-08-06 19:47:56 | INFO    |     - Validacao: 1 itens
+2026-08-06 19:47:56 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 19:47:56 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 19:47:56 | INFO    |     - agent_tasks: 38 itens
+2026-08-06 19:47:56 | INFO    |     - alerts: 14 itens
+2026-08-06 19:47:56 | INFO    |     - android_and_pc_registrations: 37 itens
+2026-08-06 19:47:56 | INFO    |     - antigravity: 1 itens
+2026-08-06 19:47:56 | INFO    |     - career: 1 itens
+2026-08-06 19:47:56 | INFO    |     - delika: 1 itens
+2026-08-06 19:47:56 | INFO    |     - design: 1 itens
+2026-08-06 19:47:56 | INFO    |     - dev: 1 itens
+2026-08-06 19:47:56 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 19:47:56 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 19:47:56 | INFO    |     - drive_docs: 23 itens
+2026-08-06 19:47:56 | INFO    |     - drive_shared_files: 12 itens
+2026-08-06 19:47:56 | INFO    |     - education: 1 itens
+2026-08-06 19:47:56 | INFO    |     - family: 1 itens
+2026-08-06 19:47:56 | INFO    |     - github_repos: 3 itens
+2026-08-06 19:47:56 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 19:47:56 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 19:47:56 | INFO    |     - gmail_linked_accounts: 17 itens
+2026-08-06 19:47:56 | INFO    |     - gmail_notifications: 22 itens
+2026-08-06 19:47:56 | INFO    |     - google_docs: 40 itens
+2026-08-06 19:47:56 | INFO    |     - hardware: 2 itens
+2026-08-06 19:47:56 | INFO    |     - jubileu: 4 itens
+2026-08-06 19:47:56 | INFO    |     - mary_kay: 1 itens
+2026-08-06 19:47:56 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 19:47:56 | INFO    |     - onedrive: 1 itens
+2026-08-06 19:47:56 | INFO    |     - personal: 2 itens
+2026-08-06 19:47:56 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 19:47:56 | INFO    |     - router: 1 itens
+2026-08-06 19:47:56 | INFO    |     - security: 1 itens
+2026-08-06 19:47:56 | INFO    |     - sparkhub: 1 itens
+2026-08-06 19:47:56 | INFO    |     - storage_parser: 1 itens
+2026-08-06 19:47:56 | INFO    |     - sync_audit: 25 itens
+2026-08-06 19:47:56 | INFO    |     - system_status: 16 itens
+2026-08-06 19:47:56 | INFO    |     - terabox: 1 itens
+2026-08-06 19:47:56 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 19:47:56 | INFO    |     - web_research_insights: 144 itens
+2026-08-06 19:49:18 | ERROR   | [ROTEADOR WARN] Camada 1 falhou (<urlopen error [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente>). Acionando Camada 2...
+2026-08-06 19:49:18 | ERROR   | [ROTEADOR WARN] Camada 2 falhou ([ERRO API] HTTP Error 401: Unauthorized). Acionando Camada 3...
+2026-08-06 19:49:19 | ERROR   | [ROTEADOR WARN] Camada 3 falhou com HTTP 429:
+{
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 40.454504247s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "40s"
+      }
+    ]
+  }
+}
+
+2026-08-06 19:53:17 | ERROR   | [ROTEADOR WARN] Camada 1 falhou (<urlopen error [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente>). Acionando Camada 2...
+2026-08-06 19:53:17 | ERROR   | [ROTEADOR WARN] Camada 2 falhou ([ERRO API] HTTP Error 429: Too Many Requests). Acionando Camada 3...
+2026-08-06 19:53:17 | ERROR   | [ROTEADOR WARN] Camada 3 falhou com HTTP 429:
+{
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 41.89163816s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "41s"
+      }
+    ]
+  }
+}
+
+2026-08-06 20:45:24 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 714):
+2026-08-06 20:45:24 | INFO    |     - 3d: 1 itens
+2026-08-06 20:45:24 | INFO    |     - Diretorios: 4 itens
+2026-08-06 20:45:24 | INFO    |     - Edicao: 1 itens
+2026-08-06 20:45:24 | INFO    |     - Fisica: 1 itens
+2026-08-06 20:45:24 | INFO    |     - MCP: 1 itens
+2026-08-06 20:45:24 | INFO    |     - RH: 8 itens
+2026-08-06 20:45:24 | INFO    |     - SalaComum: 9 itens
+2026-08-06 20:45:24 | INFO    |     - TestRoom: 5 itens
+2026-08-06 20:45:24 | INFO    |     - Validacao: 1 itens
+2026-08-06 20:45:24 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 20:45:24 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 20:45:24 | INFO    |     - agent_tasks: 38 itens
+2026-08-06 20:45:24 | INFO    |     - alerts: 14 itens
+2026-08-06 20:45:24 | INFO    |     - android_and_pc_registrations: 37 itens
+2026-08-06 20:45:24 | INFO    |     - antigravity: 1 itens
+2026-08-06 20:45:24 | INFO    |     - career: 1 itens
+2026-08-06 20:45:24 | INFO    |     - delika: 1 itens
+2026-08-06 20:45:24 | INFO    |     - design: 1 itens
+2026-08-06 20:45:24 | INFO    |     - dev: 1 itens
+2026-08-06 20:45:24 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 20:45:24 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 20:45:24 | INFO    |     - drive_docs: 23 itens
+2026-08-06 20:45:24 | INFO    |     - drive_shared_files: 12 itens
+2026-08-06 20:45:24 | INFO    |     - education: 1 itens
+2026-08-06 20:45:24 | INFO    |     - family: 1 itens
+2026-08-06 20:45:24 | INFO    |     - github_repos: 3 itens
+2026-08-06 20:45:24 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 20:45:24 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 20:45:24 | INFO    |     - gmail_linked_accounts: 17 itens
+2026-08-06 20:45:24 | INFO    |     - gmail_notifications: 22 itens
+2026-08-06 20:45:24 | INFO    |     - google_docs: 40 itens
+2026-08-06 20:45:24 | INFO    |     - hardware: 2 itens
+2026-08-06 20:45:24 | INFO    |     - jubileu: 4 itens
+2026-08-06 20:45:24 | INFO    |     - mary_kay: 1 itens
+2026-08-06 20:45:24 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 20:45:24 | INFO    |     - onedrive: 1 itens
+2026-08-06 20:45:24 | INFO    |     - personal: 2 itens
+2026-08-06 20:45:24 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 20:45:24 | INFO    |     - router: 1 itens
+2026-08-06 20:45:24 | INFO    |     - security: 1 itens
+2026-08-06 20:45:24 | INFO    |     - sparkhub: 1 itens
+2026-08-06 20:45:24 | INFO    |     - storage_parser: 1 itens
+2026-08-06 20:45:24 | INFO    |     - sync_audit: 25 itens
+2026-08-06 20:45:24 | INFO    |     - system_status: 16 itens
+2026-08-06 20:45:24 | INFO    |     - terabox: 1 itens
+2026-08-06 20:45:24 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 20:45:24 | INFO    |     - web_research_insights: 144 itens
+2026-08-06 20:45:56 | INFO    | [AUTO-DISCOVERY] Mapeados 757 programas/atalhos em D:\SparkHub\mapa_executaveis.csv
+2026-08-06 20:45:56 | INFO    | === SERVIDOR SPARKHUB v3.0 (SHELLEXECUTE / AUTO-DISCOVERY / CLI) RODANDO NA PORTA 8000 ===
+2026-08-06 20:45:56 | INFO    | Execucao nativa na sessao interativa com os.startfile() e auditoria pos-acao.
+2026-08-06 20:45:56 | INFO    | === SERVIDOR SPARKHUB v3.0 RODANDO EM http://127.0.0.1:8000/ ===
+2026-08-06 21:27:00 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 714):
+2026-08-06 21:27:00 | INFO    |     - 3d: 1 itens
+2026-08-06 21:27:00 | INFO    |     - Diretorios: 4 itens
+2026-08-06 21:27:00 | INFO    |     - Edicao: 1 itens
+2026-08-06 21:27:00 | INFO    |     - Fisica: 1 itens
+2026-08-06 21:27:00 | INFO    |     - MCP: 1 itens
+2026-08-06 21:27:00 | INFO    |     - RH: 8 itens
+2026-08-06 21:27:00 | INFO    |     - SalaComum: 9 itens
+2026-08-06 21:27:00 | INFO    |     - TestRoom: 5 itens
+2026-08-06 21:27:00 | INFO    |     - Validacao: 1 itens
+2026-08-06 21:27:00 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 21:27:00 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 21:27:00 | INFO    |     - agent_tasks: 38 itens
+2026-08-06 21:27:00 | INFO    |     - alerts: 14 itens
+2026-08-06 21:27:00 | INFO    |     - android_and_pc_registrations: 37 itens
+2026-08-06 21:27:00 | INFO    |     - antigravity: 1 itens
+2026-08-06 21:27:00 | INFO    |     - career: 1 itens
+2026-08-06 21:27:00 | INFO    |     - delika: 1 itens
+2026-08-06 21:27:00 | INFO    |     - design: 1 itens
+2026-08-06 21:27:00 | INFO    |     - dev: 1 itens
+2026-08-06 21:27:00 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 21:27:00 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 21:27:00 | INFO    |     - drive_docs: 23 itens
+2026-08-06 21:27:00 | INFO    |     - drive_shared_files: 12 itens
+2026-08-06 21:27:00 | INFO    |     - education: 1 itens
+2026-08-06 21:27:00 | INFO    |     - family: 1 itens
+2026-08-06 21:27:00 | INFO    |     - github_repos: 3 itens
+2026-08-06 21:27:00 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 21:27:00 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 21:27:00 | INFO    |     - gmail_linked_accounts: 17 itens
+2026-08-06 21:27:00 | INFO    |     - gmail_notifications: 22 itens
+2026-08-06 21:27:00 | INFO    |     - google_docs: 40 itens
+2026-08-06 21:27:00 | INFO    |     - hardware: 2 itens
+2026-08-06 21:27:00 | INFO    |     - jubileu: 4 itens
+2026-08-06 21:27:00 | INFO    |     - mary_kay: 1 itens
+2026-08-06 21:27:00 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 21:27:00 | INFO    |     - onedrive: 1 itens
+2026-08-06 21:27:00 | INFO    |     - personal: 2 itens
+2026-08-06 21:27:00 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 21:27:00 | INFO    |     - router: 1 itens
+2026-08-06 21:27:00 | INFO    |     - security: 1 itens
+2026-08-06 21:27:00 | INFO    |     - sparkhub: 1 itens
+2026-08-06 21:27:00 | INFO    |     - storage_parser: 1 itens
+2026-08-06 21:27:00 | INFO    |     - sync_audit: 25 itens
+2026-08-06 21:27:00 | INFO    |     - system_status: 16 itens
+2026-08-06 21:27:00 | INFO    |     - terabox: 1 itens
+2026-08-06 21:27:00 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 21:27:00 | INFO    |     - web_research_insights: 144 itens
+2026-08-06 21:27:07 | INFO    | [AUTO-DISCOVERY] Mapeados 757 programas/atalhos em D:\SparkHub\mapa_executaveis.csv
+2026-08-06 21:27:07 | INFO    | === SERVIDOR SPARKHUB v3.0 (SHELLEXECUTE / AUTO-DISCOVERY / CLI) RODANDO NA PORTA 8000 ===
+2026-08-06 21:27:07 | INFO    | Execucao nativa na sessao interativa com os.startfile() e auditoria pos-acao.
+2026-08-06 21:27:07 | INFO    | === SERVIDOR SPARKHUB v3.0 RODANDO EM http://127.0.0.1:8000/ ===
+2026-08-06 21:29:49 | INFO    | [ROTEADOR SUCESSO] Resposta via Camada 1 (Tamanho: 80)
+2026-08-06 21:30:41 | INFO    | [MCP METHOD] tools/call (id=1)
+2026-08-06 21:30:42 | INFO    | [ORQUESTRADOR] Rota 5 (Raciocínio) ativada.
+2026-08-06 21:32:16 | INFO    | [ROTEADOR SUCESSO] Resposta via Camada 1 (Tamanho: 39)
+2026-08-06 21:32:16 | INFO    | [MCP METHOD] tools/call (id=1)
+2026-08-06 21:32:22 | INFO    | [MCP METHOD] tools/call (id=1)
+2026-08-06 21:32:22 | INFO    | [ORQUESTRADOR] Rota 5 (Raciocínio) ativada.
+2026-08-06 21:32:25 | INFO    | [ROTEADOR SUCESSO] Resposta via Camada 1 (Tamanho: 39)
+2026-08-06 21:51:37 | INFO    | [MCP METHOD] tools/call (id=None)
+2026-08-06 21:51:38 | INFO    | [MCP METHOD] tools/call (id=None)
+2026-08-06 21:51:39 | INFO    | [MCP METHOD] tools/call (id=None)
+2026-08-06 21:51:40 | INFO    | [MCP METHOD] tools/call (id=None)
+2026-08-06 21:52:06 | INFO    | [MCP METHOD] tools/call (id=None)
+2026-08-06 21:52:08 | INFO    | [MCP METHOD] tools/call (id=None)
+2026-08-06 21:52:10 | INFO    | [MCP METHOD] tools/call (id=None)
+2026-08-06 21:52:12 | INFO    | [MCP METHOD] tools/call (id=None)
+2026-08-06 21:52:27 | INFO    | [MCP METHOD] tools/call (id=None)
+2026-08-06 21:52:28 | INFO    | [ORQUESTRADOR] Rota 5 (Raciocínio) ativada.
+2026-08-06 21:52:32 | ERROR   | [ROTEADOR WARN] Camada 1 falhou (<urlopen error [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente>). Acionando Camada 2...
+2026-08-06 21:52:33 | INFO    | [ROTEADOR SUCESSO] Resposta via Camada 2 (Tamanho: 40)
+2026-08-06 21:52:53 | INFO    | [MCP METHOD] tools/call (id=None)
+2026-08-06 21:52:54 | INFO    | [MCP METHOD] tools/call (id=None)
+2026-08-06 21:52:55 | INFO    | [MCP METHOD] tools/call (id=None)
+2026-08-06 21:52:56 | INFO    | [MCP METHOD] tools/call (id=None)
+2026-08-06 21:54:01 | INFO    | [MCP METHOD] tools/call (id=None)
+2026-08-06 22:20:06 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 714):
+2026-08-06 22:20:06 | INFO    |     - 3d: 1 itens
+2026-08-06 22:20:06 | INFO    |     - Diretorios: 4 itens
+2026-08-06 22:20:06 | INFO    |     - Edicao: 1 itens
+2026-08-06 22:20:06 | INFO    |     - Fisica: 1 itens
+2026-08-06 22:20:06 | INFO    |     - MCP: 1 itens
+2026-08-06 22:20:06 | INFO    |     - RH: 8 itens
+2026-08-06 22:20:06 | INFO    |     - SalaComum: 9 itens
+2026-08-06 22:20:06 | INFO    |     - TestRoom: 5 itens
+2026-08-06 22:20:06 | INFO    |     - Validacao: 1 itens
+2026-08-06 22:20:06 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 22:20:06 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 22:20:06 | INFO    |     - agent_tasks: 38 itens
+2026-08-06 22:20:06 | INFO    |     - alerts: 14 itens
+2026-08-06 22:20:06 | INFO    |     - android_and_pc_registrations: 37 itens
+2026-08-06 22:20:06 | INFO    |     - antigravity: 1 itens
+2026-08-06 22:20:06 | INFO    |     - career: 1 itens
+2026-08-06 22:20:06 | INFO    |     - delika: 1 itens
+2026-08-06 22:20:06 | INFO    |     - design: 1 itens
+2026-08-06 22:20:06 | INFO    |     - dev: 1 itens
+2026-08-06 22:20:06 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 22:20:06 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 22:20:06 | INFO    |     - drive_docs: 23 itens
+2026-08-06 22:20:06 | INFO    |     - drive_shared_files: 12 itens
+2026-08-06 22:20:06 | INFO    |     - education: 1 itens
+2026-08-06 22:20:06 | INFO    |     - family: 1 itens
+2026-08-06 22:20:06 | INFO    |     - github_repos: 3 itens
+2026-08-06 22:20:06 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 22:20:06 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 22:20:06 | INFO    |     - gmail_linked_accounts: 17 itens
+2026-08-06 22:20:06 | INFO    |     - gmail_notifications: 22 itens
+2026-08-06 22:20:06 | INFO    |     - google_docs: 40 itens
+2026-08-06 22:20:06 | INFO    |     - hardware: 2 itens
+2026-08-06 22:20:06 | INFO    |     - jubileu: 4 itens
+2026-08-06 22:20:06 | INFO    |     - mary_kay: 1 itens
+2026-08-06 22:20:06 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 22:20:06 | INFO    |     - onedrive: 1 itens
+2026-08-06 22:20:06 | INFO    |     - personal: 2 itens
+2026-08-06 22:20:06 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 22:20:06 | INFO    |     - router: 1 itens
+2026-08-06 22:20:06 | INFO    |     - security: 1 itens
+2026-08-06 22:20:06 | INFO    |     - sparkhub: 1 itens
+2026-08-06 22:20:06 | INFO    |     - storage_parser: 1 itens
+2026-08-06 22:20:06 | INFO    |     - sync_audit: 25 itens
+2026-08-06 22:20:06 | INFO    |     - system_status: 16 itens
+2026-08-06 22:20:06 | INFO    |     - terabox: 1 itens
+2026-08-06 22:20:06 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 22:20:06 | INFO    |     - web_research_insights: 144 itens
+2026-08-06 22:20:16 | INFO    | [AUTO-DISCOVERY] Mapeados 758 programas/atalhos em D:\SparkHub\mapa_executaveis.csv
+2026-08-06 22:20:16 | INFO    | [AUTO-DISCOVERY] Mapeados 758 programas/atalhos em D:\SparkHub\mapa_executaveis.csv
+2026-08-06 22:20:16 | INFO    | === SERVIDOR SPARKHUB v3.0 (SHELLEXECUTE / AUTO-DISCOVERY / CLI) RODANDO NA PORTA 8000 ===
+2026-08-06 22:20:16 | INFO    | Execucao nativa na sessao interativa com os.startfile() e auditoria pos-acao.
+2026-08-06 22:20:16 | INFO    | [API] Uma instância já está rodando. Encerrando.
+2026-08-06 22:20:16 | INFO    | === SERVIDOR SPARKHUB v3.0 RODANDO EM http://127.0.0.1:8000/ ===
+2026-08-06 22:22:19 | INFO    | [ORQUESTRADOR] Rota 5 (Raciocínio) ativada.
+2026-08-06 22:22:24 | ERROR   | [ROTEADOR WARN] Camada 1 falhou (<urlopen error [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente>). Acionando Camada 2...
+2026-08-06 22:22:27 | INFO    | [ROTEADOR] Tool Call Interceptado: search_gmail {'query': 'projetos inconclusos ou projeto paralisado orçamento bloqueado'}
+2026-08-06 22:22:34 | INFO    | [ROTEADOR] Tool Call Interceptado: search_gmail {'query': 'projetos'}
+2026-08-06 22:22:39 | INFO    | [ROTEADOR] Tool Call Interceptado: search_gmail {'query': 'bloqueado ou paralisado'}
+2026-08-06 22:22:44 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 715):
+2026-08-06 22:22:44 | INFO    |     - 3d: 1 itens
+2026-08-06 22:22:44 | INFO    |     - Diretorios: 4 itens
+2026-08-06 22:22:44 | INFO    |     - Edicao: 1 itens
+2026-08-06 22:22:44 | INFO    |     - Fisica: 1 itens
+2026-08-06 22:22:44 | INFO    |     - MCP: 1 itens
+2026-08-06 22:22:44 | INFO    |     - RH: 8 itens
+2026-08-06 22:22:44 | INFO    |     - SalaComum: 9 itens
+2026-08-06 22:22:44 | INFO    |     - TestRoom: 5 itens
+2026-08-06 22:22:44 | INFO    |     - Validacao: 1 itens
+2026-08-06 22:22:44 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 22:22:44 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 22:22:44 | INFO    |     - agent_tasks: 39 itens
+2026-08-06 22:22:44 | INFO    |     - alerts: 14 itens
+2026-08-06 22:22:44 | INFO    |     - android_and_pc_registrations: 37 itens
+2026-08-06 22:22:44 | INFO    |     - antigravity: 1 itens
+2026-08-06 22:22:44 | INFO    |     - career: 1 itens
+2026-08-06 22:22:44 | INFO    |     - delika: 1 itens
+2026-08-06 22:22:44 | INFO    |     - design: 1 itens
+2026-08-06 22:22:44 | INFO    |     - dev: 1 itens
+2026-08-06 22:22:44 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 22:22:44 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 22:22:44 | INFO    |     - drive_docs: 23 itens
+2026-08-06 22:22:44 | INFO    |     - drive_shared_files: 12 itens
+2026-08-06 22:22:44 | INFO    |     - education: 1 itens
+2026-08-06 22:22:44 | INFO    |     - family: 1 itens
+2026-08-06 22:22:44 | INFO    |     - github_repos: 3 itens
+2026-08-06 22:22:44 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 22:22:44 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 22:22:44 | INFO    |     - gmail_linked_accounts: 17 itens
+2026-08-06 22:22:44 | INFO    |     - gmail_notifications: 22 itens
+2026-08-06 22:22:44 | INFO    |     - google_docs: 40 itens
+2026-08-06 22:22:44 | INFO    |     - hardware: 2 itens
+2026-08-06 22:22:44 | INFO    |     - jubileu: 4 itens
+2026-08-06 22:22:44 | INFO    |     - mary_kay: 1 itens
+2026-08-06 22:22:44 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 22:22:44 | INFO    |     - onedrive: 1 itens
+2026-08-06 22:22:44 | INFO    |     - personal: 2 itens
+2026-08-06 22:22:44 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 22:22:44 | INFO    |     - router: 1 itens
+2026-08-06 22:22:44 | INFO    |     - security: 1 itens
+2026-08-06 22:22:44 | INFO    |     - sparkhub: 1 itens
+2026-08-06 22:22:44 | INFO    |     - storage_parser: 1 itens
+2026-08-06 22:22:44 | INFO    |     - sync_audit: 25 itens
+2026-08-06 22:22:44 | INFO    |     - system_status: 16 itens
+2026-08-06 22:22:44 | INFO    |     - terabox: 1 itens
+2026-08-06 22:22:44 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 22:22:44 | INFO    |     - web_research_insights: 144 itens
+2026-08-06 22:34:56 | INFO    | [AUTO-DISCOVERY] Mapeados 758 programas/atalhos em D:\SparkHub\mapa_executaveis.csv
+2026-08-06 22:34:56 | INFO    | === SERVIDOR SPARKHUB v3.0 (SHELLEXECUTE / AUTO-DISCOVERY / CLI) RODANDO NA PORTA 8000 ===
+2026-08-06 22:34:56 | INFO    | Execucao nativa na sessao interativa com os.startfile() e auditoria pos-acao.
+2026-08-06 22:34:56 | INFO    | === SERVIDOR SPARKHUB v3.0 RODANDO EM http://127.0.0.1:8000/ ===
+2026-08-06 22:34:57 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 715):
+2026-08-06 22:34:57 | INFO    |     - 3d: 1 itens
+2026-08-06 22:34:57 | INFO    |     - Diretorios: 4 itens
+2026-08-06 22:34:57 | INFO    |     - Edicao: 1 itens
+2026-08-06 22:34:57 | INFO    |     - Fisica: 1 itens
+2026-08-06 22:34:57 | INFO    |     - MCP: 1 itens
+2026-08-06 22:34:57 | INFO    |     - RH: 8 itens
+2026-08-06 22:34:57 | INFO    |     - SalaComum: 9 itens
+2026-08-06 22:34:57 | INFO    |     - TestRoom: 5 itens
+2026-08-06 22:34:57 | INFO    |     - Validacao: 1 itens
+2026-08-06 22:34:57 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 22:34:57 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 22:34:57 | INFO    |     - agent_tasks: 39 itens
+2026-08-06 22:34:57 | INFO    |     - alerts: 14 itens
+2026-08-06 22:34:57 | INFO    |     - android_and_pc_registrations: 37 itens
+2026-08-06 22:34:57 | INFO    |     - antigravity: 1 itens
+2026-08-06 22:34:57 | INFO    |     - career: 1 itens
+2026-08-06 22:34:57 | INFO    |     - delika: 1 itens
+2026-08-06 22:34:57 | INFO    |     - design: 1 itens
+2026-08-06 22:34:57 | INFO    |     - dev: 1 itens
+2026-08-06 22:34:57 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 22:34:57 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 22:34:57 | INFO    |     - drive_docs: 23 itens
+2026-08-06 22:34:57 | INFO    |     - drive_shared_files: 12 itens
+2026-08-06 22:34:57 | INFO    |     - education: 1 itens
+2026-08-06 22:34:57 | INFO    |     - family: 1 itens
+2026-08-06 22:34:57 | INFO    |     - github_repos: 3 itens
+2026-08-06 22:34:57 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 22:34:57 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 22:34:57 | INFO    |     - gmail_linked_accounts: 17 itens
+2026-08-06 22:34:57 | INFO    |     - gmail_notifications: 22 itens
+2026-08-06 22:34:57 | INFO    |     - google_docs: 40 itens
+2026-08-06 22:34:57 | INFO    |     - hardware: 2 itens
+2026-08-06 22:34:57 | INFO    |     - jubileu: 4 itens
+2026-08-06 22:34:57 | INFO    |     - mary_kay: 1 itens
+2026-08-06 22:34:57 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 22:34:57 | INFO    |     - onedrive: 1 itens
+2026-08-06 22:34:57 | INFO    |     - personal: 2 itens
+2026-08-06 22:34:57 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 22:34:57 | INFO    |     - router: 1 itens
+2026-08-06 22:34:57 | INFO    |     - security: 1 itens
+2026-08-06 22:34:57 | INFO    |     - sparkhub: 1 itens
+2026-08-06 22:34:57 | INFO    |     - storage_parser: 1 itens
+2026-08-06 22:34:57 | INFO    |     - sync_audit: 25 itens
+2026-08-06 22:34:57 | INFO    |     - system_status: 16 itens
+2026-08-06 22:34:57 | INFO    |     - terabox: 1 itens
+2026-08-06 22:34:57 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 22:34:57 | INFO    |     - web_research_insights: 144 itens
+2026-08-06 22:35:33 | ERROR   | [CASCATA] ollama indisponível/erro: [ERRO API] <urlopen error [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente>. Subindo camada.
+2026-08-06 22:35:37 | ERROR   | [CASCATA] ollama indisponível/erro: [ERRO API] <urlopen error [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente>. Subindo camada.
+2026-08-06 22:35:53 | ERROR   | [CASCATA] ollama indisponível/erro: [ERRO API] <urlopen error [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente>. Subindo camada.
+2026-08-06 22:35:53 | ERROR   | [CASCATA] openrouter indisponível/erro: [ERRO API HTTP 401] {"error":{"message":"User not found.","code":401}}. Subindo camada.
+2026-08-06 22:35:53 | ERROR   | [CASCATA] gemini indisponível/erro: [ERRO API HTTP 429] {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 5.753195026s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "5s"
+      }
+    ]
+  }
+}
+. Subindo camada.
+2026-08-06 22:47:22 | INFO    | [ORQUESTRADOR] Rota 5 (Raciocínio) ativada.
+2026-08-06 22:47:27 | ERROR   | [CASCATA] ollama indisponível/erro: [ERRO API] <urlopen error [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente>. Subindo camada.
+2026-08-06 22:47:29 | INFO    | [ROTEADOR] Tool Call Interceptado (openrouter): search_gmail {'query': 'projeto incompleto projeto parado projeto não concluído tarefa pendente projeto finalizado'}
+2026-08-06 22:47:33 | INFO    | [ROTEADOR] Tool Call Interceptado (openrouter): search_drive_docs {'query': 'projeto incompleto tarefa pendente andamento concluído'}
+2026-08-06 22:47:38 | INFO    | [ROTEADOR] Tool Call Interceptado (openrouter): search_drive_docs {'query': 'projetos trabalho'}
+2026-08-06 22:47:43 | WARNING | [CASCATA] Camada openrouter esgotou 3 iterações sem resposta. Avançando.
+2026-08-06 22:47:44 | ERROR   | [CASCATA] deepseek indisponível/erro: [ERRO API HTTP 402] {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}. Subindo camada.
+2026-08-06 22:47:44 | ERROR   | [CASCATA] gemini indisponível/erro: [ERRO API HTTP 429] {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 14.579912637s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "14s"
+      }
+    ]
+  }
+}
+. Subindo camada.
+2026-08-06 22:47:47 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 716):
+2026-08-06 22:47:47 | INFO    |     - 3d: 1 itens
+2026-08-06 22:47:47 | INFO    |     - Diretorios: 4 itens
+2026-08-06 22:47:47 | INFO    |     - Edicao: 1 itens
+2026-08-06 22:47:47 | INFO    |     - Fisica: 1 itens
+2026-08-06 22:47:47 | INFO    |     - MCP: 1 itens
+2026-08-06 22:47:47 | INFO    |     - RH: 8 itens
+2026-08-06 22:47:47 | INFO    |     - SalaComum: 9 itens
+2026-08-06 22:47:47 | INFO    |     - TestRoom: 5 itens
+2026-08-06 22:47:47 | INFO    |     - Validacao: 1 itens
+2026-08-06 22:47:47 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 22:47:47 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 22:47:47 | INFO    |     - agent_tasks: 40 itens
+2026-08-06 22:47:47 | INFO    |     - alerts: 14 itens
+2026-08-06 22:47:47 | INFO    |     - android_and_pc_registrations: 37 itens
+2026-08-06 22:47:47 | INFO    |     - antigravity: 1 itens
+2026-08-06 22:47:47 | INFO    |     - career: 1 itens
+2026-08-06 22:47:47 | INFO    |     - delika: 1 itens
+2026-08-06 22:47:47 | INFO    |     - design: 1 itens
+2026-08-06 22:47:47 | INFO    |     - dev: 1 itens
+2026-08-06 22:47:47 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 22:47:47 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 22:47:47 | INFO    |     - drive_docs: 23 itens
+2026-08-06 22:47:47 | INFO    |     - drive_shared_files: 12 itens
+2026-08-06 22:47:47 | INFO    |     - education: 1 itens
+2026-08-06 22:47:47 | INFO    |     - family: 1 itens
+2026-08-06 22:47:47 | INFO    |     - github_repos: 3 itens
+2026-08-06 22:47:47 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 22:47:47 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 22:47:47 | INFO    |     - gmail_linked_accounts: 17 itens
+2026-08-06 22:47:47 | INFO    |     - gmail_notifications: 22 itens
+2026-08-06 22:47:47 | INFO    |     - google_docs: 40 itens
+2026-08-06 22:47:47 | INFO    |     - hardware: 2 itens
+2026-08-06 22:47:47 | INFO    |     - jubileu: 4 itens
+2026-08-06 22:47:47 | INFO    |     - mary_kay: 1 itens
+2026-08-06 22:47:47 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 22:47:47 | INFO    |     - onedrive: 1 itens
+2026-08-06 22:47:47 | INFO    |     - personal: 2 itens
+2026-08-06 22:47:47 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 22:47:47 | INFO    |     - router: 1 itens
+2026-08-06 22:47:47 | INFO    |     - security: 1 itens
+2026-08-06 22:47:47 | INFO    |     - sparkhub: 1 itens
+2026-08-06 22:47:47 | INFO    |     - storage_parser: 1 itens
+2026-08-06 22:47:47 | INFO    |     - sync_audit: 25 itens
+2026-08-06 22:47:47 | INFO    |     - system_status: 16 itens
+2026-08-06 22:47:47 | INFO    |     - terabox: 1 itens
+2026-08-06 22:47:47 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 22:47:47 | INFO    |     - web_research_insights: 144 itens
+2026-08-06 22:54:06 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 716):
+2026-08-06 22:54:06 | INFO    |     - 3d: 1 itens
+2026-08-06 22:54:06 | INFO    |     - Diretorios: 4 itens
+2026-08-06 22:54:06 | INFO    |     - Edicao: 1 itens
+2026-08-06 22:54:06 | INFO    |     - Fisica: 1 itens
+2026-08-06 22:54:06 | INFO    |     - MCP: 1 itens
+2026-08-06 22:54:06 | INFO    |     - RH: 8 itens
+2026-08-06 22:54:06 | INFO    |     - SalaComum: 9 itens
+2026-08-06 22:54:06 | INFO    |     - TestRoom: 5 itens
+2026-08-06 22:54:06 | INFO    |     - Validacao: 1 itens
+2026-08-06 22:54:06 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 22:54:06 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 22:54:06 | INFO    |     - agent_tasks: 40 itens
+2026-08-06 22:54:06 | INFO    |     - alerts: 14 itens
+2026-08-06 22:54:06 | INFO    |     - android_and_pc_registrations: 37 itens
+2026-08-06 22:54:06 | INFO    |     - antigravity: 1 itens
+2026-08-06 22:54:06 | INFO    |     - career: 1 itens
+2026-08-06 22:54:06 | INFO    |     - delika: 1 itens
+2026-08-06 22:54:06 | INFO    |     - design: 1 itens
+2026-08-06 22:54:06 | INFO    |     - dev: 1 itens
+2026-08-06 22:54:06 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 22:54:06 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 22:54:06 | INFO    |     - drive_docs: 23 itens
+2026-08-06 22:54:06 | INFO    |     - drive_shared_files: 12 itens
+2026-08-06 22:54:06 | INFO    |     - education: 1 itens
+2026-08-06 22:54:06 | INFO    |     - family: 1 itens
+2026-08-06 22:54:06 | INFO    |     - github_repos: 3 itens
+2026-08-06 22:54:06 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 22:54:06 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 22:54:06 | INFO    |     - gmail_linked_accounts: 17 itens
+2026-08-06 22:54:06 | INFO    |     - gmail_notifications: 22 itens
+2026-08-06 22:54:06 | INFO    |     - google_docs: 40 itens
+2026-08-06 22:54:06 | INFO    |     - hardware: 2 itens
+2026-08-06 22:54:06 | INFO    |     - jubileu: 4 itens
+2026-08-06 22:54:06 | INFO    |     - mary_kay: 1 itens
+2026-08-06 22:54:06 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 22:54:06 | INFO    |     - onedrive: 1 itens
+2026-08-06 22:54:06 | INFO    |     - personal: 2 itens
+2026-08-06 22:54:06 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 22:54:06 | INFO    |     - router: 1 itens
+2026-08-06 22:54:06 | INFO    |     - security: 1 itens
+2026-08-06 22:54:06 | INFO    |     - sparkhub: 1 itens
+2026-08-06 22:54:06 | INFO    |     - storage_parser: 1 itens
+2026-08-06 22:54:06 | INFO    |     - sync_audit: 25 itens
+2026-08-06 22:54:06 | INFO    |     - system_status: 16 itens
+2026-08-06 22:54:06 | INFO    |     - terabox: 1 itens
+2026-08-06 22:54:06 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 22:54:06 | INFO    |     - web_research_insights: 144 itens
+2026-08-06 22:54:09 | INFO    | [AUTO-DISCOVERY] Mapeados 758 programas/atalhos em D:\SparkHub\mapa_executaveis.csv
+2026-08-06 22:54:09 | INFO    | === SERVIDOR SPARKHUB v3.0 (SHELLEXECUTE / AUTO-DISCOVERY / CLI) RODANDO NA PORTA 8000 ===
+2026-08-06 22:54:09 | INFO    | Execucao nativa na sessao interativa com os.startfile() e auditoria pos-acao.
+2026-08-06 22:54:09 | INFO    | === SERVIDOR SPARKHUB v3.0 RODANDO EM http://127.0.0.1:8000/ ===
+2026-08-06 22:54:28 | ERROR   | [CASCATA] ollama indisponível/erro: [ERRO API] <urlopen error [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente>. Subindo camada.
+2026-08-06 22:54:28 | ERROR   | [CASCATA] openrouter indisponível/erro: [ERRO API HTTP 401] {"error":{"message":"User not found.","code":401}}. Subindo camada.
+2026-08-06 22:54:29 | ERROR   | [CASCATA] gemini indisponível/erro: [ERRO API HTTP 429] {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 29.86298554s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "29s"
+      }
+    ]
+  }
+}
+. Subindo camada.
+2026-08-06 22:54:29 | ERROR   | [ROTEADOR WARN] Colapso Total da Cascata. Acionando Fallback Local do MemPalace.
+2026-08-06 23:21:58 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 716):
+2026-08-06 23:21:58 | INFO    |     - 3d: 1 itens
+2026-08-06 23:21:58 | INFO    |     - Diretorios: 4 itens
+2026-08-06 23:21:58 | INFO    |     - Edicao: 1 itens
+2026-08-06 23:21:58 | INFO    |     - Fisica: 1 itens
+2026-08-06 23:21:58 | INFO    |     - MCP: 1 itens
+2026-08-06 23:21:58 | INFO    |     - RH: 8 itens
+2026-08-06 23:21:58 | INFO    |     - SalaComum: 9 itens
+2026-08-06 23:21:58 | INFO    |     - TestRoom: 5 itens
+2026-08-06 23:21:58 | INFO    |     - Validacao: 1 itens
+2026-08-06 23:21:58 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 23:21:58 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 23:21:58 | INFO    |     - agent_tasks: 40 itens
+2026-08-06 23:21:58 | INFO    |     - alerts: 14 itens
+2026-08-06 23:21:58 | INFO    |     - android_and_pc_registrations: 37 itens
+2026-08-06 23:21:58 | INFO    |     - antigravity: 1 itens
+2026-08-06 23:21:58 | INFO    |     - career: 1 itens
+2026-08-06 23:21:58 | INFO    |     - delika: 1 itens
+2026-08-06 23:21:58 | INFO    |     - design: 1 itens
+2026-08-06 23:21:58 | INFO    |     - dev: 1 itens
+2026-08-06 23:21:58 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 23:21:58 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 23:21:58 | INFO    |     - drive_docs: 23 itens
+2026-08-06 23:21:58 | INFO    |     - drive_shared_files: 12 itens
+2026-08-06 23:21:58 | INFO    |     - education: 1 itens
+2026-08-06 23:21:58 | INFO    |     - family: 1 itens
+2026-08-06 23:21:58 | INFO    |     - github_repos: 3 itens
+2026-08-06 23:21:58 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 23:21:58 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 23:21:58 | INFO    |     - gmail_linked_accounts: 17 itens
+2026-08-06 23:21:58 | INFO    |     - gmail_notifications: 22 itens
+2026-08-06 23:21:58 | INFO    |     - google_docs: 40 itens
+2026-08-06 23:21:58 | INFO    |     - hardware: 2 itens
+2026-08-06 23:21:58 | INFO    |     - jubileu: 4 itens
+2026-08-06 23:21:58 | INFO    |     - mary_kay: 1 itens
+2026-08-06 23:21:58 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 23:21:58 | INFO    |     - onedrive: 1 itens
+2026-08-06 23:21:58 | INFO    |     - personal: 2 itens
+2026-08-06 23:21:58 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 23:21:58 | INFO    |     - router: 1 itens
+2026-08-06 23:21:58 | INFO    |     - security: 1 itens
+2026-08-06 23:21:58 | INFO    |     - sparkhub: 1 itens
+2026-08-06 23:21:58 | INFO    |     - storage_parser: 1 itens
+2026-08-06 23:21:58 | INFO    |     - sync_audit: 25 itens
+2026-08-06 23:21:58 | INFO    |     - system_status: 16 itens
+2026-08-06 23:21:58 | INFO    |     - terabox: 1 itens
+2026-08-06 23:21:58 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 23:21:58 | INFO    |     - web_research_insights: 144 itens
+2026-08-06 23:22:02 | INFO    | [AUTO-DISCOVERY] Mapeados 758 programas/atalhos em D:\SparkHub\mapa_executaveis.csv
+2026-08-06 23:22:02 | INFO    | === SERVIDOR SPARKHUB v3.0 (SHELLEXECUTE / AUTO-DISCOVERY / CLI) RODANDO NA PORTA 8000 ===
+2026-08-06 23:22:02 | INFO    | Execucao nativa na sessao interativa com os.startfile() e auditoria pos-acao.
+2026-08-06 23:22:02 | INFO    | === SERVIDOR SPARKHUB v3.0 RODANDO EM http://127.0.0.1:8000/ ===
+2026-08-06 23:24:19 | INFO    | [ORQUESTRADOR] Rota 5 (Raciocínio) ativada.
+2026-08-06 23:24:24 | ERROR   | [CASCATA] ollama indisponível/erro: [ERRO API] <urlopen error [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente>. Subindo camada.
+2026-08-06 23:24:26 | INFO    | [ROTEADOR] Tool Call Interceptado (openrouter): search_drive_docs {'query': 'projetos status em andamento ou em desenvolvimento ou inconcluso'}
+2026-08-06 23:24:33 | INFO    | [ROTEADOR SUCESSO] Resposta via openrouter (Tamanho: 262)
+2026-08-06 23:24:34 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 717):
+2026-08-06 23:24:34 | INFO    |     - 3d: 1 itens
+2026-08-06 23:24:34 | INFO    |     - Diretorios: 4 itens
+2026-08-06 23:24:34 | INFO    |     - Edicao: 1 itens
+2026-08-06 23:24:34 | INFO    |     - Fisica: 1 itens
+2026-08-06 23:24:34 | INFO    |     - MCP: 1 itens
+2026-08-06 23:24:34 | INFO    |     - RH: 8 itens
+2026-08-06 23:24:34 | INFO    |     - SalaComum: 9 itens
+2026-08-06 23:24:34 | INFO    |     - TestRoom: 5 itens
+2026-08-06 23:24:34 | INFO    |     - Validacao: 1 itens
+2026-08-06 23:24:34 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 23:24:34 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 23:24:34 | INFO    |     - agent_tasks: 41 itens
+2026-08-06 23:24:34 | INFO    |     - alerts: 14 itens
+2026-08-06 23:24:34 | INFO    |     - android_and_pc_registrations: 37 itens
+2026-08-06 23:24:34 | INFO    |     - antigravity: 1 itens
+2026-08-06 23:24:34 | INFO    |     - career: 1 itens
+2026-08-06 23:24:34 | INFO    |     - delika: 1 itens
+2026-08-06 23:24:34 | INFO    |     - design: 1 itens
+2026-08-06 23:24:34 | INFO    |     - dev: 1 itens
+2026-08-06 23:24:34 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 23:24:34 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 23:24:34 | INFO    |     - drive_docs: 23 itens
+2026-08-06 23:24:34 | INFO    |     - drive_shared_files: 12 itens
+2026-08-06 23:24:34 | INFO    |     - education: 1 itens
+2026-08-06 23:24:34 | INFO    |     - family: 1 itens
+2026-08-06 23:24:34 | INFO    |     - github_repos: 3 itens
+2026-08-06 23:24:34 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 23:24:34 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 23:24:34 | INFO    |     - gmail_linked_accounts: 17 itens
+2026-08-06 23:24:34 | INFO    |     - gmail_notifications: 22 itens
+2026-08-06 23:24:34 | INFO    |     - google_docs: 40 itens
+2026-08-06 23:24:34 | INFO    |     - hardware: 2 itens
+2026-08-06 23:24:34 | INFO    |     - jubileu: 4 itens
+2026-08-06 23:24:34 | INFO    |     - mary_kay: 1 itens
+2026-08-06 23:24:34 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 23:24:34 | INFO    |     - onedrive: 1 itens
+2026-08-06 23:24:34 | INFO    |     - personal: 2 itens
+2026-08-06 23:24:34 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 23:24:34 | INFO    |     - router: 1 itens
+2026-08-06 23:24:34 | INFO    |     - security: 1 itens
+2026-08-06 23:24:34 | INFO    |     - sparkhub: 1 itens
+2026-08-06 23:24:34 | INFO    |     - storage_parser: 1 itens
+2026-08-06 23:24:34 | INFO    |     - sync_audit: 25 itens
+2026-08-06 23:24:34 | INFO    |     - system_status: 16 itens
+2026-08-06 23:24:34 | INFO    |     - terabox: 1 itens
+2026-08-06 23:24:34 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 23:24:34 | INFO    |     - web_research_insights: 144 itens
+2026-08-06 23:24:45 | INFO    | [ORQUESTRADOR] Rota 5 (Raciocínio) ativada.
+2026-08-06 23:24:50 | ERROR   | [CASCATA] ollama indisponível/erro: [ERRO API] <urlopen error [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente>. Subindo camada.
+2026-08-06 23:24:52 | INFO    | [ROTEADOR SUCESSO] Resposta via openrouter (Tamanho: 426)
+2026-08-06 23:24:52 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 718):
+2026-08-06 23:24:52 | INFO    |     - 3d: 1 itens
+2026-08-06 23:24:52 | INFO    |     - Diretorios: 4 itens
+2026-08-06 23:24:52 | INFO    |     - Edicao: 1 itens
+2026-08-06 23:24:52 | INFO    |     - Fisica: 1 itens
+2026-08-06 23:24:52 | INFO    |     - MCP: 1 itens
+2026-08-06 23:24:52 | INFO    |     - RH: 8 itens
+2026-08-06 23:24:52 | INFO    |     - SalaComum: 9 itens
+2026-08-06 23:24:52 | INFO    |     - TestRoom: 5 itens
+2026-08-06 23:24:52 | INFO    |     - Validacao: 1 itens
+2026-08-06 23:24:52 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 23:24:52 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 23:24:52 | INFO    |     - agent_tasks: 42 itens
+2026-08-06 23:24:52 | INFO    |     - alerts: 14 itens
+2026-08-06 23:24:52 | INFO    |     - android_and_pc_registrations: 37 itens
+2026-08-06 23:24:52 | INFO    |     - antigravity: 1 itens
+2026-08-06 23:24:52 | INFO    |     - career: 1 itens
+2026-08-06 23:24:52 | INFO    |     - delika: 1 itens
+2026-08-06 23:24:52 | INFO    |     - design: 1 itens
+2026-08-06 23:24:52 | INFO    |     - dev: 1 itens
+2026-08-06 23:24:52 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 23:24:52 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 23:24:52 | INFO    |     - drive_docs: 23 itens
+2026-08-06 23:24:52 | INFO    |     - drive_shared_files: 12 itens
+2026-08-06 23:24:52 | INFO    |     - education: 1 itens
+2026-08-06 23:24:52 | INFO    |     - family: 1 itens
+2026-08-06 23:24:52 | INFO    |     - github_repos: 3 itens
+2026-08-06 23:24:52 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 23:24:52 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 23:24:52 | INFO    |     - gmail_linked_accounts: 17 itens
+2026-08-06 23:24:52 | INFO    |     - gmail_notifications: 22 itens
+2026-08-06 23:24:52 | INFO    |     - google_docs: 40 itens
+2026-08-06 23:24:52 | INFO    |     - hardware: 2 itens
+2026-08-06 23:24:52 | INFO    |     - jubileu: 4 itens
+2026-08-06 23:24:52 | INFO    |     - mary_kay: 1 itens
+2026-08-06 23:24:52 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 23:24:52 | INFO    |     - onedrive: 1 itens
+2026-08-06 23:24:52 | INFO    |     - personal: 2 itens
+2026-08-06 23:24:52 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 23:24:52 | INFO    |     - router: 1 itens
+2026-08-06 23:24:52 | INFO    |     - security: 1 itens
+2026-08-06 23:24:52 | INFO    |     - sparkhub: 1 itens
+2026-08-06 23:24:52 | INFO    |     - storage_parser: 1 itens
+2026-08-06 23:24:52 | INFO    |     - sync_audit: 25 itens
+2026-08-06 23:24:52 | INFO    |     - system_status: 16 itens
+2026-08-06 23:24:52 | INFO    |     - terabox: 1 itens
+2026-08-06 23:24:52 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 23:24:52 | INFO    |     - web_research_insights: 144 itens
+2026-08-06 23:25:59 | INFO    | [ORQUESTRADOR] Rota 5 (Raciocínio) ativada.
+2026-08-06 23:26:04 | ERROR   | [CASCATA] ollama indisponível/erro: [ERRO API] <urlopen error [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente>. Subindo camada.
+2026-08-06 23:26:06 | INFO    | [ROTEADOR] Tool Call Interceptado (openrouter): search_gmail {'query': 'projeto iniciado não concluído tarefa pendente'}
+2026-08-06 23:26:09 | INFO    | [ROTEADOR] Tool Call Interceptado (openrouter): search_gmail {'query': 'projetos trabalho pendentes'}
+2026-08-06 23:26:13 | INFO    | [ROTEADOR] Tool Call Interceptado (openrouter): search_gmail {'query': 'projetos andamento não finalizados'}
+2026-08-06 23:26:16 | WARNING | [CASCATA] Camada openrouter esgotou 3 iterações sem resposta. Avançando.
+2026-08-06 23:26:20 | INFO    | [ROTEADOR] Tool Call Interceptado (openrouter_heavy): search_gmail {'query': 'projeto não concluído iniciado'}
+2026-08-06 23:26:23 | INFO    | [ROTEADOR] Tool Call Interceptado (openrouter_heavy): search_gmail {'query': 'projeto pendente'}
+2026-08-06 23:26:27 | INFO    | [ROTEADOR] Tool Call Interceptado (openrouter_heavy): search_drive_docs {'query': 'projeto não concluído'}
+2026-08-06 23:26:30 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 719):
+2026-08-06 23:26:30 | INFO    |     - 3d: 1 itens
+2026-08-06 23:26:30 | INFO    |     - Diretorios: 4 itens
+2026-08-06 23:26:30 | INFO    |     - Edicao: 1 itens
+2026-08-06 23:26:30 | INFO    |     - Fisica: 1 itens
+2026-08-06 23:26:30 | INFO    |     - MCP: 1 itens
+2026-08-06 23:26:30 | INFO    |     - RH: 8 itens
+2026-08-06 23:26:30 | INFO    |     - SalaComum: 9 itens
+2026-08-06 23:26:30 | INFO    |     - TestRoom: 5 itens
+2026-08-06 23:26:30 | INFO    |     - Validacao: 1 itens
+2026-08-06 23:26:30 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 23:26:30 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 23:26:30 | INFO    |     - agent_tasks: 43 itens
+2026-08-06 23:26:30 | INFO    |     - alerts: 14 itens
+2026-08-06 23:26:30 | INFO    |     - android_and_pc_registrations: 37 itens
+2026-08-06 23:26:30 | INFO    |     - antigravity: 1 itens
+2026-08-06 23:26:30 | INFO    |     - career: 1 itens
+2026-08-06 23:26:30 | INFO    |     - delika: 1 itens
+2026-08-06 23:26:30 | INFO    |     - design: 1 itens
+2026-08-06 23:26:30 | INFO    |     - dev: 1 itens
+2026-08-06 23:26:30 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 23:26:30 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 23:26:30 | INFO    |     - drive_docs: 23 itens
+2026-08-06 23:26:30 | INFO    |     - drive_shared_files: 12 itens
+2026-08-06 23:26:30 | INFO    |     - education: 1 itens
+2026-08-06 23:26:30 | INFO    |     - family: 1 itens
+2026-08-06 23:26:30 | INFO    |     - github_repos: 3 itens
+2026-08-06 23:26:30 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 23:26:30 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 23:26:30 | INFO    |     - gmail_linked_accounts: 17 itens
+2026-08-06 23:26:30 | INFO    |     - gmail_notifications: 22 itens
+2026-08-06 23:26:30 | INFO    |     - google_docs: 40 itens
+2026-08-06 23:26:30 | INFO    |     - hardware: 2 itens
+2026-08-06 23:26:30 | INFO    |     - jubileu: 4 itens
+2026-08-06 23:26:30 | INFO    |     - mary_kay: 1 itens
+2026-08-06 23:26:30 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 23:26:30 | INFO    |     - onedrive: 1 itens
+2026-08-06 23:26:30 | INFO    |     - personal: 2 itens
+2026-08-06 23:26:30 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 23:26:30 | INFO    |     - router: 1 itens
+2026-08-06 23:26:30 | INFO    |     - security: 1 itens
+2026-08-06 23:26:30 | INFO    |     - sparkhub: 1 itens
+2026-08-06 23:26:30 | INFO    |     - storage_parser: 1 itens
+2026-08-06 23:26:30 | INFO    |     - sync_audit: 25 itens
+2026-08-06 23:26:30 | INFO    |     - system_status: 16 itens
+2026-08-06 23:26:30 | INFO    |     - terabox: 1 itens
+2026-08-06 23:26:31 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 23:26:31 | INFO    |     - web_research_insights: 144 itens
+2026-08-06 23:26:35 | INFO    | [ROTEADOR] Tool Call Interceptado (openrouter_heavy): search_gmail {'query': 'projeto iniciado mas não finalizado'}
+2026-08-06 23:26:38 | INFO    | [ROTEADOR] Tool Call Interceptado (openrouter_heavy): search_gmail {'query': 'tarefa pendente projeto'}
+2026-08-06 23:26:41 | INFO    | [ROTEADOR] Tool Call Interceptado (openrouter_heavy): search_gmail {'query': 'andamento projeto'}
+2026-08-06 23:26:45 | INFO    | [ROTEADOR] Tool Call Interceptado (openrouter_heavy): search_drive_docs {'query': 'projeto em andamento'}
+2026-08-06 23:26:56 | INFO    | [ROTEADOR] Tool Call Interceptado (openrouter_heavy): search_gmail {'query': 'projeto IA Godot'}
+2026-08-06 23:27:00 | INFO    | [ROTEADOR] Tool Call Interceptado (openrouter_heavy): search_gmail {'query': 'otimização memória armazenamento'}
+2026-08-06 23:27:03 | INFO    | [ROTEADOR] Tool Call Interceptado (openrouter_heavy): search_gmail {'query': 'projeto não finalizado'}
+2026-08-06 23:27:07 | INFO    | [ROTEADOR] Tool Call Interceptado (openrouter_heavy): search_drive_docs {'query': 'projeto incompleto'}
+2026-08-06 23:27:16 | INFO    | [ROTEADOR] Tool Call Interceptado (openrouter_heavy): search_drive_docs {'query': 'SparkHub projeto'}
+2026-08-06 23:27:20 | INFO    | [ROTEADOR] Tool Call Interceptado (openrouter_heavy): search_drive_docs {'query': 'Tríplice Cascata projeto'}
+2026-08-06 23:27:25 | INFO    | [ROTEADOR] Tool Call Interceptado (openrouter_heavy): search_gmail {'query': 'SparkHub projeto iniciado'}
+2026-08-06 23:27:31 | INFO    | [ROTEADOR] Tool Call Interceptado (openrouter_heavy): search_drive_docs {'query': 'SparkHub'}
+2026-08-06 23:27:35 | INFO    | [ROTEADOR] Tool Call Interceptado (openrouter_heavy): search_drive_docs {'query': 'MemPalace WAL DB'}
+2026-08-06 23:27:39 | INFO    | [ROTEADOR] Tool Call Interceptado (openrouter_heavy): search_drive_docs {'query': 'FastMCP'}
+2026-08-06 23:27:43 | WARNING | [CASCATA] Camada openrouter_heavy esgotou 5 iterações sem resposta. Avançando.
+2026-08-06 23:27:43 | ERROR   | [CASCATA] gemini indisponível/erro: [ERRO API HTTP 429] {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 15.986883632s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.0-flash"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-2.0-flash",
+              "location": "global"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "15s"
+      }
+    ]
+  }
+}
+. Subindo camada.
+2026-08-06 23:27:43 | ERROR   | [ROTEADOR WARN] Colapso Total da Cascata. Acionando Fallback Local do MemPalace.
+2026-08-06 23:43:28 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 719):
+2026-08-06 23:43:28 | INFO    |     - 3d: 1 itens
+2026-08-06 23:43:28 | INFO    |     - Diretorios: 4 itens
+2026-08-06 23:43:28 | INFO    |     - Edicao: 1 itens
+2026-08-06 23:43:28 | INFO    |     - Fisica: 1 itens
+2026-08-06 23:43:28 | INFO    |     - MCP: 1 itens
+2026-08-06 23:43:28 | INFO    |     - RH: 8 itens
+2026-08-06 23:43:28 | INFO    |     - SalaComum: 9 itens
+2026-08-06 23:43:28 | INFO    |     - TestRoom: 5 itens
+2026-08-06 23:43:28 | INFO    |     - Validacao: 1 itens
+2026-08-06 23:43:28 | INFO    |     - Windows_MCP: 7 itens
+2026-08-06 23:43:28 | INFO    |     - accounts_contacts: 2 itens
+2026-08-06 23:43:28 | INFO    |     - agent_tasks: 43 itens
+2026-08-06 23:43:28 | INFO    |     - alerts: 14 itens
+2026-08-06 23:43:28 | INFO    |     - android_and_pc_registrations: 37 itens
+2026-08-06 23:43:28 | INFO    |     - antigravity: 1 itens
+2026-08-06 23:43:28 | INFO    |     - career: 1 itens
+2026-08-06 23:43:28 | INFO    |     - delika: 1 itens
+2026-08-06 23:43:28 | INFO    |     - design: 1 itens
+2026-08-06 23:43:28 | INFO    |     - dev: 1 itens
+2026-08-06 23:43:28 | INFO    |     - Drive Principal: 79 itens
+2026-08-06 23:43:28 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-06 23:43:28 | INFO    |     - drive_docs: 23 itens
+2026-08-06 23:43:28 | INFO    |     - drive_shared_files: 12 itens
+2026-08-06 23:43:28 | INFO    |     - education: 1 itens
+2026-08-06 23:43:28 | INFO    |     - family: 1 itens
+2026-08-06 23:43:28 | INFO    |     - github_repos: 3 itens
+2026-08-06 23:43:28 | INFO    |     - Gmail Principal: 87 itens
+2026-08-06 23:43:28 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-06 23:43:28 | INFO    |     - gmail_linked_accounts: 17 itens
+2026-08-06 23:43:28 | INFO    |     - gmail_notifications: 22 itens
+2026-08-06 23:43:28 | INFO    |     - google_docs: 40 itens
+2026-08-06 23:43:28 | INFO    |     - hardware: 2 itens
+2026-08-06 23:43:28 | INFO    |     - jubileu: 4 itens
+2026-08-06 23:43:28 | INFO    |     - mary_kay: 1 itens
+2026-08-06 23:43:28 | INFO    |     - neon_orbit: 1 itens
+2026-08-06 23:43:28 | INFO    |     - onedrive: 1 itens
+2026-08-06 23:43:28 | INFO    |     - personal: 2 itens
+2026-08-06 23:43:28 | INFO    |     - reddit_godot: 1 itens
+2026-08-06 23:43:28 | INFO    |     - router: 1 itens
+2026-08-06 23:43:28 | INFO    |     - security: 1 itens
+2026-08-06 23:43:28 | INFO    |     - sparkhub: 1 itens
+2026-08-06 23:43:28 | INFO    |     - storage_parser: 1 itens
+2026-08-06 23:43:28 | INFO    |     - sync_audit: 25 itens
+2026-08-06 23:43:28 | INFO    |     - system_status: 16 itens
+2026-08-06 23:43:28 | INFO    |     - terabox: 1 itens
+2026-08-06 23:43:28 | INFO    |     - tiktok_shop: 1 itens
+2026-08-06 23:43:28 | INFO    |     - web_research_insights: 144 itens
+2026-08-06 23:43:31 | INFO    | [AUTO-DISCOVERY] Mapeados 758 programas/atalhos em D:\SparkHub\mapa_executaveis.csv
+2026-08-06 23:43:31 | INFO    | === SERVIDOR SPARKHUB v3.0 (SHELLEXECUTE / AUTO-DISCOVERY / CLI) RODANDO NA PORTA 8000 ===
+2026-08-06 23:43:31 | INFO    | Execucao nativa na sessao interativa com os.startfile() e auditoria pos-acao.
+2026-08-06 23:43:31 | INFO    | === SERVIDOR SPARKHUB v3.0 RODANDO EM http://127.0.0.1:8000/ ===
+2026-08-06 23:43:42 | INFO    | [SEARCH AGENT] Realizando buscas via ['mempalace', 'gmail', 'drive']
+2026-08-06 23:43:42 | INFO    | [SEARCH AGENT] Busca concluída.
+2026-08-06 23:44:33 | INFO    | [SEARCH AGENT] Realizando buscas via ['mempalace', 'gmail', 'drive']
+2026-08-06 23:44:33 | INFO    | [SEARCH AGENT] Busca concluída.
+2026-08-06 23:44:35 | ERROR   | [CASCATA SEM TOOLS] ollama indisponivel/erro: <urlopen error [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente>
+2026-08-06 23:44:35 | ERROR   | [CASCATA SEM TOOLS] openrouter indisponivel/erro: HTTP Error 401: Unauthorized
+2026-08-06 23:44:35 | ERROR   | [CASCATA SEM TOOLS] openrouter_heavy indisponivel/erro: HTTP Error 401: Unauthorized
+2026-08-06 23:45:38 | INFO    | [SEARCH AGENT] Realizando buscas via ['mempalace', 'gmail', 'drive']
+2026-08-06 23:45:39 | INFO    | [MCP METHOD] tools/call (id=search_agent)
+2026-08-06 23:45:40 | INFO    | [MCP METHOD] tools/call (id=search_agent)
+2026-08-06 23:45:40 | INFO    | [SEARCH AGENT] Busca concluída.
+2026-08-06 23:45:42 | ERROR   | [CASCATA SEM TOOLS] ollama indisponivel/erro: <urlopen error [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente>
+2026-08-06 23:45:42 | ERROR   | [CASCATA SEM TOOLS] openrouter indisponivel/erro: HTTP Error 401: Unauthorized
+2026-08-06 23:45:42 | ERROR   | [CASCATA SEM TOOLS] openrouter_heavy indisponivel/erro: HTTP Error 401: Unauthorized
+2026-08-06 23:46:15 | INFO    | [SEARCH AGENT] Realizando buscas via ['mempalace', 'gmail', 'drive']
+2026-08-06 23:46:15 | INFO    | [MCP METHOD] tools/call (id=search_agent)
+2026-08-06 23:46:15 | INFO    | [MCP METHOD] tools/call (id=search_agent)
+2026-08-06 23:46:16 | INFO    | [SEARCH AGENT] Busca concluída.
+2026-08-06 23:46:18 | ERROR   | [CASCATA SEM TOOLS] ollama indisponivel/erro: <urlopen error [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente>
+2026-08-06 23:46:18 | ERROR   | [CASCATA SEM TOOLS] openrouter indisponivel/erro: HTTP Error 401: Unauthorized
+2026-08-06 23:46:18 | ERROR   | [CASCATA SEM TOOLS] openrouter_heavy indisponivel/erro: HTTP Error 401: Unauthorized
+2026-08-06 23:46:18 | ERROR   | [CASCATA SEM TOOLS] gemini indisponivel/erro: HTTP Error 429: Too Many Requests
+2026-08-06 23:46:18 | ERROR   | [ROTEADOR WARN] Colapso Total da Cascata. Acionando Fallback Local do MemPalace.
+2026-08-07 00:16:19 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 719):
+2026-08-07 00:16:19 | INFO    |     - 3d: 1 itens
+2026-08-07 00:16:19 | INFO    |     - Diretorios: 4 itens
+2026-08-07 00:16:19 | INFO    |     - Edicao: 1 itens
+2026-08-07 00:16:19 | INFO    |     - Fisica: 1 itens
+2026-08-07 00:16:19 | INFO    |     - MCP: 1 itens
+2026-08-07 00:16:19 | INFO    |     - RH: 8 itens
+2026-08-07 00:16:19 | INFO    |     - SalaComum: 9 itens
+2026-08-07 00:16:19 | INFO    |     - TestRoom: 5 itens
+2026-08-07 00:16:19 | INFO    |     - Validacao: 1 itens
+2026-08-07 00:16:19 | INFO    |     - Windows_MCP: 7 itens
+2026-08-07 00:16:19 | INFO    |     - accounts_contacts: 2 itens
+2026-08-07 00:16:19 | INFO    |     - agent_tasks: 43 itens
+2026-08-07 00:16:19 | INFO    |     - alerts: 14 itens
+2026-08-07 00:16:19 | INFO    |     - android_and_pc_registrations: 37 itens
+2026-08-07 00:16:19 | INFO    |     - antigravity: 1 itens
+2026-08-07 00:16:19 | INFO    |     - career: 1 itens
+2026-08-07 00:16:19 | INFO    |     - delika: 1 itens
+2026-08-07 00:16:19 | INFO    |     - design: 1 itens
+2026-08-07 00:16:19 | INFO    |     - dev: 1 itens
+2026-08-07 00:16:19 | INFO    |     - Drive Principal: 79 itens
+2026-08-07 00:16:19 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-07 00:16:19 | INFO    |     - drive_docs: 23 itens
+2026-08-07 00:16:19 | INFO    |     - drive_shared_files: 12 itens
+2026-08-07 00:16:19 | INFO    |     - education: 1 itens
+2026-08-07 00:16:19 | INFO    |     - family: 1 itens
+2026-08-07 00:16:19 | INFO    |     - github_repos: 3 itens
+2026-08-07 00:16:19 | INFO    |     - Gmail Principal: 87 itens
+2026-08-07 00:16:19 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-07 00:16:19 | INFO    |     - gmail_linked_accounts: 17 itens
+2026-08-07 00:16:19 | INFO    |     - gmail_notifications: 22 itens
+2026-08-07 00:16:19 | INFO    |     - google_docs: 40 itens
+2026-08-07 00:16:19 | INFO    |     - hardware: 2 itens
+2026-08-07 00:16:19 | INFO    |     - jubileu: 4 itens
+2026-08-07 00:16:19 | INFO    |     - mary_kay: 1 itens
+2026-08-07 00:16:19 | INFO    |     - neon_orbit: 1 itens
+2026-08-07 00:16:19 | INFO    |     - onedrive: 1 itens
+2026-08-07 00:16:19 | INFO    |     - personal: 2 itens
+2026-08-07 00:16:19 | INFO    |     - reddit_godot: 1 itens
+2026-08-07 00:16:19 | INFO    |     - router: 1 itens
+2026-08-07 00:16:19 | INFO    |     - security: 1 itens
+2026-08-07 00:16:19 | INFO    |     - sparkhub: 1 itens
+2026-08-07 00:16:19 | INFO    |     - storage_parser: 1 itens
+2026-08-07 00:16:19 | INFO    |     - sync_audit: 25 itens
+2026-08-07 00:16:19 | INFO    |     - system_status: 16 itens
+2026-08-07 00:16:19 | INFO    |     - terabox: 1 itens
+2026-08-07 00:16:19 | INFO    |     - tiktok_shop: 1 itens
+2026-08-07 00:16:19 | INFO    |     - web_research_insights: 144 itens
+2026-08-07 00:16:23 | INFO    | [AUTO-DISCOVERY] Mapeados 758 programas/atalhos em D:\SparkHub\mapa_executaveis.csv
+2026-08-07 00:16:23 | INFO    | === SERVIDOR SPARKHUB v3.0 (SHELLEXECUTE / AUTO-DISCOVERY / CLI) RODANDO NA PORTA 8000 ===
+2026-08-07 00:16:23 | INFO    | Execucao nativa na sessao interativa com os.startfile() e auditoria pos-acao.
+2026-08-07 00:16:23 | INFO    | === SERVIDOR SPARKHUB v3.0 RODANDO EM http://127.0.0.1:8000/ ===
+2026-08-07 00:16:59 | INFO    | [MCP METHOD] tools/call (id=moltbook_agent)
+2026-08-07 00:17:00 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 720):
+2026-08-07 00:17:00 | INFO    |     - 3d: 1 itens
+2026-08-07 00:17:00 | INFO    |     - Diretorios: 4 itens
+2026-08-07 00:17:00 | INFO    |     - Edicao: 1 itens
+2026-08-07 00:17:00 | INFO    |     - Fisica: 1 itens
+2026-08-07 00:17:00 | INFO    |     - MCP: 1 itens
+2026-08-07 00:17:00 | INFO    |     - RH: 8 itens
+2026-08-07 00:17:00 | INFO    |     - SalaComum: 9 itens
+2026-08-07 00:17:00 | INFO    |     - TestRoom: 5 itens
+2026-08-07 00:17:00 | INFO    |     - Validacao: 1 itens
+2026-08-07 00:17:00 | INFO    |     - Windows_MCP: 7 itens
+2026-08-07 00:17:00 | INFO    |     - accounts_contacts: 2 itens
+2026-08-07 00:17:00 | INFO    |     - agent_tasks: 43 itens
+2026-08-07 00:17:00 | INFO    |     - alerts: 14 itens
+2026-08-07 00:17:00 | INFO    |     - android_and_pc_registrations: 37 itens
+2026-08-07 00:17:00 | INFO    |     - antigravity: 1 itens
+2026-08-07 00:17:00 | INFO    |     - career: 1 itens
+2026-08-07 00:17:00 | INFO    |     - delika: 1 itens
+2026-08-07 00:17:00 | INFO    |     - design: 1 itens
+2026-08-07 00:17:00 | INFO    |     - dev: 1 itens
+2026-08-07 00:17:00 | INFO    |     - Drive Principal: 79 itens
+2026-08-07 00:17:00 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-07 00:17:00 | INFO    |     - drive_docs: 23 itens
+2026-08-07 00:17:00 | INFO    |     - drive_shared_files: 12 itens
+2026-08-07 00:17:00 | INFO    |     - education: 1 itens
+2026-08-07 00:17:00 | INFO    |     - family: 1 itens
+2026-08-07 00:17:00 | INFO    |     - github_repos: 3 itens
+2026-08-07 00:17:00 | INFO    |     - Gmail Principal: 87 itens
+2026-08-07 00:17:00 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-07 00:17:00 | INFO    |     - gmail_linked_accounts: 17 itens
+2026-08-07 00:17:00 | INFO    |     - gmail_notifications: 22 itens
+2026-08-07 00:17:00 | INFO    |     - godot: 1 itens
+2026-08-07 00:17:00 | INFO    |     - google_docs: 40 itens
+2026-08-07 00:17:00 | INFO    |     - hardware: 2 itens
+2026-08-07 00:17:00 | INFO    |     - jubileu: 4 itens
+2026-08-07 00:17:00 | INFO    |     - mary_kay: 1 itens
+2026-08-07 00:17:00 | INFO    |     - neon_orbit: 1 itens
+2026-08-07 00:17:00 | INFO    |     - onedrive: 1 itens
+2026-08-07 00:17:00 | INFO    |     - personal: 2 itens
+2026-08-07 00:17:00 | INFO    |     - reddit_godot: 1 itens
+2026-08-07 00:17:00 | INFO    |     - router: 1 itens
+2026-08-07 00:17:00 | INFO    |     - security: 1 itens
+2026-08-07 00:17:00 | INFO    |     - sparkhub: 1 itens
+2026-08-07 00:17:00 | INFO    |     - storage_parser: 1 itens
+2026-08-07 00:17:00 | INFO    |     - sync_audit: 25 itens
+2026-08-07 00:17:00 | INFO    |     - system_status: 16 itens
+2026-08-07 00:17:00 | INFO    |     - terabox: 1 itens
+2026-08-07 00:17:00 | INFO    |     - tiktok_shop: 1 itens
+2026-08-07 00:17:00 | INFO    |     - web_research_insights: 144 itens
+2026-08-07 01:10:17 | INFO    | [ORQUESTRADOR] Rota 5 (Raciocínio) ativada.
+2026-08-07 01:10:19 | INFO    | [SEARCH AGENT] Realizando buscas via ['mempalace', 'gmail', 'drive']
+2026-08-07 01:10:24 | INFO    | [SEARCH AGENT] Busca concluída.
+2026-08-07 01:10:26 | ERROR   | [CASCATA SEM TOOLS] ollama indisponivel/erro: <urlopen error [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente>
+2026-08-07 01:10:30 | INFO    | [ROTEADOR SUCESSO] Resposta via openrouter (Tamanho: 1532)
+2026-08-07 01:10:30 | INFO    | [MCP METHOD] tools/call (id=search_agent)
+2026-08-07 01:10:31 | INFO    | [MCP METHOD] tools/call (id=search_agent)
+2026-08-07 01:10:32 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 721):
+2026-08-07 01:10:32 | INFO    |     - 3d: 1 itens
+2026-08-07 01:10:32 | INFO    |     - Diretorios: 4 itens
+2026-08-07 01:10:32 | INFO    |     - Edicao: 1 itens
+2026-08-07 01:10:32 | INFO    |     - Fisica: 1 itens
+2026-08-07 01:10:32 | INFO    |     - MCP: 1 itens
+2026-08-07 01:10:32 | INFO    |     - RH: 8 itens
+2026-08-07 01:10:32 | INFO    |     - SalaComum: 9 itens
+2026-08-07 01:10:32 | INFO    |     - TestRoom: 5 itens
+2026-08-07 01:10:32 | INFO    |     - Validacao: 1 itens
+2026-08-07 01:10:32 | INFO    |     - Windows_MCP: 7 itens
+2026-08-07 01:10:32 | INFO    |     - accounts_contacts: 2 itens
+2026-08-07 01:10:32 | INFO    |     - agent_tasks: 44 itens
+2026-08-07 01:10:32 | INFO    |     - alerts: 14 itens
+2026-08-07 01:10:32 | INFO    |     - android_and_pc_registrations: 37 itens
+2026-08-07 01:10:32 | INFO    |     - antigravity: 1 itens
+2026-08-07 01:10:32 | INFO    |     - career: 1 itens
+2026-08-07 01:10:32 | INFO    |     - delika: 1 itens
+2026-08-07 01:10:32 | INFO    |     - design: 1 itens
+2026-08-07 01:10:32 | INFO    |     - dev: 1 itens
+2026-08-07 01:10:32 | INFO    |     - Drive Principal: 79 itens
+2026-08-07 01:10:32 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-07 01:10:32 | INFO    |     - drive_docs: 23 itens
+2026-08-07 01:10:32 | INFO    |     - drive_shared_files: 12 itens
+2026-08-07 01:10:32 | INFO    |     - education: 1 itens
+2026-08-07 01:10:32 | INFO    |     - family: 1 itens
+2026-08-07 01:10:32 | INFO    |     - github_repos: 3 itens
+2026-08-07 01:10:32 | INFO    |     - Gmail Principal: 87 itens
+2026-08-07 01:10:32 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-07 01:10:32 | INFO    |     - gmail_linked_accounts: 17 itens
+2026-08-07 01:10:32 | INFO    |     - gmail_notifications: 22 itens
+2026-08-07 01:10:32 | INFO    |     - godot: 1 itens
+2026-08-07 01:10:32 | INFO    |     - google_docs: 40 itens
+2026-08-07 01:10:32 | INFO    |     - hardware: 2 itens
+2026-08-07 01:10:32 | INFO    |     - jubileu: 4 itens
+2026-08-07 01:10:32 | INFO    |     - mary_kay: 1 itens
+2026-08-07 01:10:32 | INFO    |     - neon_orbit: 1 itens
+2026-08-07 01:10:32 | INFO    |     - onedrive: 1 itens
+2026-08-07 01:10:32 | INFO    |     - personal: 2 itens
+2026-08-07 01:10:32 | INFO    |     - reddit_godot: 1 itens
+2026-08-07 01:10:32 | INFO    |     - router: 1 itens
+2026-08-07 01:10:32 | INFO    |     - security: 1 itens
+2026-08-07 01:10:32 | INFO    |     - sparkhub: 1 itens
+2026-08-07 01:10:32 | INFO    |     - storage_parser: 1 itens
+2026-08-07 01:10:32 | INFO    |     - sync_audit: 25 itens
+2026-08-07 01:10:32 | INFO    |     - system_status: 16 itens
+2026-08-07 01:10:32 | INFO    |     - terabox: 1 itens
+2026-08-07 01:10:32 | INFO    |     - tiktok_shop: 1 itens
+2026-08-07 01:10:32 | INFO    |     - web_research_insights: 144 itens
+2026-08-07 01:11:48 | INFO    | [ORQUESTRADOR] Rota 5 (Raciocínio) ativada.
+2026-08-07 01:11:50 | INFO    | [SEARCH AGENT] Realizando buscas via ['mempalace', 'gmail', 'drive']
+2026-08-07 01:11:55 | INFO    | [SEARCH AGENT] Busca concluída.
+2026-08-07 01:11:57 | ERROR   | [CASCATA SEM TOOLS] ollama indisponivel/erro: <urlopen error [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente>
+2026-08-07 01:11:59 | INFO    | [ROTEADOR SUCESSO] Resposta via openrouter (Tamanho: 813)
+2026-08-07 01:11:59 | INFO    | [MCP METHOD] tools/call (id=search_agent)
+2026-08-07 01:12:00 | INFO    | [MCP METHOD] tools/call (id=search_agent)
+2026-08-07 01:12:00 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 722):
+2026-08-07 01:12:00 | INFO    |     - 3d: 1 itens
+2026-08-07 01:12:00 | INFO    |     - Diretorios: 4 itens
+2026-08-07 01:12:00 | INFO    |     - Edicao: 1 itens
+2026-08-07 01:12:00 | INFO    |     - Fisica: 1 itens
+2026-08-07 01:12:00 | INFO    |     - MCP: 1 itens
+2026-08-07 01:12:00 | INFO    |     - RH: 8 itens
+2026-08-07 01:12:00 | INFO    |     - SalaComum: 9 itens
+2026-08-07 01:12:00 | INFO    |     - TestRoom: 5 itens
+2026-08-07 01:12:00 | INFO    |     - Validacao: 1 itens
+2026-08-07 01:12:00 | INFO    |     - Windows_MCP: 7 itens
+2026-08-07 01:12:00 | INFO    |     - accounts_contacts: 2 itens
+2026-08-07 01:12:00 | INFO    |     - agent_tasks: 45 itens
+2026-08-07 01:12:00 | INFO    |     - alerts: 14 itens
+2026-08-07 01:12:00 | INFO    |     - android_and_pc_registrations: 37 itens
+2026-08-07 01:12:00 | INFO    |     - antigravity: 1 itens
+2026-08-07 01:12:00 | INFO    |     - career: 1 itens
+2026-08-07 01:12:00 | INFO    |     - delika: 1 itens
+2026-08-07 01:12:00 | INFO    |     - design: 1 itens
+2026-08-07 01:12:00 | INFO    |     - dev: 1 itens
+2026-08-07 01:12:00 | INFO    |     - Drive Principal: 79 itens
+2026-08-07 01:12:00 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-07 01:12:00 | INFO    |     - drive_docs: 23 itens
+2026-08-07 01:12:00 | INFO    |     - drive_shared_files: 12 itens
+2026-08-07 01:12:00 | INFO    |     - education: 1 itens
+2026-08-07 01:12:00 | INFO    |     - family: 1 itens
+2026-08-07 01:12:00 | INFO    |     - github_repos: 3 itens
+2026-08-07 01:12:00 | INFO    |     - Gmail Principal: 87 itens
+2026-08-07 01:12:00 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-07 01:12:00 | INFO    |     - gmail_linked_accounts: 17 itens
+2026-08-07 01:12:00 | INFO    |     - gmail_notifications: 22 itens
+2026-08-07 01:12:00 | INFO    |     - godot: 1 itens
+2026-08-07 01:12:00 | INFO    |     - google_docs: 40 itens
+2026-08-07 01:12:00 | INFO    |     - hardware: 2 itens
+2026-08-07 01:12:00 | INFO    |     - jubileu: 4 itens
+2026-08-07 01:12:00 | INFO    |     - mary_kay: 1 itens
+2026-08-07 01:12:00 | INFO    |     - neon_orbit: 1 itens
+2026-08-07 01:12:00 | INFO    |     - onedrive: 1 itens
+2026-08-07 01:12:00 | INFO    |     - personal: 2 itens
+2026-08-07 01:12:00 | INFO    |     - reddit_godot: 1 itens
+2026-08-07 01:12:00 | INFO    |     - router: 1 itens
+2026-08-07 01:12:00 | INFO    |     - security: 1 itens
+2026-08-07 01:12:00 | INFO    |     - sparkhub: 1 itens
+2026-08-07 01:12:00 | INFO    |     - storage_parser: 1 itens
+2026-08-07 01:12:00 | INFO    |     - sync_audit: 25 itens
+2026-08-07 01:12:00 | INFO    |     - system_status: 16 itens
+2026-08-07 01:12:00 | INFO    |     - terabox: 1 itens
+2026-08-07 01:12:00 | INFO    |     - tiktok_shop: 1 itens
+2026-08-07 01:12:00 | INFO    |     - web_research_insights: 144 itens
+2026-08-07 01:19:00 | INFO    | [ORQUESTRADOR] Rota 5 (Raciocínio) ativada.
+2026-08-07 01:19:02 | INFO    | [SEARCH AGENT] Realizando buscas via ['mempalace', 'gmail', 'drive']
+2026-08-07 01:19:07 | INFO    | [SEARCH AGENT] Busca concluída.
+2026-08-07 01:19:09 | ERROR   | [CASCATA SEM TOOLS] ollama indisponivel/erro: <urlopen error [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente>
+2026-08-07 01:19:12 | INFO    | [ROTEADOR SUCESSO] Resposta via openrouter (Tamanho: 535)
+2026-08-07 01:19:12 | INFO    | [MCP METHOD] tools/call (id=search_agent)
+2026-08-07 01:19:12 | INFO    | [MCP METHOD] tools/call (id=search_agent)
+2026-08-07 01:19:12 | INFO    | [MEMPALACE] Resumo completo de agrupamento (Total: 723):
+2026-08-07 01:19:12 | INFO    |     - 3d: 1 itens
+2026-08-07 01:19:12 | INFO    |     - Diretorios: 4 itens
+2026-08-07 01:19:12 | INFO    |     - Edicao: 1 itens
+2026-08-07 01:19:12 | INFO    |     - Fisica: 1 itens
+2026-08-07 01:19:12 | INFO    |     - MCP: 1 itens
+2026-08-07 01:19:12 | INFO    |     - RH: 8 itens
+2026-08-07 01:19:12 | INFO    |     - SalaComum: 9 itens
+2026-08-07 01:19:12 | INFO    |     - TestRoom: 5 itens
+2026-08-07 01:19:12 | INFO    |     - Validacao: 1 itens
+2026-08-07 01:19:12 | INFO    |     - Windows_MCP: 7 itens
+2026-08-07 01:19:12 | INFO    |     - accounts_contacts: 2 itens
+2026-08-07 01:19:12 | INFO    |     - agent_tasks: 46 itens
+2026-08-07 01:19:12 | INFO    |     - alerts: 14 itens
+2026-08-07 01:19:12 | INFO    |     - android_and_pc_registrations: 37 itens
+2026-08-07 01:19:12 | INFO    |     - antigravity: 1 itens
+2026-08-07 01:19:12 | INFO    |     - career: 1 itens
+2026-08-07 01:19:12 | INFO    |     - delika: 1 itens
+2026-08-07 01:19:12 | INFO    |     - design: 1 itens
+2026-08-07 01:19:12 | INFO    |     - dev: 1 itens
+2026-08-07 01:19:12 | INFO    |     - Drive Principal: 79 itens
+2026-08-07 01:19:12 | INFO    |     - Drive Trabalho: 10 itens
+2026-08-07 01:19:12 | INFO    |     - drive_docs: 23 itens
+2026-08-07 01:19:12 | INFO    |     - drive_shared_files: 12 itens
+2026-08-07 01:19:12 | INFO    |     - education: 1 itens
+2026-08-07 01:19:12 | INFO    |     - family: 1 itens
+2026-08-07 01:19:12 | INFO    |     - github_repos: 3 itens
+2026-08-07 01:19:12 | INFO    |     - Gmail Principal: 87 itens
+2026-08-07 01:19:12 | INFO    |     - Gmail Trabalho: 82 itens
+2026-08-07 01:19:12 | INFO    |     - gmail_linked_accounts: 17 itens
+2026-08-07 01:19:12 | INFO    |     - gmail_notifications: 22 itens
+2026-08-07 01:19:12 | INFO    |     - godot: 1 itens
+2026-08-07 01:19:12 | INFO    |     - google_docs: 40 itens
+2026-08-07 01:19:12 | INFO    |     - hardware: 2 itens
+2026-08-07 01:19:12 | INFO    |     - jubileu: 4 itens
+2026-08-07 01:19:12 | INFO    |     - mary_kay: 1 itens
+2026-08-07 01:19:12 | INFO    |     - neon_orbit: 1 itens
+2026-08-07 01:19:12 | INFO    |     - onedrive: 1 itens
+2026-08-07 01:19:12 | INFO    |     - personal: 2 itens
+2026-08-07 01:19:12 | INFO    |     - reddit_godot: 1 itens
+2026-08-07 01:19:12 | INFO    |     - router: 1 itens
+2026-08-07 01:19:12 | INFO    |     - security: 1 itens
+2026-08-07 01:19:12 | INFO    |     - sparkhub: 1 itens
+2026-08-07 01:19:12 | INFO    |     - storage_parser: 1 itens
+2026-08-07 01:19:12 | INFO    |     - sync_audit: 25 itens
+2026-08-07 01:19:12 | INFO    |     - system_status: 16 itens
+2026-08-07 01:19:12 | INFO    |     - terabox: 1 itens
+2026-08-07 01:19:12 | INFO    |     - tiktok_shop: 1 itens
+2026-08-07 01:19:12 | INFO    |     - web_research_insights: 144 itens

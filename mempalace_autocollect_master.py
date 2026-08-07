@@ -52,9 +52,8 @@ class AntifragileAutoCollectorV2:
             if is_sensitive:
                 try:
                     sys.path.append(str(PROJECT_ROOT))
-                    from sparkhub_crypto import SparkHubCrypto
-                    crypto = SparkHubCrypto()
-                    final_content = crypto.encrypt_text(content)
+                    import sparkhub_crypto
+                    final_content = sparkhub_crypto.encrypt_content(content)
                 except Exception as e:
                     print(f"[CRYPTO WARN] Falha ao cifrar dado sensível, ignorando gravação por segurança: {e}")
                     return False

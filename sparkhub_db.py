@@ -95,10 +95,65 @@ def init_and_migrate_db(db_path: str = DB_PATH):
             );
         """)
         
+        # 4. Embeddings table
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS memories_embeddings (
+                memory_id INTEGER PRIMARY KEY,
+                embedding TEXT NOT NULL
+            );
+        """)
+        
+        # 5. Processed Media Registry (Deduplicação)
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS processed_media_registry (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                file_hash TEXT UNIQUE NOT NULL,
+                original_name TEXT NOT NULL,
+                processed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                mem_id INTEGER
+            );
+        """)
+        
+        # 6. Telemetry (Orchestrator)
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS telemetry (
+                request_id TEXT PRIMARY KEY,
+                origin TEXT NOT NULL,
+                tool TEXT NOT NULL,
+                status TEXT NOT NULL,
+                latency_ms REAL NOT NULL,
+                bytes_in INTEGER NOT NULL,
+                bytes_out INTEGER NOT NULL,
+                backend_used TEXT NOT NULL,
+                cache_hit BOOLEAN NOT NULL,
+                sha256 TEXT,
+                timestamp TEXT DEFAULT (datetime('now'))
+            )
+        """)
+        
         conn.commit()
 
-def save_memory(wing: str, room: str, content: str, db_path: str = DB_PATH) -> bool:
-    """Safely saves a memory entry into mempalace.db."""
+def insert_telemetry(record: dict, db_path: str = DB_PATH) -> bool:
+    """Insere um registro de telemetria no banco de dados SQLite."""
+    try:
+        with get_db_connection(db_path) as conn:
+            conn.execute("""
+                INSERT INTO telemetry 
+                (request_id, origin, tool, status, latency_ms, bytes_in, bytes_out, backend_used, cache_hit, sha256, timestamp) 
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """, (
+                record["request_id"], record["origin"], record["tool"], record["status"],
+                record["latency_ms"], record["bytes_in"], record["bytes_out"],
+                record["backend_used"], record["cache_hit"], record.get("sha256", ""), record["timestamp"].isoformat()
+            ))
+            conn.commit()
+        return True
+    except Exception as e:
+        print(f"[TELEMETRIA] Erro ao salvar log no BD: {e}")
+        return False
+
+def save_memory(wing: str, room: str, content: str, db_path: str = DB_PATH) -> int:
+    """Safely saves a memory entry into mempalace.db. Returns mem_id or 0 on failure."""
     try:
         init_and_migrate_db(db_path)
         
@@ -112,25 +167,46 @@ def save_memory(wing: str, room: str, content: str, db_path: str = DB_PATH) -> b
             
         now_iso = datetime.datetime.now(datetime.timezone.utc).isoformat()
         with get_db_connection(db_path) as conn:
-            conn.execute(
+            cur = conn.execute(
                 "INSERT INTO memories (wing, room, content, timestamp, updated_at, is_sensitive) VALUES (?, ?, ?, ?, ?, ?)",
                 (wing, room, content, now_iso, now_iso, is_sensitive)
             )
+            rowid = cur.lastrowid
             
             # Atualizar FTS5 apenas para registros não-sensíveis
             if not is_sensitive:
-                # O ID gerado pode ser pego com lastrowid
-                cur = conn.execute("SELECT last_insert_rowid()")
-                rowid = cur.fetchone()[0]
                 conn.execute(
                     "INSERT INTO memories_fts(rowid, wing, room, content) VALUES (?, ?, ?, ?)",
                     (rowid, wing, room, content)
                 )
                 
             conn.commit()
-        return True
+        return rowid
     except Exception as e:
         print(f"[DB ERROR] Error saving memory ({wing}/{room}): {e}")
+        return 0
+
+def check_media_processed(file_hash: str, db_path: str = DB_PATH) -> bool:
+    try:
+        with get_db_connection(db_path) as conn:
+            cur = conn.execute("SELECT 1 FROM processed_media_registry WHERE file_hash = ?", (file_hash,))
+            return cur.fetchone() is not None
+    except Exception as e:
+        print(f"[DB ERROR] check_media_processed falhou: {e}")
+        return False
+
+def register_processed_media(file_hash: str, original_name: str, mem_id: int, db_path: str = DB_PATH) -> bool:
+    try:
+        with get_db_connection(db_path) as conn:
+            conn.execute(
+                "INSERT OR IGNORE INTO processed_media_registry (file_hash, original_name, mem_id) VALUES (?, ?, ?)",
+                (file_hash, original_name, mem_id)
+            )
+            conn.commit()
+        return True
+    except Exception as e:
+        print(f"[DB ERROR] register_processed_media falhou: {e}")
+        return False
         return False
 
 def save_chat_message(sender: str, message: str, response: str = "", channel: str = "mobile", db_path: str = DB_PATH) -> bool:
@@ -155,3 +231,36 @@ def save_chat_message(sender: str, message: str, response: str = "", channel: st
 if __name__ == "__main__":
     init_and_migrate_db()
     print("[DB ENGINE] SparkHub Database initial migration & health check OK!")
+
+def mempalace_search(query: str, db_path: str = DB_PATH, limit: int = 5) -> str:
+    """Busca no MemPalace via FTS5 e LIKE para fallback se IAs caírem."""
+    try:
+        init_and_migrate_db(db_path)
+        with get_db_connection(db_path) as conn:
+            try:
+                cur = conn.execute(
+                    "SELECT wing, room, content FROM memories_fts WHERE memories_fts MATCH ? ORDER BY rank LIMIT ?",
+                    (query, limit)
+                )
+                rows = cur.fetchall()
+            except Exception:
+                rows = []
+            
+            if not rows:
+                like_q = f"%{query}%"
+                cur = conn.execute(
+                    "SELECT wing, room, content FROM memories WHERE content LIKE ? OR room LIKE ? LIMIT ?",
+                    (like_q, like_q, limit)
+                )
+                rows = cur.fetchall()
+                
+            if not rows:
+                return "Nenhum resultado encontrado localmente."
+                
+            res = []
+            for r in rows:
+                wing, room, content_text = r[0], r[1], str(r[2])
+                res.append(f"- [{wing}/{room}]: {content_text[:200]}...")
+            return "\n".join(res)
+    except Exception as e:
+        return f"Erro na busca local: {e}"

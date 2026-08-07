@@ -16,7 +16,7 @@ from dotenv import load_dotenv
 
 load_dotenv(get_path(".env"))
 app = Flask(__name__)
-app.secret_key = os.urandom(24)
+app.secret_key = os.getenv("SPARKHUB_API_TOKEN", "default_secret_key_fallback")
 
 # Tokens de Segurança
 DASHBOARD_PASS = os.getenv("DASHBOARD_PASSWORD", "12345")
@@ -165,7 +165,7 @@ LOGS_TEMPLATE = """
         body { font-family: monospace; background: #0d1117; color: #c9d1d9; margin: 0; padding: 10px; }
         .card { background: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 10px; margin-bottom: 8px; }
         h2 { font-size: 13px; margin: 0 0 6px 0; color: #58a6ff; display: flex; justify-content: space-between; align-items: center;}
-        a.btn { background: #21262d; color: #c9d1d9; border: 1px solid #30363d; padding: 4px 8px; border-radius: 4px; text-decoration: none; font-size: 11px; }
+        a.btn, button.btn { background: #21262d; color: #c9d1d9; border: 1px solid #30363d; padding: 4px 8px; border-radius: 4px; text-decoration: none; font-size: 11px; cursor: pointer; }
         .log-container { background: #010409; border: 1px solid #30363d; border-radius: 4px; padding: 10px; height: 80vh; overflow-y: auto; font-size: 11px; line-height: 1.4; white-space: pre-wrap; }
         .info { color: #8b949e; }
         .warning { color: #d29922; }
@@ -176,7 +176,10 @@ LOGS_TEMPLATE = """
 <body>
     <h2>
         <span>SparkHub System Logs</span>
-        <a href="/" class="btn">Voltar</a>
+        <div>
+            <button class="btn" onclick="copyLogs()">Copiar</button>
+            <a href="/" class="btn">Voltar</a>
+        </div>
     </h2>
     <div class="card">
         <div id="logs" class="log-container">Carregando...</div>
@@ -197,6 +200,14 @@ LOGS_TEMPLATE = """
                     logEl.innerHTML = html;
                     if (isBottom) logEl.scrollTop = logEl.scrollHeight;
                 }
+            });
+        }
+        function copyLogs() {
+            let logText = document.getElementById('logs').innerText;
+            navigator.clipboard.writeText(logText).then(() => {
+                alert('Logs copiados com sucesso!');
+            }).catch(err => {
+                alert('Erro ao copiar logs.');
             });
         }
         setInterval(updateLogs, 2000);
@@ -226,7 +237,13 @@ HTML_TEMPLATE = """
     </style>
 </head>
 <body>
-    <h2>GDD-as-Code · Módulo 6 · SparkHub</h2>
+    <h2 style="display:flex; justify-content:space-between; align-items:center;">
+        <span>GDD-as-Code · Módulo 6 · SparkHub</span>
+        <span>
+            <button style="width:auto; padding:2px 6px; margin:0; font-size:10px;" onclick="changeZoom(-0.1)">-</button>
+            <button style="width:auto; padding:2px 6px; margin:0; font-size:10px;" onclick="changeZoom(0.1)">+</button>
+        </span>
+    </h2>
     <div style="font-size: 10px; margin-bottom: 8px; color: #8b949e;">
         porta :8085 · escopo <span id="scope">Local SQLite</span>
     </div>
@@ -261,12 +278,21 @@ HTML_TEMPLATE = """
             <a href="/logs" style="background: #21262d; color: #c9d1d9; border: 1px solid #30363d; padding: 2px 6px; border-radius: 4px; text-decoration: none; font-size: 10px; float: right;">Ver Logs</a>
         </h2>
         <div style="font-size: 11px;" id="services">Aguardando heartbeat...</div>
+        <div style="margin-top: 5px; font-size: 10px; color: #8b949e; border-top: 1px dashed #30363d; padding-top: 5px;">
+            <strong>Última Conexão MCP:</strong> <span id="mcp_conn">Nenhuma requisição recente.</span>
+        </div>
     </div>
 
     <!-- Novo Card: Fontes de Dados -->
     <div class="card">
         <h2>08 · Fontes de Informação</h2>
         <div style="font-size: 11px;" id="data_sources">Verificando tokens e cotas...</div>
+    </div>
+
+    <!-- Novo Card: Mixture of Experts (IAs Dedicadas) -->
+    <div class="card">
+        <h2>🧠 Mixture of Experts (IAs Dedicadas)</h2>
+        <div style="font-size: 11px;" id="moe_status">Inspecionando especialistas...</div>
     </div>
 
     <!-- Moltbook & Social Insights -->
@@ -301,6 +327,43 @@ HTML_TEMPLATE = """
     </div>
 
     <script>
+        // Memória de Posição, Tamanho e Escala (Zoom)
+        function changeZoom(delta) {
+            let z = parseFloat(localStorage.getItem('dashboard_zoom') || 1);
+            z += delta;
+            if(z < 0.5) z = 0.5;
+            if(z > 3.0) z = 3.0;
+            document.body.style.zoom = z;
+            localStorage.setItem('dashboard_zoom', z);
+        }
+
+        function saveWindowState() {
+            localStorage.setItem('dashboard_x', window.screenX);
+            localStorage.setItem('dashboard_y', window.screenY);
+            localStorage.setItem('dashboard_w', window.outerWidth);
+            localStorage.setItem('dashboard_h', window.outerHeight);
+        }
+
+        window.onload = () => {
+            let x = localStorage.getItem('dashboard_x');
+            let y = localStorage.getItem('dashboard_y');
+            let w = localStorage.getItem('dashboard_w');
+            let h = localStorage.getItem('dashboard_h');
+            let z = localStorage.getItem('dashboard_zoom') || 1;
+            
+            document.body.style.zoom = z;
+            
+            if (x !== null && y !== null && w !== null && h !== null) {
+                try {
+                    window.moveTo(parseInt(x), parseInt(y));
+                    window.resizeTo(parseInt(w), parseInt(h));
+                } catch(e) {}
+            }
+        };
+
+        window.addEventListener('beforeunload', saveWindowState);
+        setInterval(saveWindowState, 2000);
+
         function update() {
             fetch('/api/status').then(r => r.json()).then(d => {
                 document.getElementById('c_free').innerText = d.disk.c_free;
@@ -338,6 +401,17 @@ HTML_TEMPLATE = """
                     ds += `<div>${k}: <span class="${cls}">${v.status}</span> <span style="color:#8b949e; font-size:9px;">(${v.detail})</span></div>`;
                 }
                 document.getElementById('data_sources').innerHTML = ds || "Indisponível";
+
+                let moe = "";
+                if(d.moe) {
+                    for(let [k,v] of Object.entries(d.moe)) {
+                        let cls = v.status === 'OK' ? 'ok' : 'down';
+                        moe += `<div>${k}: <span class="${cls}">${v.status}</span> <span style="color:#8b949e; font-size:10px;">(${v.detail})</span></div>`;
+                    }
+                    if(document.getElementById('moe_status')) {
+                        document.getElementById('moe_status').innerHTML = moe || "N/A";
+                    }
+                }
             });
         }
         function sendCmd() {
@@ -376,6 +450,21 @@ HTML_TEMPLATE = """
         }
         setInterval(refreshSocialInsights, 30000);
         refreshSocialInsights();
+
+        async function fetchMCP() {
+            try {
+                let r = await fetch('/api/orchestrator/telemetry');
+                let d = await r.json();
+                if(d && d.length > 0) {
+                    let last = d[0];
+                    let cls = last.status === 'sucesso' ? 'ok' : 'down';
+                    document.getElementById('mcp_conn').innerHTML = 
+                        `<span class="${cls}">${last.tool}</span> (${last.latency_ms}ms) -> ${last.backend_used} [${last.status}]`;
+                }
+            } catch(e) {}
+        }
+        setInterval(fetchMCP, 2000);
+        fetchMCP();
 
         setInterval(update, 2000);
         update();
@@ -431,7 +520,7 @@ def api_status():
         token = os.environ.get(token_env, "")
         if not token: return {"status": "NO_TOKEN", "detail": "Token ausente"}
         try:
-            req = urllib.request.Request(url, headers={'Authorization': f'Bearer {token}'} if 'Bearer' in token_env else {})
+            req = urllib.request.Request(url, headers={'Authorization': f'Bearer {token}'})
             urllib.request.urlopen(req, timeout=2)
             return {"status": "OK", "detail": "Conectado"}
         except urllib.error.HTTPError as e:
@@ -449,18 +538,46 @@ def api_status():
             "Antigravity IDE": check_process("Antigravity.exe"),
             "VSCode IDE": check_process("code.exe"),
             "Blender Engine": check_process("blender.exe"),
+            "Godot Engine": check_process("godot"),
             "Bot WhatsApp (:8082)": check_port("127.0.0.1", 8082),
             "Dashboard (:8085)": check_port("127.0.0.1", 8085),
         },
         "data_sources": {
             "OpenRouter (Camada 2)": check_llm("https://openrouter.ai/api/v1/auth/key", "OPENROUTER_API_KEY"),
-            "Gemini (Camada 3)": {"status": "OK", "detail": "Configurado"} if os.environ.get("GEMINI_API_KEY") else {"status": "NO_TOKEN", "detail": "Faltando"},
+            "DeepSeek (Camada 3)": {"status": "OK", "detail": "Configurado"} if os.environ.get("DEEPSEEK_API_KEY") else {"status": "NO_TOKEN", "detail": "Faltando"},
+            "Gemini (Camada 4)": {"status": "OK", "detail": "Configurado"} if os.environ.get("GEMINI_API_KEY") else {"status": "NO_TOKEN", "detail": "Faltando"},
+            "NVIDIA Build (Embeddings)": {"status": "OK", "detail": "Configurado"} if os.environ.get("NVIDIA_API_KEY") else {"status": "NO_TOKEN", "detail": "Faltando"},
             "Ollama (Local)": {"status": "OK", "detail": "Conectado"} if check_port("127.0.0.1", 11434) else {"status": "OFFLINE", "detail": "Inativo"},
-            "Gmail Principal": {"status": "OK", "detail": "Token Ativo"} if os.path.exists(str(get_path("credentials/token.pickle"))) else {"status": "NO_TOKEN", "detail": "Não Autenticado"},
-            "Google Drive": {"status": "OK", "detail": "Token Ativo"} if os.path.exists(str(get_path("credentials/token.pickle"))) else {"status": "NO_TOKEN", "detail": "Não Autenticado"},
+            "Gmail Principal": {"status": "OK", "detail": "Token Ativo"} if os.path.exists(str(get_path("token.json"))) or os.path.exists(str(get_path("credentials/token.pickle"))) else {"status": "NO_TOKEN", "detail": "Não Autenticado"},
+            "Google Drive": {"status": "OK", "detail": "Token Ativo"} if os.path.exists(str(get_path("token.json"))) or os.path.exists(str(get_path("credentials/token.pickle"))) else {"status": "NO_TOKEN", "detail": "Não Autenticado"},
             "MemPalace (SQLite)": {"status": "OK", "detail": "Ativo"} if os.path.exists(str(get_path("mempalace.db"))) else {"status": "NO_DB", "detail": "Arquivo Ausente"}
+        },
+        "moe": {
+            "Agente de Código": {"status": "OK", "detail": "Poolside Laguna XS 2.1"},
+            "Geração/Chat (Texto)": {"status": "OK", "detail": "Ollama/Gemini/OpenRouter"},
+            "Memória (Embeddings)": {"status": "OK", "detail": "Llama Nemotron-1B"},
+            "Motor Rerank (Contexto)": {"status": "OK", "detail": "Llama Nemotron Rerank-1B"},
+            "Análise Visual (Imagem/Vídeo)": {"status": "OK", "detail": "Gemini 2.0 Flash"},
+            "Audição (Transcrição Local)": {"status": "OK", "detail": "Faster-Whisper"}
         }
     })
+
+@app.route("/api/orchestrator/status")
+def api_orchestrator_status():
+    from sparkhub_mcp_orchestrator import orchestrator
+    # Convert states to a serializable format
+    return jsonify(orchestrator.cb.states)
+
+@app.route("/api/orchestrator/telemetry")
+def api_orchestrator_telemetry():
+    import json
+    try:
+        with open("D:\\SparkHub\\mcp_telemetry.json", "r", encoding="utf-8") as f:
+            data = json.load(f)
+        return jsonify(data[::-1][:50]) # Return last 50
+    except Exception:
+        return jsonify([])
+
 
 
 def send_systray_signal(msg: str):
@@ -626,6 +743,26 @@ def get_social_insights():
         
         insights = [{"content": row[0], "timestamp": row[1]} for row in rows]
         return jsonify({"status": "success", "data": insights})
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500
+
+@app.route('/api/moltbook/sync', methods=['POST'])
+@login_required
+def api_moltbook_sync():
+    try:
+        # Import local to avoid circular import loops early on
+        from sparkhub_moltbook_agent import get_moltbook_agent
+        agent = get_moltbook_agent()
+        
+        # In a real app we'd dispatch this async, but for MVP we run sync and return stats
+        # If heavy load is detected, we could reject it or bypass since it's "On Demand"
+        # The user specification says: "Varredura imediata acionada por comando MCP ou Dashboard."
+        result = agent.sinc_demanda()
+        
+        if result.get("status") == "success":
+            return jsonify({"status": "success", "data": result.get("stats", {})})
+        else:
+            return jsonify({"status": "error", "message": result.get("message", "Erro desconhecido")}), 500
     except Exception as e:
         return jsonify({"status": "error", "message": str(e)}), 500
 

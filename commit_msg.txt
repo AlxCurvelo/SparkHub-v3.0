@@ -1,0 +1,7 @@
+docs: atualizacao da documentacao e finalizacao da arquitetura v3
+
+- Adicionado CHANGELOG.md com o resumo das features.
+- Consolidacao da Busca Desacoplada (SearchAgent Hibrido).
+- Inclusao do Agente Moltbook passivo.
+- Adicionado esqueleto do GDD do jogo.
+- Nova estrutura do Orchestrator com SQLite Telemetry.

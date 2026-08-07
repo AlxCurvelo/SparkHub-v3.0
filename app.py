@@ -19,10 +19,11 @@ from urllib.parse import parse_qs, urlparse
 from dotenv import load_dotenv
 
 from sparkhub_paths import PROJECT_ROOT, get_default_port, get_path
-load_dotenv(get_path(".env"))
+load_dotenv(get_path(".env"), override=True)
 import router_ai
 import ctypes
 import sparkhub_crypto
+from sparkhub_mcp_orchestrator import orchestrator
 
 # =========================================================
 # CONFIGURAÇÕES DO SPARKHUB v2.4.0 UNIVERSAL (SHELL EXECUTE + AUTO-DISCOVERY)
@@ -154,7 +155,7 @@ def find_executable_or_shortcut(app_query):
                     nome = row["Nome"].lower()
                     if query == nome:
                         return row["Caminho"]
-                    elif query in nome or nome in query:
+                    elif query in nome:
                         if not best_match:
                             best_match = row["Caminho"]
             if best_match:
@@ -703,7 +704,7 @@ def proactive_memory_check(tool_name, args):
         return ""
 
 def execute_tool(name, args):
-    """Executa as acoes nativas no Windows e MemPalace v2.5.0 com os.startfile(), Auto-Discovery, Auditoria e Contexto Proativo"""
+    """Executa as acoes nativas no Windows e MemPalace v3.0 com os.startfile(), Auto-Discovery, Auditoria e Contexto Proativo"""
     
     # 1. Recuperar contexto proativo
     proactive_context = proactive_memory_check(name, args)
@@ -1130,19 +1131,30 @@ class LocalHubMCPHandler(http.server.BaseHTTPRequestHandler):
                 arguments = params.get("arguments", {})
                 try:
                     update_state(tool_name, increment=True)
-                    res_text = execute_tool(tool_name, arguments)
-                    self._send_json(200, {
+                    # Delegação para o Orchestrator (Deduplicação, Auto-healing, Circuit Breaker, Telemetria)
+                    from sparkhub_mcp_orchestrator import MCPRequest
+                    from datetime import datetime
+                    
+                    req_obj = MCPRequest(
+                        request_id=str(req_id) if req_id else str(uuid.uuid4()),
+                        origin=self.headers.get("User-Agent", "unknown"),
+                        tool=tool_name,
+                        payload=params,
+                        timestamp=datetime.now(),
+                        ttl_seconds=30
+                    )
+                    
+                    orchestrator_resp = orchestrator.process(req_obj, execute_tool)
+                    
+                    # O orchestrator_resp já traz a formatação {"result": ...} ou {"error": ...}
+                    resp_dict = {
                         "jsonrpc": "2.0",
-                        "id": req_id,
-                        "result": {
-                            "content": [
-                                {
-                                    "type": "text",
-                                    "text": res_text
-                                }
-                            ]
-                        }
-                    })
+                        "id": req_id
+                    }
+                    resp_dict.update(orchestrator_resp)
+                    
+                    self._send_json(200 if "result" in orchestrator_resp else 503, resp_dict)
+
                 except Exception as e:
                     self._send_json(200, {
                         "jsonrpc": "2.0",
@@ -1188,7 +1200,7 @@ if __name__ == "__main__":
         logger.info("[API] Uma instância já está rodando. Encerrando.")
         sys.exit(0)
         
-    parser = argparse.ArgumentParser(description="SparkHub v2.5.0 - CLI e Servidor MCP")
+    parser = argparse.ArgumentParser(description="SparkHub v3.0 - CLI e Servidor MCP")
     parser.add_argument("tool", nargs="?", help="Nome da ferramenta para executar via CLI (ex: open_app, run_command)")
     parser.add_argument("args", nargs="*", help="Argumentos da ferramenta em formato chave=valor ou string direta")
     parser.add_argument("--profile", default="auto", help="Perfil do Multi-Mode para ask_ai (auto, cloud, vram_fast, etc)")
@@ -1197,7 +1209,7 @@ if __name__ == "__main__":
     
     if cli_args.tool:
         # Modo CLI
-        logger.info(f"=== SPARKHUB v2.5.0 MODO CLI ===")
+        logger.info(f"=== SPARKHUB v3.0 MODO CLI ===")
         tool_name = cli_args.tool
         # Parse simple arguments
         tool_kwargs = {}
@@ -1226,7 +1238,7 @@ if __name__ == "__main__":
             logger.error(f"[ERRO] {e}")
     else:
         # Modo Servidor MCP Original
-        logger.info(f"=== SERVIDOR SPARKHUB v2.5.0 (SHELLEXECUTE / AUTO-DISCOVERY / CLI) RODANDO NA PORTA {PORT} ===")
+        logger.info(f"=== SERVIDOR SPARKHUB v3.0 (SHELLEXECUTE / AUTO-DISCOVERY / CLI) RODANDO NA PORTA {PORT} ===")
         logger.info("Execucao nativa na sessao interativa com os.startfile() e auditoria pos-acao.")
         import subprocess
         pyw = sys.executable.replace('python.exe', 'pythonw.exe')
@@ -1244,6 +1256,6 @@ if __name__ == "__main__":
             logger.warning(f"[WARN] Nao foi possivel iniciar widgets/UI: {e}")
             
         with SparkHubTCPServer(("", PORT), LocalHubMCPHandler) as httpd:
-            logger.info(f"=== SERVIDOR SPARKHUB v2.5.0 RODANDO EM http://127.0.0.1:{PORT}/ ===")
+            logger.info(f"=== SERVIDOR SPARKHUB v3.0 RODANDO EM http://127.0.0.1:{PORT}/ ===")
             httpd.serve_forever()
 

@@ -53,3 +53,4 @@ task_state.json
 # Arquivos grandes e cache do WhatsApp
 whatsapp-bot/.wwebjs_auth/
 cloudflared.exe
+ollama.zip
